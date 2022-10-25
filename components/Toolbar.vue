@@ -1,7 +1,9 @@
 <template>
   <div>
     <nav class="navbar">
-      <NuxtLink class="logo" to="#">LOGO</NuxtLink>
+      <NuxtLink class="logo" to="#" alt="Website Logo">
+        Damien NOEL <Icon icon="material-symbols:code" class="logoIcon" />
+      </NuxtLink>
       <div class="nav-links" :class="{ 'mobile-menu': isMobileMenuActive }">
         <NuxtLink
           v-for="page of pages"
@@ -23,7 +25,7 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
 
-const pages = ["home", "about", "education", "work"];
+const pages = ["home", "education", "experiences", "about"];
 
 let isMobileMenuActive = ref(false);
 
@@ -38,6 +40,8 @@ let menuToggle = () => {
   font-family: "Poppins", serif;
 }
 
+$focus-color: #d81264;
+
 .navbar {
   width: 100%;
 
@@ -47,18 +51,27 @@ let menuToggle = () => {
 
   .logo {
     left: 50px;
-    font-size: 2em;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 2rem;
     font-weight: 600;
+
+    .logoIcon {
+      font-size: 3rem;
+    }
   }
   a {
     color: white;
 
     &:hover {
-      color: red !important;
+      color: $focus-color;
     }
 
     &:focus {
-      color: red !important;
+      color: $focus-color;
     }
   }
 }
