@@ -43,24 +43,19 @@ let menuToggle = () => {
 $focus-color: #d81264;
 
 .navbar {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100vw;
 
   .logo {
-    left: 50px;
-
+    margin-left: 30px;
     display: flex;
     align-items: center;
     gap: 5px;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
 
     .logoIcon {
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
   a {
@@ -81,12 +76,7 @@ $focus-color: #d81264;
     position: absolute;
     top: 50px;
   }
-
   .nav-links {
-    top: 0;
-    left: 0;
-    position: absolute;
-
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.342);
@@ -109,7 +99,7 @@ $focus-color: #d81264;
 
   .menu-hamburger {
     position: absolute;
-    top: 50px;
+    top: 45px;
     right: 50px;
     height: 50px;
     width: auto;
@@ -120,20 +110,15 @@ $focus-color: #d81264;
 @media screen and (min-width: 768px) {
   .navbar {
     padding-top: 50px;
-  }
-
-  .logo {
-    position: relative;
-    top: 0px;
-  }
-  .nav-links {
-    position: relative;
-
-    width: 60vw;
 
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    width: 60vw;
+    display: flex;
     justify-content: space-evenly;
-    height: auto;
     font-size: 1rem;
     font-weight: 500;
   }
