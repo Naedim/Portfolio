@@ -39,6 +39,7 @@ $accentColor: #22268f;
   padding: 0;
   text-decoration: none;
   list-style: none;
+  font-family: "Poppins", serif;
 }
 
 .wholeAppContainer {

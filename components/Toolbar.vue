@@ -25,7 +25,7 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
 
-const pages = ["home", "education", "experiences", "about"];
+const pages = ["home", "about", "education", "experiences"];
 
 let isMobileMenuActive = ref(false);
 
@@ -36,14 +36,12 @@ let menuToggle = () => {
 </script>
 
 <style scoped lang="scss">
-* {
-  font-family: "Poppins", serif;
-}
-
 $focus-color: #d81264;
 
 .navbar {
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
 
   .logo {
     margin-left: 30px;
@@ -73,10 +71,10 @@ $focus-color: #d81264;
 
 @media screen and (max-width: 767px) {
   .logo {
-    position: absolute;
-    top: 50px;
+    margin-top: 25px;
   }
   .nav-links {
+    position: absolute;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.342);
@@ -98,9 +96,9 @@ $focus-color: #d81264;
   }
 
   .menu-hamburger {
-    position: absolute;
-    top: 45px;
-    right: 50px;
+    margin-top: 25px;
+    margin-right: 30px;
+
     height: 50px;
     width: auto;
     color: white;
