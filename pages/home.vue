@@ -1,47 +1,71 @@
 <template>
-  <div>
-    <div class="introduction">
-      <div class="introduction__first-line">
-        <span>Hello, I'm</span>
+  <div class="center-container">
+    <div class="center-container__introduction">
+      <div class="center-container__introduction--first-line">
+        <p>Hello, I'm</p>
       </div>
 
-      <div class="introduction__second-line">
-        <span>Damien NOEL</span>
+      <div class="center-container__introduction--second-line">
+        <p>Damien NOEL</p>
+      </div>
+
+      <div class="center-container__introduction--third-line">
+        <p>
+          I'm a <span>software engineer</span> working as an
+          <span>IT teacher</span> in university and a
+          <span>freelance developer</span>.
+        </p>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-$primary-color: #d81264;
+$secondary-color: #d81264;
 $third-color: #ccd6f6;
-.introduction {
-  margin-left: 30px;
-  width: 100vw;
-  // background-color: red;
+$fourth-color: #6b7dad;
 
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.center-container {
+  padding-right: 30px;
+  padding-left: 30px;
 
-  .introduction__first-line {
-    span {
-      font-size: 1.25rem;
-      color: $primary-color;
-      font-weight: 500;
+  .center-container__introduction {
+    // background-color: red;
+
+    display: flex;
+    flex-direction: column;
+    .center-container__introduction--first-line {
+      p {
+        font-size: 1.25rem;
+        color: $secondary-color;
+        font-weight: 500;
+      }
     }
-  }
 
-  .introduction__second-line {
-    span {
-      font-size: 2.5rem;
-      color: $third-color;
-      font-weight: 500;
+    .center-container__introduction--second-line {
+      margin-top: -10px;
+      p {
+        font-size: clamp(2.5rem, 8vw, 6rem);
+        color: $third-color;
+        font-weight: 600;
+      }
+    }
+
+    .center-container__introduction--third-line {
+      margin-top: 20px;
+      max-width: 500px;
+      p {
+        font-size: 1.5rem;
+        color: $fourth-color;
+        font-weight: 500;
+        span {
+          color: $third-color;
+        }
+      }
     }
   }
 }
 
-.menu-hamburger {
-  font-size: 2rem;
+@media screen and (min-width: 480px) {
 }
 </style>

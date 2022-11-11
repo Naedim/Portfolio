@@ -1,5 +1,5 @@
 <template>
-  <div class="wholeAppContainer">
+  <div class="app-container">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -42,7 +42,7 @@ $accentColor: #22268f;
   font-family: "Poppins", serif;
 }
 
-.wholeAppContainer {
+.app-container {
   height: 100vh;
   width: 100vw;
   background: rgb(105, 72, 203);

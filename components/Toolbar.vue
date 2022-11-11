@@ -1,16 +1,14 @@
 <template>
   <div>
     <nav class="navbar">
-      <NuxtLink class="logo" to="#" alt="Website Logo">
-        Damien NOEL <Icon icon="material-symbols:code" class="logoIcon" />
+      <NuxtLink class="navbar__logo" to="#" alt="Website navbar logo">
+        Damien NOEL
+        <Icon icon="material-symbols:code" class="navbar__icon" />
       </NuxtLink>
       <div class="nav-links" :class="{ 'mobile-menu': isMobileMenuActive }">
-        <NuxtLink
-          v-for="page of pages"
-          :to="page"
-          v-on:click="() => menuToggle()"
-          >{{ page }}</NuxtLink
-        >
+        <NuxtLink v-for="page of pages" :to="page" @click="menuToggle()">{{
+          page
+        }}</NuxtLink>
       </div>
       <Icon
         icon="mdi:menu"
@@ -25,7 +23,7 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
 
-const pages = ["home", "about", "education", "experiences"];
+const pages = ["home", "experiences", "education", "about"];
 
 let isMobileMenuActive = ref(false);
 
@@ -42,8 +40,9 @@ $focus-color: #d81264;
   width: 100vw;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10vh;
 
-  .logo {
+  .navbar__logo {
     margin-left: 30px;
     display: flex;
     align-items: center;
@@ -52,7 +51,7 @@ $focus-color: #d81264;
     font-size: 1.5rem;
     font-weight: 600;
 
-    .logoIcon {
+    .navbar__icon {
       font-size: 2rem;
     }
   }
@@ -70,7 +69,7 @@ $focus-color: #d81264;
 }
 
 @media screen and (max-width: 767px) {
-  .logo {
+  .navbar__logo {
     margin-top: 25px;
   }
   .nav-links {
