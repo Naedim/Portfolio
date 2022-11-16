@@ -26,8 +26,8 @@ $third-color: #ccd6f6;
 $fourth-color: #6b7dad;
 
 .center-container {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 8vw;
+  padding-left: 8vw;
 
   .center-container__introduction {
     // background-color: red;
@@ -36,7 +36,7 @@ $fourth-color: #6b7dad;
     flex-direction: column;
     .center-container__introduction--first-line {
       p {
-        font-size: 1.25rem;
+        font-size: clamp(1.25rem, 3.7vw, 4rem);
         color: $secondary-color;
         font-weight: 500;
       }
@@ -45,17 +45,17 @@ $fourth-color: #6b7dad;
     .center-container__introduction--second-line {
       margin-top: -10px;
       p {
-        font-size: clamp(2.5rem, 8vw, 6rem);
+        font-size: clamp(2.5rem, 8vw, 10em);
         color: $third-color;
         font-weight: 600;
       }
     }
 
     .center-container__introduction--third-line {
-      margin-top: 20px;
-      max-width: 500px;
+      margin-top: clamp(15px, 20px, 40px);
+      width: clamp(100%, 80%, 60%);
       p {
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 4.5vw, 5.5rem);
         color: $fourth-color;
         font-weight: 500;
         span {
@@ -64,8 +64,5 @@ $fourth-color: #6b7dad;
       }
     }
   }
-}
-
-@media screen and (min-width: 480px) {
 }
 </style>
