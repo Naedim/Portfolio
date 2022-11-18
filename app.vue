@@ -47,24 +47,5 @@ $accentColor: #22268f;
   width: 100vw;
   background: rgb(105, 72, 203);
   background: #061336;
-  // background: -moz-linear-gradient(
-  //   90deg,
-  //   rgba(22, 65, 177, 1) 15%,
-  //   rgba(12, 38, 107, 1) 50%,
-  //   rgba(6, 19, 54, 1) 85%
-  // );
-  // background: -webkit-linear-gradient(
-  //   90deg,
-  //   rgba(22, 65, 177, 1) 15%,
-  //   rgba(12, 38, 107, 1) 50%,
-  //   rgba(6, 19, 54, 1) 85%
-  // );
-  // background: linear-gradient(
-  //   90deg,
-  //   rgba(22, 65, 177, 1) 15%,
-  //   rgba(12, 38, 107, 1) 50%,
-  //   rgba(6, 19, 54, 1) 85%
-  // );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1641b1",endColorstr="#061336",GradientType=1);
 }
 </style>
