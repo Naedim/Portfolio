@@ -26,17 +26,21 @@ $third-color: #ccd6f6;
 $fourth-color: #6b7dad;
 
 .center-container {
-  padding-right: 8vw;
-  padding-left: 8vw;
+  box-sizing: border-box;
+  height : 50vh;
+  // background-color: red;
+  
+ 
+
 
   .center-container__introduction {
-    // background-color: red;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     .center-container__introduction--first-line {
       p {
-        font-size : clamp(1.25rem, 3vw, 3rem);
+        font-size : clamp(1.25rem, 3vw, 2.5rem);
         color: $secondary-color;
         font-weight: 500;
       }
@@ -45,7 +49,7 @@ $fourth-color: #6b7dad;
     .center-container__introduction--second-line {
       margin-top: -10px;
       p {
-        font-size: clamp(2.5rem, 8vw, 10em);
+        font-size: clamp(2.5rem, 8vw, 7em);
         color: $third-color;
         font-weight: 600;
       }
@@ -53,9 +57,8 @@ $fourth-color: #6b7dad;
 
     .center-container__introduction--third-line {
       margin-top: 20px;
-      // max-width: 500px;
       p {
-        font-size : clamp(1.5rem, 3vw, 3rem);
+        font-size : clamp(1.5rem, 3vw, 2.5rem);
         color: $fourth-color;
         font-weight: 500;
         span {
@@ -70,6 +73,10 @@ $fourth-color: #6b7dad;
   .center-container {
     padding-right: 15%;
     padding-left: 15%;
+
+    display : flex;
+  justify-content: center;
+  align-items: center;
   }
 
 }

@@ -5,8 +5,9 @@
         Damien NOEL
         <Icon icon="material-symbols:code" class="navbar__icon" />
       </NuxtLink>
+        <p class = "current-page-indicator"> {{currentPage}}</p>
       <div class="nav-links" :class="{ 'mobile-menu': isMobileMenuActive }">
-        <NuxtLink v-for="page of pages" :to="page" @click="menuToggle()">{{
+        <NuxtLink v-for="page of pages" :to="page" @click="pageChange(page)">{{
           page
         }}</NuxtLink>
       </div>
@@ -26,20 +27,33 @@ import { Icon } from "@iconify/vue";
 const pages = ["home", "experiences", "education", "about"];
 
 let isMobileMenuActive = ref(false);
+let currentPage = ref("home");
 
 let menuToggle = () => {
   isMobileMenuActive.value = !isMobileMenuActive.value;
-  console.log(isMobileMenuActive.value);
 };
+
+let pageChange = (page : string) =>{
+  currentPage.value = page;
+  menuToggle();
+}
+
+let setCurrentPage = (page : string)=>{
+  currentPage.value = page;
+}
+
 </script>
 
 <style scoped lang="scss">
 $focus-color: #d81264;
+$secondary-color: #d81264;
 
 .navbar {
+  height : 10vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 10vh;
 
   .navbar__logo {
@@ -48,34 +62,43 @@ $focus-color: #d81264;
     align-items: center;
     gap: 5px;
 
-    font-size: clamp(1.5rem, 2.25vw, 3rem);
+    font-size: clamp(1.5rem, 2.25vw, 2.5rem);
     font-weight: 600;
 
     .navbar__icon {
       font-size: clamp(2rem, 3vw, 3.75rem);
     }
+    
+  }
+
+  .current-page-indicator{
+    margin-top: 25px;
+    font-size : clamp(1.3rem, 2vw, 1.7rem);
+    color: $secondary-color;
+    font-weight: 500;
+      
   }
 
   .nav-links {
     margin-right: 8vw;
 
-    font-size: clamp(1.3rem, 2vw, 2.7rem);
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
   }
 
   a {
     color: white;
 
     &:hover {
-      color: $focus-color;
+      color: $secondary-color;
     }
 
     &:focus {
-      color: $focus-color;
+      color: $secondary-color;
     }
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 899px) {
   .navbar__logo {
     margin-top: 25px;
   }
@@ -85,6 +108,7 @@ $focus-color: #d81264;
     height: 100vh;
     background: rgba(0, 0, 0, 0.342);
     backdrop-filter: blur(9px);
+    margin-top : 90vh;
 
     display: flex;
     flex-direction: column;
@@ -110,14 +134,26 @@ $focus-color: #d81264;
     z-index: 1;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
+
   .navbar {
     padding-top: 50px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .navbar__logo{
+    gap: 15px !important;
+
+    }
   }
+
+  .current-page-indicator{
+    display: none;
+  }
+
+
   .nav-links {
     width: 60vw;
     display: flex;
@@ -127,12 +163,6 @@ $focus-color: #d81264;
 
   .menu-hamburger {
     display: none;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .nav-links {
-    width: 50vw;
   }
 }
 </style>
