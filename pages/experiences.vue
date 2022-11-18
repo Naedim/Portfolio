@@ -1,6 +1,5 @@
 <template>
   <div class="center-container">
-    <p class="header">My experiences</p>
     <div class="experiences">
       <div class="experiences__companies-list">
         <NuxtLink
