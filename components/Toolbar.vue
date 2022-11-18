@@ -43,18 +43,25 @@ $focus-color: #d81264;
   padding-bottom: 10vh;
 
   .navbar__logo {
-    margin-left: 30px;
+    margin-left: 8vw;
     display: flex;
     align-items: center;
     gap: 5px;
 
-    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 2.25vw, 3rem);
     font-weight: 600;
 
     .navbar__icon {
-      font-size: 2rem;
+      font-size: clamp(2rem, 3vw, 3.75rem);
     }
   }
+
+  .nav-links {
+    margin-right: 8vw;
+
+    font-size: clamp(1.3rem, 2vw, 2.7rem);
+  }
+
   a {
     color: white;
 
@@ -85,7 +92,6 @@ $focus-color: #d81264;
     align-items: center;
     gap: 50px;
     font-weight: 600;
-    font-size: 1.3rem;
     margin-left: -100%;
     transition: all 0.5s ease;
 
@@ -116,7 +122,6 @@ $focus-color: #d81264;
     width: 60vw;
     display: flex;
     justify-content: space-evenly;
-    font-size: 1rem;
     font-weight: 500;
   }
 

@@ -26,8 +26,8 @@ $third-color: #ccd6f6;
 $fourth-color: #6b7dad;
 
 .center-container {
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 8vw;
+  padding-left: 8vw;
 
   .center-container__introduction {
     // background-color: red;
@@ -45,7 +45,7 @@ $fourth-color: #6b7dad;
     .center-container__introduction--second-line {
       margin-top: -10px;
       p {
-        font-size: clamp(2.5rem, 8vw, 6rem);
+        font-size: clamp(2.5rem, 8vw, 10em);
         color: $third-color;
         font-weight: 600;
       }
