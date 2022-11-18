@@ -36,7 +36,7 @@ $fourth-color: #6b7dad;
     flex-direction: column;
     .center-container__introduction--first-line {
       p {
-        font-size: 1.25rem;
+        font-size : clamp(1.25rem, 3vw, 3rem);
         color: $secondary-color;
         font-weight: 500;
       }
@@ -53,9 +53,9 @@ $fourth-color: #6b7dad;
 
     .center-container__introduction--third-line {
       margin-top: 20px;
-      max-width: 500px;
+      // max-width: 500px;
       p {
-        font-size: 1.5rem;
+        font-size : clamp(1.5rem, 3vw, 3rem);
         color: $fourth-color;
         font-weight: 500;
         span {
@@ -67,5 +67,10 @@ $fourth-color: #6b7dad;
 }
 
 @media screen and (min-width: 480px) {
+  .center-container {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+
 }
 </style>
