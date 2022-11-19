@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <nav class="navbar">
-      <NuxtLink class="navbar__logo" to="#" alt="Website navbar logo">
+  <div class = "toolbar">
+    <nav class="toolbar__navbar">
+      <NuxtLink class="toolbar__navbar-logo" to="#" title = "navbar's logo">
         Damien NOEL
-        <Icon icon="material-symbols:code" class="navbar__icon" />
+        <Icon icon="material-symbols:code" class="toolbar__navbar-log-icon" title = "navbar's logo's icon" />
       </NuxtLink>
-        <p class = "current-page-indicator"> {{route.name}}</p>
       <div class="nav-links" :class="{ 'mobile-menu': isMobileMenuActive }">
         <NuxtLink v-for="page of pages" :to="page" @click="menuToggle()">{{
           page
@@ -14,10 +13,13 @@
       <Icon
         icon="mdi:menu"
         class="menu-hamburger"
-        alt="hamburger menu"
+        title = "hamburger menu"
         v-on:click="() => menuToggle()"
       />
     </nav>
+    <div class = "toolbar__current-page-container">
+      <p class = "current-page-name" title = "current page's name"> {{route.name}}</p>
+    </div>
   </div>
 </template>
 
@@ -37,40 +39,29 @@ let menuToggle = () => {
 $focus-color: #d81264;
 $secondary-color: #d81264;
 
-.navbar {
-  height : 10vh;
+.toolbar__navbar {
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 10vh;
 
-  .navbar__logo {
+  .toolbar__navbar-logo {
     margin-left: 8vw;
     display: flex;
     align-items: center;
     gap: 5px;
 
-    font-size: clamp(1.5rem, 2.25vw, 2.5rem);
+    font-size: clamp(1.2rem, 2.25vw, 2.5rem);
     font-weight: 600;
 
-    .navbar__icon {
-      font-size: clamp(2rem, 3vw, 3.75rem);
+    .toolbar__navbar-log-icon {
+      font-size: clamp(1.5rem, 3vw, 3.75rem);
     }
     
   }
 
-  .current-page-indicator{
-    margin-top: 25px;
-    font-size : clamp(1.3rem, 2vw, 1.7rem);
-    color: $secondary-color;
-    font-weight: 500;
-      
-  }
-
   .nav-links {
     margin-right: 8vw;
-
     font-size: clamp(1.3rem, 2vw, 1.7rem);
   }
 
@@ -87,8 +78,23 @@ $secondary-color: #d81264;
   }
 }
 
+div.toolbar__current-page-container{
+
+  .current-page-name{
+    padding-left : 8vw;  display : flex;
+    align-items: center;
+    font-size : clamp(1.3rem, 2vw, 1.7rem);
+    color: $secondary-color;
+    font-weight: 500;
+      
+  }
+}
+
+
+
+
 @media screen and (max-width: 899px) {
-  .navbar__logo {
+  .toolbar__navbar-logo {
     margin-top: 25px;
   }
   .nav-links {
@@ -117,7 +123,8 @@ $secondary-color: #d81264;
     margin-top: 25px;
     margin-right: 30px;
 
-    height: 50px;
+    // height: 50px;
+    height : 2.5rem;
     width: auto;
     color: white;
     z-index: 1;
@@ -125,14 +132,14 @@ $secondary-color: #d81264;
 }
 @media screen and (min-width: 900px) {
 
-  .navbar {
+  .toolbar__navbar {
     padding-top: 50px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .navbar__logo{
+    .toolbar__navbar-logo{
     gap: 15px !important;
 
     }
