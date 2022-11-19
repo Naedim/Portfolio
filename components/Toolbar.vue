@@ -5,9 +5,9 @@
         Damien NOEL
         <Icon icon="material-symbols:code" class="navbar__icon" />
       </NuxtLink>
-        <p class = "current-page-indicator"> {{currentPage}}</p>
+        <p class = "current-page-indicator"> {{route.name}}</p>
       <div class="nav-links" :class="{ 'mobile-menu': isMobileMenuActive }">
-        <NuxtLink v-for="page of pages" :to="page" @click="pageChange(page)">{{
+        <NuxtLink v-for="page of pages" :to="page" @click="menuToggle()">{{
           page
         }}</NuxtLink>
       </div>
@@ -23,24 +23,13 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-
+const route = useRoute()
 const pages = ["home", "experiences", "education", "about"];
 
 let isMobileMenuActive = ref(false);
-let currentPage = ref("home");
-
 let menuToggle = () => {
   isMobileMenuActive.value = !isMobileMenuActive.value;
 };
-
-let pageChange = (page : string) =>{
-  currentPage.value = page;
-  menuToggle();
-}
-
-let setCurrentPage = (page : string)=>{
-  currentPage.value = page;
-}
 
 </script>
 
