@@ -1,15 +1,15 @@
 <template>
-  <div class="center-container">
-    <div class="center-container__introduction">
-      <div class="center-container__introduction--first-line">
+  <div class="home-page-container">
+    <div class="home-page-container__introduction">
+      <div class="home-page-container__introduction--first-line">
         <p>Hello, I'm</p>
       </div>
 
-      <div class="center-container__introduction--second-line">
+      <div class="home-page-container__introduction--second-line">
         <p>Damien NOEL</p>
       </div>
 
-      <div class="center-container__introduction--third-line">
+      <div class="home-page-container__introduction--third-line">
         <p>
           I'm a <span>software engineer</span> working as an
           <span>IT teacher</span> in university and a
@@ -25,20 +25,21 @@ $secondary-color: #d81264;
 $third-color: #ccd6f6;
 $fourth-color: #6b7dad;
 
-.center-container {
+.home-page-container {
   box-sizing: border-box;
   height : 50vh;
-  // background-color: red;
-  
+  padding-left: 3%; 
+  padding-right: 3%; 
+
  
 
 
-  .center-container__introduction {
+  .home-page-container__introduction {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .center-container__introduction--first-line {
+    .home-page-container__introduction--first-line {
       p {
         font-size : clamp(1.25rem, 3vw, 2.5rem);
         color: $secondary-color;
@@ -46,7 +47,7 @@ $fourth-color: #6b7dad;
       }
     }
 
-    .center-container__introduction--second-line {
+    .home-page-container__introduction--second-line {
       margin-top: -10px;
       p {
         font-size: clamp(2.5rem, 8vw, 7em);
@@ -55,7 +56,7 @@ $fourth-color: #6b7dad;
       }
     }
 
-    .center-container__introduction--third-line {
+    .home-page-container__introduction--third-line {
       margin-top: 20px;
       p {
         font-size : clamp(1.5rem, 3vw, 2.5rem);
@@ -70,7 +71,7 @@ $fourth-color: #6b7dad;
 }
 
 @media screen and (min-width: 480px) {
-  .center-container {
+  .home-page-container {
     padding-right: 15%;
     padding-left: 15%;
 

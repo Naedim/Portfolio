@@ -18,7 +18,8 @@
       />
     </nav>
     <div class = "toolbar__current-page-container">
-      <p class = "current-page-name" title = "current page's name"> {{route.name}}</p>
+      <Icon icon="mdi:book-open-page-variant-outline" class="page-icon" title = "navbar's logo's icon" />
+<p class = "current-page-name" title = "current page's name"> {{route.name}}</p>
     </div>
   </div>
 </template>
@@ -39,6 +40,10 @@ let menuToggle = () => {
 $focus-color: #d81264;
 $secondary-color: #d81264;
 
+
+.toolbar{
+  margin-bottom: 5vh;
+}
 .toolbar__navbar {
   width: 100vw;
   display: flex;
@@ -79,15 +84,22 @@ $secondary-color: #d81264;
 }
 
 div.toolbar__current-page-container{
-
+  padding-left : 8vw; 
+  display : flex;
+  align-items: center;
+  gap : 2%;
+  
+  .page-icon{
+      color : $secondary-color;
+  }
   .current-page-name{
-    padding-left : 8vw;  display : flex;
-    align-items: center;
-    font-size : clamp(1.3rem, 2vw, 1.7rem);
+    font-size : clamp(1rem, 2vw, 1.7rem);
     color: $secondary-color;
     font-weight: 500;
       
   }
+
+
 }
 
 
