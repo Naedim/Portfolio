@@ -51,7 +51,7 @@ $secondary-color: #d81264;
   align-items: center;
 
   .toolbar__navbar-logo {
-    margin-left: 8vw;
+    margin-left: 7%;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -66,7 +66,7 @@ $secondary-color: #d81264;
   }
 
   .nav-links {
-    margin-right: 8vw;
+    margin-right: 7%;
     font-size: clamp(1.3rem, 2vw, 1.7rem);
   }
 
@@ -84,13 +84,14 @@ $secondary-color: #d81264;
 }
 
 div.toolbar__current-page-container{
-  padding-left : 8vw; 
+  padding-left : 7%; 
   display : flex;
   align-items: center;
   gap : 2%;
   
   .page-icon{
       color : $secondary-color;
+      margin-left: 0;
   }
   .current-page-name{
     font-size : clamp(1rem, 2vw, 1.7rem);
@@ -102,10 +103,16 @@ div.toolbar__current-page-container{
 
 }
 
+@media screen and (min-width : 676px){
+    div.toolbar__current-page-container{
+    display : none;
+  }
+}
 
 
 
-@media screen and (max-width: 899px) {
+
+@media screen and (max-width: 675px) {
   .toolbar__navbar-logo {
     margin-top: 25px;
   }
@@ -142,7 +149,7 @@ div.toolbar__current-page-container{
     z-index: 1;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 676px) {
 
   .toolbar__navbar {
     padding-top: 50px;
@@ -171,6 +178,10 @@ div.toolbar__current-page-container{
 
   .menu-hamburger {
     display: none;
+  }
+
+  div.toolbar__current-page-container{
+    display : none;
   }
 }
 </style>

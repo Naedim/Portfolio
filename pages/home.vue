@@ -27,9 +27,12 @@ $fourth-color: #6b7dad;
 
 .home-page-container {
   box-sizing: border-box;
-  height : 50vh;
-  padding-left: 3%; 
-  padding-right: 3%; 
+  padding-left: 7%; 
+  padding-right: 7%; 
+  height : 100%;
+
+  display :flex;
+  align-items: center;
 
  
 
@@ -38,7 +41,7 @@ $fourth-color: #6b7dad;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     .home-page-container__introduction--first-line {
       p {
         font-size : clamp(1.25rem, 3vw, 2.5rem);
