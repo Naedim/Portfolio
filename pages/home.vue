@@ -27,24 +27,20 @@ $fourth-color: #6b7dad;
 
 .home-page-container {
   box-sizing: border-box;
-  padding-left: 7%; 
-  padding-right: 7%; 
-  height : 100%;
+  padding-left: 7%;
+  padding-right: 7%;
+  height: 100%;
 
-  display :flex;
+  display: flex;
   align-items: center;
 
- 
-
-
   .home-page-container__introduction {
-
     display: flex;
     flex-direction: column;
     // justify-content: center;
     .home-page-container__introduction--first-line {
       p {
-        font-size : clamp(1.25rem, 3vw, 2.5rem);
+        font-size: clamp(1.25rem, 3vw, 2.5rem);
         color: $secondary-color;
         font-weight: 500;
       }
@@ -62,7 +58,7 @@ $fourth-color: #6b7dad;
     .home-page-container__introduction--third-line {
       margin-top: 20px;
       p {
-        font-size : clamp(1.5rem, 3vw, 2.5rem);
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
         color: $fourth-color;
         font-weight: 500;
         span {
@@ -78,10 +74,9 @@ $fourth-color: #6b7dad;
     padding-right: 15%;
     padding-left: 15%;
 
-    display : flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
 }
 </style>

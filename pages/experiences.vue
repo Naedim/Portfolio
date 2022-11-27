@@ -4,15 +4,17 @@
       <div class="experiences__companies-list">
         <NuxtLink
           v-for="(company, index) of companies"
-          @click="selectExperience(index)"
+          @click="selectCompany(index)"
         >
           <div class="experience__company-name">
-            <p>{{ company.name }}</p>
+            <span>{{ company.name }}</span>
           </div>
         </NuxtLink>
       </div>
 
-      <div class="experience__company-experiences">a</div>
+      <div class="experience__company-experiences">
+        {{ selectedCompany.experiences }}
+      </div>
     </div>
   </div>
 </template>
@@ -91,9 +93,9 @@ companies.push(
 );
 
 let selectedCompany: Ref<Company> = ref(companies[0]);
-let selectExperience = (index: number) => {
+let selectCompany = (index: number) => {
   console.log(index);
-  selectedCompany = ref(companies[index]);
+  selectedCompany.value = companies[index];
 
   console.log(selectedCompany);
 };
@@ -139,6 +141,7 @@ $fourth-color: #6b7dad;
       // overflow-x: auto;
 
       a {
+        cursor: pointer;
       }
       .experience__company-name {
         height: 100%;
