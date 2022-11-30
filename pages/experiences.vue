@@ -29,9 +29,9 @@ import { Ref } from "vue";
 interface Company {
   name: string;
   website: string;
-  experiences: Experience[];
 }
 interface Experience {
+  company : Company, 
   contractType: "work-study program" | "Business internship";
   begining: string;
   duration: number;
@@ -39,68 +39,95 @@ interface Experience {
   description: string;
 }
 
-let companies: Array<Company> = [];
+let experienceList: Array<Experience> = [];
 
-companies.push(
-  {
-    name: "Capgemini",
-
-    website: "https://www.capgemini.com/",
-    experiences: [
-      {
-        contractType: "work-study program",
-        begining: "August 2021",
-        duration: 12,
-        title: "FullStack developer",
-        description: "",
-      },
-      {
-        contractType: "Business internship",
-        begining: "August 2021",
-        duration: 12,
-        title: "FullStack developer",
-        description: "",
-      },
-    ],
-  },
-
-  {
-    name: "Koust",
-    website: "https://www.capgemini.com/",
-    experiences: [
-      {
-        contractType: "Business internship",
-        begining: "August 2021",
-        duration: 12,
-        title: "Web/mobile developer",
-        description: "",
-      },
-    ],
-  },
-  {
-    name: "Intita",
-    website: "https://www.capgemini.com/",
-    experiences: [
-      {
-        contractType: "Business internship",
-        begining: "August 2021",
-        duration: 12,
-        title: "FullStack developer",
-        description: "",
-      },
-    ],
+let exp : Experience =   {
+    company : {
+      name : "capgemini",
+      website: "https://www.capgemini.com/",
+    },
+    contractType: "work-study program",
+    begining: "August 2021",
+    duration: 12,
+    title: "FullStack developer",
+    description: "",
   }
-);
 
-let selectedCompany: Ref<Company> = ref(companies[0]);
-let selectCompany = (index: number) => {
-  console.log(index);
-  selectedCompany.value = companies[index];
+let exp2 : Experience = {
+    company : {
+      name : "Koust",
+      website = "http,s://www.capgemini.com/"
+    },
+    contractType: "Business internship",
+    begining: "August 2021",
+    duration: 12,
+    title: "Web/mobile developer",
+    description: "",
+  }
 
-  console.log(selectedCompany);
-};
+  experienceList.push({
+    company : {
+      name : "capgemini",
+      website: "https://www.capgemini.com/",
+    },
+    contractType: "work-study program",
+    begining: "August 2021",
+    duration: 12,
+    title: "FullStack developer",
+    description: "",
+  }, {
+    company : {
+      name : "Koust",
+      website : "http,s://www.capgemini.com/"
+    },
+    contractType: "Business internship",
+    begining: "August 2021",
+    duration: 12,
+    title: "Web/mobile developer",
+    description: "",
+  }, {
+    company : {
+      name : "Intia",
+      website  : "http,s://www.capgemini.com/"
+    },
+    contractType: "Business internship",
+    begining: "August 2021",
+    duration: 12,
+    title: "Web/mobile developer",
+    description: "",
+  }, 
+  {
+    company : {
+      name : "Intia",
+      website  : "http,s://www.capgemini.com/"
+    },
+    contractType: "Business internship",
+    begining: "August 2021",
+    duration: 12,
+    title: "Web/mobile developer",
+    description: "",
+  },
+  {
+    company : {
+      name : "Intia",
+      website  : "http,s://www.capgemini.com/"
+    },
+    contractType: "Business internship",
+    begining: "August 2021",
+    duration: 12,
+    title: "Web/mobile developer",
+    description: "",
+  });
 
-console.log(companies);
+let selectedExperience: Ref<Company> = ref(experienceList[0]);
+// let selectCompany = (index: number) => {
+//   console.log(index);
+//   selectedCompany.value = companies[index];
+
+//   console.log(selectedCompany);
+// };
+
+// console.log(companies);
 </script>
 <style scoped lang="scss">
 $secondary-color: #d81264;
