@@ -1,15 +1,15 @@
 <template>
-  <div class="home-page-container">
-    <div class="home-page-container__introduction">
-      <div class="home-page-container__introduction--first-line">
+  <div class="home-page">
+    <div class="home-page__introduction">
+      <div class="home-page__introduction-first-line">
         <p>Hello, I'm</p>
       </div>
 
-      <div class="home-page-container__introduction--second-line">
+      <div class="home-page__introduction-second-line">
         <p>Damien NOEL</p>
       </div>
 
-      <div class="home-page-container__introduction--third-line">
+      <div class="home-page__introduction-third-line">
         <p>
           I'm a <span>software engineer</span> working as an
           <span>IT teacher</span> in university and a
@@ -25,7 +25,7 @@ $secondary-color: #d81264;
 $third-color: #ccd6f6;
 $fourth-color: #6b7dad;
 
-.home-page-container {
+.home-page {
   box-sizing: border-box;
   padding-left: 7%;
   padding-right: 7%;
@@ -34,11 +34,11 @@ $fourth-color: #6b7dad;
   display: flex;
   align-items: center;
 
-  .home-page-container__introduction {
+  .home-page__introduction {
     display: flex;
     flex-direction: column;
     // justify-content: center;
-    .home-page-container__introduction--first-line {
+    .home-page__introduction-first-line {
       p {
         font-size: clamp(1.25rem, 3vw, 2.5rem);
         color: $secondary-color;
@@ -46,7 +46,7 @@ $fourth-color: #6b7dad;
       }
     }
 
-    .home-page-container__introduction--second-line {
+    .home-page__introduction-second-line {
       margin-top: -10px;
       p {
         font-size: clamp(2.5rem, 8vw, 7em);
@@ -55,7 +55,7 @@ $fourth-color: #6b7dad;
       }
     }
 
-    .home-page-container__introduction--third-line {
+    .home-page__introduction-third-line {
       margin-top: 20px;
       p {
         font-size: clamp(1.5rem, 3vw, 2.5rem);
@@ -70,7 +70,7 @@ $fourth-color: #6b7dad;
 }
 
 @media screen and (min-width: 480px) {
-  .home-page-container {
+  .home-page {
     padding-right: 15%;
     padding-left: 15%;
 

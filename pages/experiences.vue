@@ -107,21 +107,19 @@ $third-color: #ccd6f6;
 $fourth-color: #6b7dad;
 
 .experiences-page {
-  height: 100%;
-  width: 100vw;
+  flex-grow: 1;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .experience-page__experience {
-  width: 100vh;
-  height: 50vh;
+  height: 50%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
 
   h1.experiences-page__experience-year {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     font-size: clamp(1.25rem, 3vw, 2.5rem);
     color: white;
