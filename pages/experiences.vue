@@ -1,13 +1,24 @@
 <template>
   <div class="experiences-page">
-    <div
-      class="experience-page__experience"
-      v-for="experience of experienceList"
-    >
-      <h1 class="experiences-page__experience-year">
-        {{ experience.begining }}
-      </h1>
+    <div class="experience-page__experience" v-for="experience of experienceList">
+      <div class="experiences-page__selected-experience">
+        <h1>
+          {{ experience.begining }}
+        </h1>
 
+        <div class="experiences-page__company-info">
+          <h2 class="experience-page__company-name">{{ experience.company.name }}</h2>
+
+          <div class="experience-page__experience-duration">
+            <Icon icon="material-symbols:hourglass-bottom" class="hourglass-icon" title="navbar's logo's icon" />
+
+            <h2>{{ experience.duration }} months</h2>
+
+          </div>
+
+        </div>
+
+      </div>
       <div class="experience-page__experience-content">
         <h2 class="experiences-page__experience-title">
           {{ experience.title }}
@@ -22,7 +33,7 @@
 
 <script setup lang="ts">
 import { Ref } from "vue";
-
+import { Icon } from "@iconify/vue";
 /**
  * Informations about professionnal experiences, duration in months
  */
@@ -76,20 +87,59 @@ $fourth-color: #6b7dad;
   flex-direction: column;
   justify-content: center;
 }
+
 .experience-page__experience {
-  height: 80%;
+  height: 90%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h1.experiences-page__experience-year {
+  .experiences-page__selected-experience {
     width: 100%;
-    height: 15%;
-    text-align: center;
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    color: white;
-    font-weight: 500;
+    height: 30%;
+
+    h1 {
+      text-align: center;
+      font-size: clamp(2rem, 3vw, 2.5rem);
+      color: white;
+      font-weight: 500;
+    }
+
+    .experiences-page__company-info {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+
+        h2.experience-page__company-name {
+          font-size: clamp(2.5rem, 2.5vw, 2rem);
+          color: white;
+          font-weight: 500;
+        }
+
+
+
+      .experience-page__experience-duration {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2{
+          text-align: center;
+        font-size: clamp(1.25rem, 3vw, 2.5rem);
+        color : $third-color;
+        font-weight: 500;
+        }
+
+        .hourglass-icon {
+          color: $fourth-color;
+          width: 1.5rem;
+          font-size: clamp(1.25rem, 3vw, 2.5rem);
+        }
+      }
+    }
   }
 
   .experience-page__experience-content {
