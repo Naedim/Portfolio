@@ -34,6 +34,8 @@
           <h3>{{ experience.duration }} mounths</h3>
           <Icon icon="ic:baseline-hourglass-bottom" title="open in new tab" />
         </div>
+
+        <div class="experience-page__experience-skills"></div>
       </div>
     </div>
   </div>
@@ -52,7 +54,13 @@ interface Company {
 
 interface Skillset {
   description: string;
-  skillsLogos: string[];
+  skillList: Skill[];
+}
+
+interface Skill {
+  name: string;
+  logo: string;
+  logoIsLocal: boolean;
 }
 interface Experience {
   company: Company;
@@ -80,7 +88,49 @@ experienceList.push({
   Skillsetlist: [
     {
       description: "client development",
-      skillsLogos: ["vue", "react", "angular"],
+      skillList: [
+        {
+          name: "angular",
+          logoIsLocal: false,
+          logo: "vscode-icons:file-type-angular",
+        },
+        {
+          name: "typescript",
+          logoIsLocal: false,
+          logo: "vscode-icons:file-type-typescript-official",
+        },
+      ],
+    },
+    {
+      description: "API development",
+      skillList: [
+        {
+          name: "C#",
+          logoIsLocal: false,
+          logo: "vscode-icons:file-type-csharp",
+        },
+        {
+          name: "java",
+          logoIsLocal: false,
+          logo: "vscode-icons:file-type-java",
+        },
+      ],
+    },
+
+    {
+      description: "data processing",
+      skillList: [
+        {
+          name: "python",
+          logoIsLocal: false,
+          logo: "vscode-icons:file-type-python",
+        },
+        {
+          name: "java",
+          logoIsLocal: false,
+          logo: "vscode-icons:file-type-java",
+        },
+      ],
     },
   ],
 });
