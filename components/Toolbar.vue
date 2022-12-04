@@ -27,9 +27,9 @@
         class="page-icon"
         title="navbar's logo's icon"
       />
-      <p class="current-page-name" title="current page's name">
+      <h1 class="current-page-name" title="current page's name">
         {{ route.name }}
-      </p>
+      </h1>
     </div>
   </div>
 </template>
