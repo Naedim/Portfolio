@@ -9,70 +9,20 @@
           {{ experience.begining }}
         </h2>
       </div>
-      <div class="experience-page__experience-content">
-        <div class="experience-page__experience-company">
-          <a
-            :href="experience.company.website"
-            target="_blank"
-            rel="noopener noreferrer"
-            alt="company's name and link to the company website"
-          >
-            <h2>
-              {{ experience.company.name }}
-            </h2>
-            <Icon icon="mdi:open-in-new" title="open in new tab" />
-          </a>
-        </div>
-
-        <div class="experience-page__experience-title">
-          <h2>
-            {{ experience.title }}
-          </h2>
-        </div>
-
-        <div class="experience-page__experience-duration">
-          <h3>{{ experience.duration }} mounths</h3>
-          <Icon icon="ic:baseline-hourglass-bottom" title="open in new tab" />
-        </div>
-
-        <div class="experience-page__experience-skills"></div>
-      </div>
+      <Experience :experience="experience" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
+import {ExperienceInterface} from "@/models/interfaces/ExperienceInteface";
+import Experience from "@/components/Experience.vue";
 /**
  * Informations about professionnal experiences, duration in months
  */
 
-interface Company {
-  name: string;
-  website: string;
-}
 
-interface Skillset {
-  description: string;
-  skillList: Skill[];
-}
-
-interface Skill {
-  name: string;
-  logo: string;
-  logoIsLocal: boolean;
-}
-interface Experience {
-  company: Company;
-  contractType: "work-study program" | "Business internship";
-  begining: string;
-  duration: number;
-  title: string;
-  description: string;
-  Skillsetlist: Skillset[];
-}
-
-let experienceList: Array<Experience> = [];
+let experienceList: Array<ExperienceInterface> = [];
 
 experienceList.push({
   company: {
@@ -164,74 +114,6 @@ $fourth-color: #6b7dad;
       font-size: clamp(2rem, 3vw, 2.5rem);
       color: white;
       font-weight: 500;
-    }
-  }
-
-  .experience-page__experience-content {
-    margin-top: 2%;
-    box-sizing: border-box;
-    width: 90%;
-    padding-left: 4%;
-    padding-right: 4%;
-
-    border-color: $secondary-color;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 10px;
-    flex-grow: 1;
-
-    display: flex;
-    flex-direction: column;
-    .experience-page__experience-company {
-      display: flex;
-      justify-content: center;
-      a {
-        display: flex;
-        font-size: clamp(1.5rem, 3vw, 2.5rem);
-        align-items: center;
-        color: $third-color;
-        display: flex;
-        gap: 5px;
-
-        h2 {
-          color: $third-color;
-          font-weight: 500;
-        }
-
-        svg {
-          font-size: clamp(1.5rem, 3vw, 2.5rem);
-        }
-
-        &:hover {
-          h2,
-          svg {
-            color: $secondary-color;
-          }
-        }
-      }
-    }
-
-    .experience-page__experience-title {
-      h2 {
-        font-size: clamp(0.8rem, 3vw, 2.5rem);
-        color: $third-color;
-        font-weight: 500;
-      }
-    }
-
-    .experience-page__experience-duration {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      h3 {
-        font-size: clamp(0.8rem, 3vw, 2.5rem);
-        color: $third-color;
-        font-weight: 500;
-      }
-      svg {
-        color: $third-color;
-        font-size: clamp(0.8rem, 3vw, 2.5rem);
-      }
     }
   }
 }
