@@ -1,89 +1,64 @@
 <template>
   <div class="experiences-page">
-    <div
-      class="experience-page__experience"
-      v-for="experience of experienceList"
-    >
-      <div class="experiences-page__selected-experience">
+    <div class="experience-page__experience">
+      <div class="experience-page__experience-selector">
         <h2>
-          {{ experience.begining }}
+          {{ selectedExperience.begining }}
         </h2>
+        <div class="experience__duration">
+          <h3>{{ selectedExperience.duration }} mounths</h3>
+          <Icon icon="ic:baseline-hourglass-bottom" title="open in new tab" />
+        </div>
+        <div class="experience-page__selection-arrows">
+          <div
+            v-if="currentExperienceIndex > 0"
+            class="experience-page__left-side"
+          >
+            <Icon
+              icon="ic:baseline-arrow-back"
+              @click="selectExperience(currentExperienceIndex - 1)"
+              title="open in new tab"
+            />
+            <!-- <p>{{ experienceList[currentExperienceIndex - 1].begining }}</p> -->
+          </div>
+
+          <div
+            @click="selectExperience(currentExperienceIndex + 1)"
+            class="experience-page__right-side"
+          >
+            <Icon
+              icon="ic:outline-arrow-forward"
+              v-if="currentExperienceIndex < experienceList.length - 1"
+              title="open in new tab"
+            />
+          </div>
+        </div>
       </div>
-      <Experience :experience="experience" />
+      <Experience :experience="selectedExperience" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import {ExperienceInterface} from "@/models/interfaces/ExperienceInteface";
-import Experience from "@/components/Experience.vue";
+import { ExperienceInterface } from "@/models/interfaces/ExperienceInteface";
+import { Icon } from "@iconify/vue";
+import { Ref } from "vue";
+import experiences from "../assets/staticData/experiences.json";
 /**
  * Informations about professionnal experiences, duration in months
  */
 
+let experienceList: Array<ExperienceInterface> =
+  experiences as Array<ExperienceInterface>;
 
-let experienceList: Array<ExperienceInterface> = [];
+let selectedExperience: Ref<ExperienceInterface> = ref(experienceList[0]);
+let currentExperienceIndex: Ref<number> = ref(0);
 
-experienceList.push({
-  company: {
-    name: "Capgemini",
-    website: "https://www.capgemini.com/",
-  },
-  contractType: "work-study program",
-  begining: "August 2021",
-  duration: 12,
-  title: "FullStack developer",
-  description: "",
-
-  Skillsetlist: [
-    {
-      description: "client development",
-      skillList: [
-        {
-          name: "angular",
-          logoIsLocal: false,
-          logo: "vscode-icons:file-type-angular",
-        },
-        {
-          name: "typescript",
-          logoIsLocal: false,
-          logo: "vscode-icons:file-type-typescript-official",
-        },
-      ],
-    },
-    {
-      description: "API development",
-      skillList: [
-        {
-          name: "C#",
-          logoIsLocal: false,
-          logo: "vscode-icons:file-type-csharp",
-        },
-        {
-          name: "java",
-          logoIsLocal: false,
-          logo: "vscode-icons:file-type-java",
-        },
-      ],
-    },
-
-    {
-      description: "data processing",
-      skillList: [
-        {
-          name: "python",
-          logoIsLocal: false,
-          logo: "vscode-icons:file-type-python",
-        },
-        {
-          name: "java",
-          logoIsLocal: false,
-          logo: "vscode-icons:file-type-java",
-        },
-      ],
-    },
-  ],
-});
+const selectExperience = (index: number) => {
+  selectedExperience.value = experienceList[index];
+  currentExperienceIndex.value = index;
+  console.log(currentExperienceIndex);
+};
 </script>
 <style scoped lang="scss">
 $secondary-color: #d81264;
@@ -99,21 +74,65 @@ $fourth-color: #6b7dad;
 }
 
 .experience-page__experience {
-  height: 90%;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .experiences-page__selected-experience {
-    width: 100%;
-    height: 10%;
+  .experience-page__experience-selector {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h2 {
+      width: 100%;
       text-align: center;
-      font-size: clamp(2rem, 3vw, 2.5rem);
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
       color: white;
       font-weight: 500;
+    }
+
+    .experience__duration {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1%;
+      h3 {
+        font-size: clamp(1.2rem, 3vw, 2.5rem);
+        color: $third-color;
+        font-weight: 500;
+      }
+      svg {
+        color: $third-color;
+        font-size: clamp(1.2remrem, 3vw, 2.5rem);
+      }
+    }
+
+    .experience-page__selection-arrows {
+      width: 100%;
+      display: flex;
+
+      .experience-page__left-side {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        color: $secondary-color;
+      }
+
+      .experience-page__right-side {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100%;
+        color: $secondary-color;
+      }
     }
   }
 }

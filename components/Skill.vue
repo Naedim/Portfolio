@@ -18,12 +18,12 @@ $secondary-color: #d81264;
 $third-color: #ccd6f6;
 $fourth-color: #6b7dad;
 
-.skill{
-    width : 33%;
-
-    svg{
-        height : 100%;
-        width : 100%
-    }
+.skill {
+  width: 15%;
+  height: 100%;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

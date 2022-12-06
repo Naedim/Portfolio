@@ -1,0 +1,176 @@
+[
+    {
+        "company": {
+            "name": "Capgemini",
+            "website": "https://www.capgemini.com/"
+        },
+        "contractType": "work-study program",
+        "begining": "August 2021",
+        "duration": 12,
+        "title": "FullStack developer",
+        "description": "",
+        "Skillsetlist": [
+            {
+                "description": "client development",
+                "skillList": [
+                    {
+                        "name": "angular",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-angular"
+                    },
+                    {
+                        "name": "typescript",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-typescript-official"
+                    }
+                ]
+            },
+            {
+                "description": "API development",
+                "skillList": [
+                    {
+                        "name": "C#",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-csharp"
+                    },
+                    {
+                        "name": "java",
+                        "logoIsLocal": false,
+                        "logo": "logos:java"
+                    }
+                ]
+            },
+            {
+                "description": "data processing",
+                "skillList": [
+                    {
+                        "name": "python",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-python"
+                    },
+                    {
+                        "name": "java",
+                        "logoIsLocal": false,
+                        "logo": "logos:java"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "company": {
+            "name": "Capgemini",
+            "website": "https://www.capgemini.com/"
+        },
+        "contractType": "work-study program",
+        "begining": "September 2020",
+        "duration": 12,
+        "title": "FullStack developer",
+        "description": "",
+        "Skillsetlist": [
+            {
+                "description": "client development",
+                "skillList": [
+                    {
+                        "name": "angular",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-angular"
+                    },
+                    {
+                        "name": "typescript",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-typescript-official"
+                    }
+                ]
+            },
+            {
+                "description": "API development",
+                "skillList": [
+                    {
+                        "name": "C#",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-csharp"
+                    },
+                    {
+                        "name": "java",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-java"
+                    }
+                ]
+            },
+            {
+                "description": "data processing",
+                "skillList": [
+                    {
+                        "name": "python",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-python"
+                    },
+                    {
+                        "name": "java",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-java"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "company": {
+            "name": "Capgemini",
+            "website": "https://www.capgemini.com/"
+        },
+        "contractType": "work-study program",
+        "begining": "October 2019",
+        "duration": 12,
+        "title": "FullStack developer",
+        "description": "",
+        "Skillsetlist": [
+            {
+                "description": "client development",
+                "skillList": [
+                    {
+                        "name": "angular",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-angular"
+                    },
+                    {
+                        "name": "typescript",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-typescript-official"
+                    }
+                ]
+            },
+            {
+                "description": "API development",
+                "skillList": [
+                    {
+                        "name": "C#",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-csharp"
+                    },
+                    {
+                        "name": "java",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-java"
+                    }
+                ]
+            },
+            {
+                "description": "data processing",
+                "skillList": [
+                    {
+                        "name": "python",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-python"
+                    },
+                    {
+                        "name": "java",
+                        "logoIsLocal": false,
+                        "logo": "vscode-icons:file-type-java"
+                    }
+                ]
+            }
+        ]
+    }
+]
