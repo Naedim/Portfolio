@@ -12,8 +12,8 @@
         <Icon icon="mdi:open-in-new" title="open in new tab" />
       </a>
     </div>
-
-    <div class="experience__title">
+    <div class = "experience__content">
+      <div class="experience__title">
       <h2>
         {{ experience.title }}
       </h2>
@@ -25,16 +25,17 @@
     </div>
 
     <div class="experience__skillset-list">
-      <Skill v-for = "Skillset of experience.Skillsetlist" :skillset="Skillset"/>
+      <Skillset v-for = "Skillset of experience.Skillsetlist" :skillset="Skillset"/>
 
     </div>
+    </div>
+    
   </div>
 </template>
 
 <script  setup lang="ts">
 import { Icon } from "@iconify/vue";
 import { ExperienceInterface } from "~~/models/interfaces/ExperienceInteface";
-import Skill from "~~/components/Skillset.vue";
 const props = defineProps<{
   experience: ExperienceInterface;
 }>();
@@ -49,14 +50,12 @@ $fourth-color: #6b7dad;
 .experience {
     margin-top: 2%;
     box-sizing: border-box;
-    width: 90%;
-    padding-left: 4%;
-    padding-right: 4%;
+    width: 100%;
 
-    border-color: $secondary-color;
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 10px;
+    // border-color: $secondary-color;
+    // border-style: solid;
+    // border-width: 3px;
+    // border-radius: 10px;
     flex-grow: 1;
 
     display: flex;
@@ -90,6 +89,12 @@ $fourth-color: #6b7dad;
       }
     }
 
+    .experience__content{
+    height: 100%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+
     .experience__title {
       h2 {
         font-size: clamp(0.8rem, 3vw, 2.5rem);
@@ -99,9 +104,11 @@ $fourth-color: #6b7dad;
     }
 
     .experience__duration {
+      width : 100%;
       display: flex;
       align-items: center;
-      gap: 1%;
+      justify-content: center;
+      gap: 1%;  
       h3 {
         font-size: clamp(0.8rem, 3vw, 2.5rem);
         color: $third-color;
@@ -115,10 +122,17 @@ $fourth-color: #6b7dad;
 
     .experience__skillset-list{
       flex-grow: 1;
-
+      width : 100%;
+      box-sizing: border-box;
+      padding-left: 4%;
+      padding-right: 4%;
+      padding-top: 4%;
+      padding-bottom: 4%;
       display :flex;
       flex-direction: column;
-      gap : 5px;
+      gap : 4%;
     }
+    }
+    
   }
 </style>

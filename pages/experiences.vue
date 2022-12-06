@@ -95,7 +95,7 @@ $fourth-color: #6b7dad;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .experience-page__experience {
