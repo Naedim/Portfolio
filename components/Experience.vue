@@ -19,12 +19,12 @@
       </h2>
       <h2>{{ experience.contractType }}</h2>
 
-      <div class="experience__skillset-list">
+      <!-- <div class="experience__skillset-list">
         <Skillset
           v-for="Skillset of experience.Skillsetlist"
           :skillset="Skillset"
         />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -46,7 +46,8 @@ $fourth-color: #6b7dad;
   margin-top: 2%;
   box-sizing: border-box;
   width: 100%;
-
+  padding-left: 8%;
+  padding-right: 8%;
   // border-color: $secondary-color;
   // border-style: solid;
   // border-width: 3px;
@@ -110,10 +111,10 @@ $fourth-color: #6b7dad;
     .experience__skillset-list {
       flex-grow: 1;
       width: 100%;
-      box-sizing: border-box;
-      padding-top: 4%;
-      padding-left: 4%;
-      padding-right: 4%;
+      box-sizing: border-box; 
+      padding-top : 2%;
+      padding-bottom : 2%;
+
       display: flex;
       flex-direction: column;
       justify-content: center;

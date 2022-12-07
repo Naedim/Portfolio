@@ -1,7 +1,10 @@
 <template>
   <div class="skill">
-    <Icon :icon="skill.logo" />
+    <img src = "../assets/img/angularLogo.png" alt = "Angular logo" />
   </div>
+  <!-- <div class="skill">
+    <Icon :icon="skill.logo" />
+  </div> -->
 </template>
 
 <script setup lang="ts">
@@ -19,11 +22,11 @@ $third-color: #ccd6f6;
 $fourth-color: #6b7dad;
 
 .skill {
-  width: 15%;
+  width : 33%;
   height: 100%;
-  svg {
-    width: 100%;
-    height: 100%;
+  img {
+    max-width: 100%;
+    max-width: 100%;
   }
 }
 </style>

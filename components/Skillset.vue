@@ -22,12 +22,12 @@ $fourth-color: #6b7dad;
 .skillset {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   flex: 1;
 
   h2 {
     color: $secondary-color;
-    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    font-size: clamp(1rem, 3vw, 2.5rem);
     font-weight: 500;
   }
 
