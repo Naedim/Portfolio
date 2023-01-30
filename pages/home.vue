@@ -32,9 +32,11 @@ $fourth-color: #6b7dad;
   height: 100%;
 
   display: flex;
-  align-items: center;
+  // align-items: center;
 
   .home-page__introduction {
+    padding-top: 25%;
+    
     display: flex;
     flex-direction: column;
     // justify-content: center;
@@ -76,7 +78,12 @@ $fourth-color: #6b7dad;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+
+    .home-page__introduction{
+      padding-top: 15%;
+
+    }
   }
 }
 </style>
