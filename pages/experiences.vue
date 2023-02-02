@@ -1,41 +1,42 @@
 <template>
-  <div class="experiences-page">
-    <div class="experience-page__experience">
-      <div class="experience-page__experience-selector">
-        <h2>
-          {{ selectedExperience.begining }}
-        </h2>
-        <div class="experience__duration">
-          <h3>{{ selectedExperience.duration }} mounths</h3>
-          <Icon icon="ic:baseline-hourglass-bottom" title="open in new tab" />
+
+  <div class="experience">
+    <div class="experience__selected-experience">
+
+      <div class="experience__header">
+
+        <div class="experience__title">
+          <h2>
+            {{ selectedExperience.company.name }}
+
+          </h2>
+          <!-- <img src="~/assets/img/CAP.PA.svg" alt="company name" /> -->
         </div>
-        <div class="experience-page__selection-arrows">
-          <div
-            v-if="currentExperienceIndex > 0"
-            class="experience-page__left-side"
-          >
-            <Icon
-              icon="ic:baseline-arrow-back"
-              @click="selectExperience(currentExperienceIndex - 1)"
-              title="open in new tab"
-            />
-            <!-- <p>{{ experienceList[currentExperienceIndex - 1].begining }}</p> -->
+
+        <div class="experience__timeline">
+
+          <div class="experience__start">
+            <Icon icon="majesticons:rocket-3-start" class="page-icon" title="navbar's logo's icon" />
+            <h3>
+              {{ selectedExperience.begining }}
+            </h3>
           </div>
 
-          <div
-            @click="selectExperience(currentExperienceIndex + 1)"
-            class="experience-page__right-side"
-          >
-            <Icon
-              icon="ic:outline-arrow-forward"
-              v-if="currentExperienceIndex < experienceList.length - 1"
-              title="open in new tab"
-            />
+          <div class="experience__duration">
+            <Icon icon="ion:clock" class="page-icon" title="navbar's logo's icon" />
+
+            <h3>
+              {{ selectedExperience.duration }} months
+            </h3>
           </div>
+
         </div>
+
+        <hr class="experience__separator" />
       </div>
-      <Experience :experience="selectedExperience" />
+
     </div>
+
   </div>
 </template>
 
@@ -65,75 +66,69 @@ $secondary-color: #d81264;
 $third-color: #ccd6f6;
 $fourth-color: #6b7dad;
 
-.experiences-page {
-  flex-grow: 1;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.experience-page__experience {
+.experience {
   height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 
-  .experience-page__experience-selector {
-    width: 90%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    h2 {
-      width: 100%;
-      text-align: center;
-      font-size: clamp(1.5rem, 3vw, 2.5rem);
-      color: white;
-      font-weight: 500;
-    }
+  .experience__selected-experience {
+    height: 80%;
 
-    .experience__duration {
-      width: 100%;
+    .experience__title {
       display: flex;
-      align-items: center;
       justify-content: center;
-      gap: 1%;
-      h3 {
-        font-size: clamp(1.2rem, 3vw, 2.5rem);
-        color: $third-color;
-        font-weight: 500;
+      align-items: center;
+      gap: 5%;
+
+      h2 {
+        text-align: center;
+        color: white;
+        font-size: 30px;
       }
-      svg {
-        color: $third-color;
-        font-size: clamp(1.2remrem, 3vw, 2.5rem);
+
+      img {
+        width: 100%;
+        height: auto;
+
       }
     }
 
-    .experience-page__selection-arrows {
-      width: 100%;
+  }
+
+  .experience__timeline {
+    padding-top: 20px;
+
+    display: flex;
+    justify-content: space-around;
+
+    .experience__start,
+    .experience__duration {
       display: flex;
+      flex-direction: column;
+      align-items: center;
 
-      .experience-page__left-side {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        height: 100%;
-        color: $secondary-color;
+      svg {
+        color: #d81264;
+        font-size: 50px;
       }
 
-      .experience-page__right-side {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        height: 100%;
-        color: $secondary-color;
+      h3 {
+        color: #ccd6f6;
+        font-size: 15px;
+
       }
     }
+
+  }
+
+  .experience__separator{
+    margin : auto;
+    border-top: solid;
+    margin-top: 10px;
+    border-top: 1px;
+    width : 80%;
   }
 }
 </style>

@@ -40,6 +40,8 @@ $fourth-color: #6b7dad;
   display: flex;
 
   .home-page__introduction {
+    padding-top: 25%;
+    
     display: flex;
     flex-direction: column;
     padding-top: 25%;
