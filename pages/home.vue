@@ -10,9 +10,15 @@
       </div>
 
       <div class="home-page__introduction-third-line">
-        <p>
-          I'm a <span>software engineer</span> working as an
-          <span>IT teacher</span> in university and a
+
+        <p class="home-page__mobile-text">
+          I'm a <span>software engineer</span>, <span>freelance developer</span> working as an
+          <span>IT teacher</span> in university.
+        </p>
+
+        <p class="home-page__text">
+          <span>Software engineer</span> &&
+          <span>IT teacher in university</span> &&
           <span>freelance developer</span>.
         </p>
       </div>
@@ -32,12 +38,12 @@ $fourth-color: #6b7dad;
   height: 100%;
 
   display: flex;
-  align-items: center;
 
   .home-page__introduction {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
+    padding-top: 25%;
+
     .home-page__introduction-first-line {
       p {
         font-size: clamp(1.25rem, 3vw, 2.5rem);
@@ -48,6 +54,7 @@ $fourth-color: #6b7dad;
 
     .home-page__introduction-second-line {
       margin-top: -10px;
+
       p {
         font-size: clamp(2.5rem, 8vw, 7em);
         color: $third-color;
@@ -57,10 +64,16 @@ $fourth-color: #6b7dad;
 
     .home-page__introduction-third-line {
       margin-top: 20px;
+
       p {
         font-size: clamp(1.5rem, 3vw, 2.5rem);
         color: $fourth-color;
         font-weight: 500;
+
+        &.home-page__text {
+          display: none;
+        }
+
         span {
           color: $third-color;
         }
@@ -77,6 +90,28 @@ $fourth-color: #6b7dad;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .home-page__introduction {
+      padding-top: 0%;
+
+      .home-page__introduction-third-line {
+      p {
+        &.home-page__mobile-text {
+          display: none;
+        }
+
+        &.home-page__text {
+          display: block;
+        }
+
+      }
+    }
+    }
+
+    
+
   }
+
+
 }
 </style>
