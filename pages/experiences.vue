@@ -33,6 +33,27 @@
         </div>
 
         <hr class="experience__separator" />
+
+        <div class="experience__timeline">
+
+          <div class="experience__start">
+            <Icon icon="ic:baseline-code" class="page-icon" title="navbar's logo's icon" />
+            <h3>
+              {{ selectedExperience.title }}
+            </h3>
+          </div>
+
+          <div class="experience__duration">
+            <Icon icon="ic:outline-handshake" class="page-icon" title="navbar's logo's icon" />
+
+            <h3>
+              {{ selectedExperience.contractType }}
+            </h3>
+          </div>
+
+        </div>
+
+        
       </div>
 
     </div>
@@ -111,24 +132,24 @@ $fourth-color: #6b7dad;
 
       svg {
         color: #d81264;
-        font-size: 50px;
+        font-size: 40px;
       }
 
       h3 {
         color: #ccd6f6;
-        font-size: 15px;
+        font-size: 12px;
 
       }
     }
 
   }
 
-  .experience__separator{
-    margin : auto;
+  .experience__separator {
+    margin: auto;
     border-top: solid;
     margin-top: 10px;
     border-top: 1px;
-    width : 80%;
+    width: 80%;
   }
 }
 </style>
