@@ -48,7 +48,7 @@ $fourth-color: #6b7dad;
 
     .home-page__introduction-first-line {
       p {
-        font-size: clamp(1.25rem, 3vw, 2.5rem);
+        font-size: clamp(1.25rem, 4vw, 2.5rem);
         color: $secondary-color;
         font-weight: 500;
       }
@@ -84,17 +84,17 @@ $fourth-color: #6b7dad;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 900px) {
   .home-page {
     padding-right: 15%;
     padding-left: 15%;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 
     .home-page__introduction {
-      padding-top: 0%;
+      padding-top: 15%;
 
       .home-page__introduction-third-line {
       p {
