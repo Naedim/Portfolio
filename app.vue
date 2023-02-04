@@ -45,7 +45,6 @@ $accentColor: #22268f;
 .app-container {
   height: 100vh;
   width: 100vw;
-  background: rgb(105, 72, 203);
   background: #061336;
 }
 </style>

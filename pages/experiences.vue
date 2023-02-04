@@ -105,7 +105,7 @@ $fourth-color: #6b7dad;
 
       h2 {
         text-align: center;
-        color: white;
+        color: $third-color;
         font-size: 30px;
       }
 
@@ -116,6 +116,10 @@ $fourth-color: #6b7dad;
       }
     }
 
+  }
+
+  hr{
+    border-color: $fourth-color;
   }
 
   .experience__timeline {
@@ -136,7 +140,7 @@ $fourth-color: #6b7dad;
       }
 
       h3 {
-        color: #ccd6f6;
+        color: white;
         font-size: 12px;
 
       }

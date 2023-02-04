@@ -48,6 +48,8 @@ let menuToggle = () => {
 <style scoped lang="scss">
 $focus-color: #d81264;
 $secondary-color: #d81264;
+$third-color: #ccd6f6;
+
 
 .toolbar {
   height: 15%;
@@ -63,6 +65,7 @@ $secondary-color: #d81264;
     display: flex;
     align-items: center;
     gap: 5px;
+    color: $third-color;
 
     font-size: clamp(1.2rem, 2.25vw, 2.5rem);
     font-weight: 600;
