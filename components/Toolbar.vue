@@ -3,30 +3,17 @@
     <nav class="toolbar__navbar">
       <NuxtLink class="toolbar__navbar-logo" to="#" title="navbar's logo">
         Damien NOEL
-        <Icon
-          icon="material-symbols:code"
-          class="toolbar__navbar-log-icon"
-          title="navbar's logo's icon"
-        />
+        <Icon icon="material-symbols:code" class="toolbar__navbar-log-icon" title="navbar's logo's icon" />
       </NuxtLink>
       <div class="nav-links" :class="{ 'mobile-menu': isMobileMenuActive }">
         <NuxtLink v-for="page of pages" :to="page" @click="menuToggle()">{{
           page
         }}</NuxtLink>
       </div>
-      <Icon
-        icon="mdi:menu"
-        class="menu-hamburger"
-        title="hamburger menu"
-        v-on:click="() => menuToggle()"
-      />
+      <Icon icon="mdi:menu" class="menu-hamburger" title="hamburger menu" v-on:click="() => menuToggle()" />
     </nav>
     <div class="toolbar__current-page-container">
-      <Icon
-        icon="mdi:book-open-page-variant-outline"
-        class="page-icon"
-        title="navbar's logo's icon"
-      />
+      <Icon icon="mdi:book-open-page-variant-outline" class="page-icon" title="navbar's logo's icon" />
       <h1 class="current-page-name" title="current page's name">
         {{ route.name }}
       </h1>
@@ -40,17 +27,19 @@ const route = useRoute();
 const pages = ["home", "experiences", "education", "about"];
 
 let isMobileMenuActive = ref(false);
-let menuToggle = () => {
+
+
+function menuToggle() : void{
   isMobileMenuActive.value = !isMobileMenuActive.value;
 };
 </script>
 
+
 <style scoped lang="scss">
-
-
 .toolbar {
   height: 15%;
 }
+
 .toolbar__navbar {
   width: 100vw;
   display: flex;
@@ -100,6 +89,7 @@ div.toolbar__current-page-container {
     color: $secondary-color;
     margin-left: 0;
   }
+
   .current-page-name {
     font-size: clamp(1rem, 2vw, 1.7rem);
     color: $secondary-color;
@@ -117,6 +107,7 @@ div.toolbar__current-page-container {
   .toolbar__navbar-logo {
     margin-top: 25px;
   }
+
   .nav-links {
     position: absolute;
     width: 100vw;
@@ -150,6 +141,7 @@ div.toolbar__current-page-container {
     z-index: 1;
   }
 }
+
 @media screen and (min-width: 676px) {
   .toolbar__navbar {
     padding-top: 50px;
