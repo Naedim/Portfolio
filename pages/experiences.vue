@@ -83,9 +83,7 @@ const selectExperience = (index: number) => {
 };
 </script>
 <style scoped lang="scss">
-$secondary-color: #d81264;
-$third-color: #ccd6f6;
-$fourth-color: #6b7dad;
+.experience-page {
 
 .experience {
   height: 100%;

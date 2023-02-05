@@ -30,9 +30,6 @@ useHead({
 </script>
 
 <style lang="scss">
-$primaryColor: #6948cb;
-$secondaryColor: #284fb5;
-$accentColor: #22268f;
 
 * {
   margin: 0;
@@ -45,6 +42,6 @@ $accentColor: #22268f;
 .app-container {
   height: 100vh;
   width: 100vw;
-  background: #061336;
+  background: $background-color;
 }
 </style>

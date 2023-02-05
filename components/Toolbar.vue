@@ -46,9 +46,6 @@ let menuToggle = () => {
 </script>
 
 <style scoped lang="scss">
-$focus-color: #d81264;
-$secondary-color: #d81264;
-$third-color: #ccd6f6;
 
 
 .toolbar {
