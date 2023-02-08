@@ -27,9 +27,6 @@
 </template>
 
 <style scoped lang="scss">
-$primary: #d81264;
-$background-color: #ccd6f6;
-$slate-4: #6b7dad;
 
 .home-page {
   box-sizing: border-box;
