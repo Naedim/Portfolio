@@ -40,7 +40,7 @@ const props = defineProps<{
 
   // h3{
   //   font-size: 22px;
-  //   color: $fourth-color;
+  //   color: $slate-4;
 
   // }
 
@@ -55,12 +55,12 @@ const props = defineProps<{
     h3 {
       flex: 6;
       font-size: 18px;
-      color: $fourth-color;
+      color: $slate-4;
     }
 
     svg {
       flex: 1;
-      color : $secondary-color;
+      color : $primary;
       font-size: 25px;
     }
   }

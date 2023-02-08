@@ -42,6 +42,6 @@ useHead({
 .app-container {
   height: 100vh;
   width: 100vw;
-  background: $background-color;
+  background: $slate-9;
 }
 </style>

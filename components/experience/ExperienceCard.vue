@@ -50,8 +50,10 @@
 
     <hr class="experience__separator" />
 
-      <!-- <Skillset v-for="skillset in experience.Skillsetlist" :skillet=skillset></Skillset> -->
-      <SkillsetManager :skillsetList="experience.Skillsetlist" ></SkillsetManager>
+      <!-- <Skillset v-for="skillset in experience.Skillsetlist" :skillet=skillset></Skillset>
+      <SkillsetManager :skillsetList="experience.Skillsetlist" ></SkillsetManager> -->
+
+      
   </div>
 
 </template>
@@ -68,14 +70,18 @@ const props = defineProps<{
 <style scoped lang="scss">
 
 .experience {
-  height: 80%;
-  width : 80%;
+  height: 45vh;
+  width : 70vw;
+  background-color: white;
+  border : 3px solid $primary;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px $primary;
 
   display : flex;
   flex-direction: column;
 
   .experience__title {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,8 +89,8 @@ const props = defineProps<{
 
     h2 {
       text-align: center;
-      color: $slate-2;
-      font-size: 30px;
+      color: $slate-9;
+      font-size: 20px;
     }
 
     img {
@@ -110,14 +116,14 @@ const props = defineProps<{
     align-items: center;
 
     svg {
-      color: $primary;
-      font-size: 40px;
+      color: #d81264;
+      font-size: 30px;
     }
 
     h3 {
       text-align: center;
       color: white;
-      font-size: 12px;
+      font-size: 10px;
 
     }
   }
@@ -125,7 +131,7 @@ const props = defineProps<{
 }
 
 hr.experience__separator {
-  width: 100%;
+  width: 80%;
   margin: auto;
   border-top: solid;
   margin-top: 10px;

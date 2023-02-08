@@ -1,13 +1,13 @@
 <template>
 
   <div class="experience-page">
-    <Experience :experience = "selectedExperience"/>
+    <ExperienceCard :experience = "selectedExperience"/>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ExperienceInterface } from "@/models/interfaces/ExperienceInteface";
-import Experience from "@/components/experience/Experience.vue";
+import ExperienceCard from "@/components/experience/ExperienceCard.vue";
 import { Icon } from "@iconify/vue";
 import { Ref } from "vue";
 import experiences from "../assets/staticData/experiences.json";
@@ -26,6 +26,7 @@ function selectExperience(index: number) : void{
   currentExperienceIndex.value = index;
   console.log(currentExperienceIndex);
 };
+
 </script>
 <style scoped lang="scss">
 .experience-page {
@@ -33,6 +34,7 @@ function selectExperience(index: number) : void{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 </style>
 

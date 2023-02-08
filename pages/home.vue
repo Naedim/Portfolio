@@ -27,9 +27,9 @@
 </template>
 
 <style scoped lang="scss">
-$secondary-color: #d81264;
-$third-color: #ccd6f6;
-$fourth-color: #6b7dad;
+$primary: #d81264;
+$background-color: #ccd6f6;
+$slate-4: #6b7dad;
 
 .home-page {
   box-sizing: border-box;
@@ -49,7 +49,7 @@ $fourth-color: #6b7dad;
     .home-page__introduction-first-line {
       p {
         font-size: clamp(1.25rem, 4vw, 2.5rem);
-        color: $secondary-color;
+        color: $primary;
         font-weight: 500;
       }
     }
@@ -59,7 +59,7 @@ $fourth-color: #6b7dad;
 
       p {
         font-size: clamp(2.5rem, 8vw, 7em);
-        color: $third-color;
+        color: $slate-2;
         font-weight: 600;
       }
     }
@@ -69,7 +69,7 @@ $fourth-color: #6b7dad;
 
       p {
         font-size: clamp(1.5rem, 3vw, 2.5rem);
-        color: $fourth-color;
+        color: $slate-4;
         font-weight: 500;
 
         &.home-page__text {
@@ -77,7 +77,7 @@ $fourth-color: #6b7dad;
         }
 
         span {
-          color: $third-color;
+          color: $slate-2;
         }
       }
     }
