@@ -70,11 +70,11 @@ function menuToggle() : void{
     color: white;
 
     &:hover {
-      color: $secondary-color;
+      color: $primary;
     }
 
     &:focus {
-      color: $secondary-color;
+      color: $primary;
     }
   }
 }
@@ -86,13 +86,13 @@ div.toolbar__current-page-container {
   gap: 2%;
 
   .page-icon {
-    color: $secondary-color;
+    color: $primary;
     margin-left: 0;
   }
 
   .current-page-name {
     font-size: clamp(1rem, 2vw, 1.7rem);
-    color: $secondary-color;
+    color: $primary;
     font-weight: 500;
   }
 }

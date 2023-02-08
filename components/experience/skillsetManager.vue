@@ -60,7 +60,7 @@ const props = defineProps<{
 
     svg {
       flex: 1;
-      color : $secondary-color;
+      color : $primary;
       font-size: 25px;
     }
   }

@@ -27,7 +27,7 @@
 </template>
 
 <style scoped lang="scss">
-$secondary-color: #d81264;
+$primary: #d81264;
 $third-color: #ccd6f6;
 $fourth-color: #6b7dad;
 
@@ -49,7 +49,7 @@ $fourth-color: #6b7dad;
     .home-page__introduction-first-line {
       p {
         font-size: clamp(1.25rem, 4vw, 2.5rem);
-        color: $secondary-color;
+        color: $primary;
         font-weight: 500;
       }
     }
