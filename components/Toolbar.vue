@@ -51,7 +51,7 @@ function menuToggle() : void{
     display: flex;
     align-items: center;
     gap: 5px;
-    color: $slate-2;
+    color: $neutral;
 
     font-size: clamp(1.2rem, 2.25vw, 2.5rem);
     font-weight: 600;
@@ -67,14 +67,14 @@ function menuToggle() : void{
   }
 
   a {
-    color: white;
+    color: $secondary;
 
     &:hover {
-      color: $primary;
+      color: $accent;
     }
 
     &:focus {
-      color: $primary;
+      color: $accent;
     }
   }
 }
@@ -86,13 +86,13 @@ div.toolbar__current-page-container {
   gap: 2%;
 
   .page-icon {
-    color: $primary;
+    color: $accent;
     margin-left: 0;
   }
 
   .current-page-name {
     font-size: clamp(1rem, 2vw, 1.7rem);
-    color: $primary;
+    color: $accent;
     font-weight: 500;
   }
 }
@@ -137,7 +137,7 @@ div.toolbar__current-page-container {
     // height: 50px;
     height: 2.5rem;
     width: auto;
-    color: white;
+    color: $secondary;
     z-index: 1;
   }
 }

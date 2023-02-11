@@ -66,7 +66,7 @@
 
       p {
         font-size: clamp(1.5rem, 3vw, 2.5rem);
-        color: $slate-4;
+        color: $accent;
         font-weight: 500;
 
         &.home-page__text {
@@ -81,7 +81,7 @@
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 552px) {
   .home-page {
     padding-right: 15%;
     padding-left: 15%;

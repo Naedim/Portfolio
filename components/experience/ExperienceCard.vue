@@ -70,12 +70,11 @@ const props = defineProps<{
 <style scoped lang="scss">
 
 .experience {
-  height: 45vh;
-  width : 70vw;
-  background-color: white;
-  border : 3px solid $primary;
+  height: 60%;
+  width : 80vw;
+  background-color: $primary;
+  border : 2px solid $secondary;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px $primary;
 
   display : flex;
   flex-direction: column;
@@ -89,8 +88,10 @@ const props = defineProps<{
 
     h2 {
       text-align: center;
-      color: $slate-9;
+      // color: $slate-9;
       font-size: 20px;
+      color: $secondary;
+
     }
 
     img {
@@ -116,13 +117,13 @@ const props = defineProps<{
     align-items: center;
 
     svg {
-      color: #d81264;
+      color: $accent;
       font-size: 30px;
     }
 
     h3 {
       text-align: center;
-      color: white;
+      color: $secondary;
       font-size: 10px;
 
     }
@@ -138,6 +139,6 @@ hr.experience__separator {
   margin-bottom: 10px;
   border-top: 1px;
 
-  border-color: $slate-4;
+  border-color: $neutral;
 }
 </style>

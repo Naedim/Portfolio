@@ -83,7 +83,7 @@ const props = defineProps<{
 
     h2 {
       text-align: center;
-      color: $slate-2;
+      color: $neutral;
       font-size: 30px;
     }
 
@@ -116,7 +116,7 @@ const props = defineProps<{
 
     h3 {
       text-align: center;
-      color: white;
+      color: $secondary
       font-size: 12px;
 
     }
