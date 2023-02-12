@@ -1,16 +1,18 @@
 <template>
 
   <div class="experience-page">
-    <ExperienceCard :experience = "selectedExperience"/>
+    <Experience :experience = "selectedExperience"/>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ExperienceInterface } from "@/models/interfaces/ExperienceInteface";
 import ExperienceCard from "@/components/experience/ExperienceCard.vue";
+import  Experience  from "@/components/experience/Experience.vue";
 import { Icon } from "@iconify/vue";
 import { Ref } from "vue";
 import experiences from "../assets/staticData/experiences.json";
+
 /**
  * Informations about professionnal experiences, duration in months
  */
