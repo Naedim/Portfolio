@@ -2,11 +2,19 @@
   <div class="experience">
 
     <div class="experience__content">
-      <div class="experience__title">
+      <!-- <div class="experience__title">
         <h2>
           {{ experience.company.name }}
 
         </h2>
+      </div> -->
+
+       <div class="experience__company-website">
+        <div class = "website-logo">
+          <Icon icon="ic:outline-insert-link" class="page-icon" title="navbar's logo's icon"  />
+          <p>website</p>
+        </div>
+        <p> {{ experience.company.website}} </p>
       </div>
 
       <div class="experience__info-set">
@@ -53,19 +61,11 @@
 
       <!-- <button>Know more</button> -->
 
-      <div class="experience__know-more">
+      <!-- <div class="experience__know-more">
         <button>Know more</button>
 
-      </div>
+      </div> -->
     </div>
-
-
-
-
-    <!-- <Skillset v-for="skillset in experience.Skillsetlist" :skillet=skillset></Skillset>
-      <SkillsetManager :skillsetList="experience.Skillsetlist" ></SkillsetManager> -->
-
-
   </div>
 
 </template>
@@ -87,16 +87,18 @@ $gap-value : 5vw;
   width: 100%;
   background-color: #7D2859;
   box-sizing: border-box;
+  padding : calc($gap-value / 2);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding : calc($gap-value / 2);
   // padding : $gap-value;
 
   .experience__content {
     height: 100%;
     width : 100%;
+
     display : flex;
     flex-direction: column;
     justify-content: center;
@@ -105,6 +107,7 @@ $gap-value : 5vw;
 
     .experience__title {
       flex : 2;
+
       display: flex;
       justify-content: center;
       gap: 5vw;
@@ -119,14 +122,16 @@ $gap-value : 5vw;
 
     .experience__info-set{
       flex : 2;
+      width: 100%;
+
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      width: 100%;
 
 
       .experience__info {
         width : 40%;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
