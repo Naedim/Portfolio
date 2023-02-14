@@ -2,53 +2,20 @@
   <div class="experience">
 
     <div class="experience__content">
-      <!-- <div class="experience__title">
-        <h2>
-          {{ experience.company.name }}
 
-        </h2>
-      </div> -->
-
-       <div class="experience__company-website">
-        <div class = "website-logo">
-          <Icon icon="ic:outline-insert-link" class="page-icon" title="navbar's logo's icon"  />
-          <p>website</p>
-        </div>
-        <p> {{ experience.company.website}} </p>
-      </div>
+      
 
       <div class="experience__info-set">
 
         <div class="experience__info">
-          <Icon icon="majesticons:rocket-3-start" class="page-icon" title="navbar's logo's icon"  />
-          <h3>
-            {{ experience.begining }}
-          </h3>
-        </div>
-
-        <div class="experience__info">
-          <Icon icon="ion:clock" class="page-icon" title="navbar's logo's icon"  />
-
-          <h3>
-            {{ experience.duration }} months
-          </h3>
-        </div>
-
-      </div>
-
-      <hr class="experience__separator" />
-
-      <div class="experience__info-set">
-
-        <div class="experience__info">
-          <Icon icon="ic:baseline-code" class="page-icon" title="navbar's logo's icon"  />
+          <Icon icon="ic:baseline-code" title="navbar's logo's icon" />
           <h3>
             {{ experience.title }}
           </h3>
         </div>
 
         <div class="experience__info">
-          <Icon icon="ic:outline-handshake" class="page-icon" title="navbar's logo's icon"   />
+          <Icon icon="ic:outline-handshake" title="navbar's logo's icon" />
 
           <h3>
             {{ experience.contractType }}
@@ -57,14 +24,24 @@
 
       </div>
 
-      <hr class="experience__separator" />
+      <div class="experience__info-set">
 
-      <!-- <button>Know more</button> -->
+        <div class="experience__info">
+          <Icon icon="majesticons:rocket-3-start" title="navbar's logo's icon" />
+          <h3>
+            {{ experience.begining }}
+          </h3>
+        </div>
 
-      <!-- <div class="experience__know-more">
-        <button>Know more</button>
+        <div class="experience__info">
+          <Icon icon="ion:clock" title="navbar's logo's icon" />
 
-      </div> -->
+          <h3>
+            {{ experience.duration }} months
+          </h3>
+        </div>
+
+      </div>
     </div>
   </div>
 
@@ -80,15 +57,11 @@ const props = defineProps<{
 </script>
 
 <style scoped lang="scss">
-
 $gap-value : 5vw;
+
 .experience {
   height: 60%;
   width: 100%;
-  background-color: #7D2859;
-  box-sizing: border-box;
-  padding : calc($gap-value / 2);
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,55 +70,72 @@ $gap-value : 5vw;
 
   .experience__content {
     height: 100%;
-    width : 100%;
+    width: 100%;
 
-    display : flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    gap : $gap-value ;
+
+    // .experience__company-website {
+    //   flex: 2;
+    //   width: 100%;
+
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+
+    //   gap: 7%;
+    //   color: $primary;
+
+    //   .experience__website-logo {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
 
 
-    .experience__title {
-      flex : 2;
 
-      display: flex;
-      justify-content: center;
-      gap: 5vw;
+    //     svg.experience__link-icon {
+    //       font-size: 3.5vh;
+    //     }
 
-      h2 {
-        font-size: 4vh;
-        color: $secondary;
+    //     p {
+    //       font-size: 3vh;
+    //     }
+    //   }
 
-      }
-    }
+    //   svg.experience__link-arrow {
+    //     font-size: 3.5vh;
+    //   }
+    // }
 
 
-    .experience__info-set{
-      flex : 2;
+    .experience__info-set {
+      flex: 1;
       width: 100%;
 
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
 
 
       .experience__info {
-        width : 40%;
-        
+        flex : 1;
+
         display: flex;
         flex-direction: column;
         align-items: center;
 
         svg {
           color: $accent;
-          font-size: 6vh;
+          font-size: 7vh;
+
           //height is defined in the iconify Icon component in the HTML (couldn't do it in css)
         }
 
         h3 {
           text-align: center;
           color: $secondary;
-          font-size: 2vh;
+          font-size: 2.5vh;
 
         }
       }
@@ -160,7 +150,7 @@ $gap-value : 5vw;
 
 
     .experience__know-more {
-      flex : 2;
+      flex: 2;
       width: 100%;
       display: flex;
       justify-content: center;

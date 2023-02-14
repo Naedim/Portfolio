@@ -2,23 +2,27 @@
 
   <div class="experience-page">
     <div class="experience-page__selector">
-      <button class="experience-page__select-button" title="">
-        <Icon icon="ic:baseline-arrow-circle-left" title="previous experience" />
-      </button>
-      <h3>{{ selectedExperience.company.name }}</h3>
-      <button class="experience-page__select-button" title="">
-        <Icon icon="ic:baseline-arrow-circle-right" title="previous experience" />
-      </button>
+      <div class="selection">
+        <button class="experience-page__select-button" title="">
+          <Icon icon="ic:baseline-arrow-circle-left" title="previous experience" />
+        </button>
+        <h3>{{ selectedExperience.company.name }}</h3>
+        <button class="experience-page__select-button" title="">
+          <Icon icon="ic:baseline-arrow-circle-right" title="previous experience" />
+        </button>
+      </div>
+      <p>{{ selectedExperience.begining }} - {{ selectedExperience.duration }}</p>
 
     </div>
-    <Experience :experience="selectedExperience" />
+
+    <Experience2 :experience="selectedExperience" />
   </div>
 </template>
 
 <script setup lang="ts">
 import { ExperienceInterface } from "@/models/interfaces/ExperienceInteface";
 import ExperienceCard from "@/components/experience/ExperienceCard.vue";
-import Experience from "@/components/experience/Experience.vue";
+import Experience2 from "~~/components/experience/Experience2.vue";
 import { Icon } from "@iconify/vue";
 import { Ref } from "vue";
 import experiences from "../assets/staticData/experiences.json";
@@ -43,36 +47,49 @@ function selectExperience(index: number): void {
 <style scoped lang="scss">
 .experience-page {
   height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap : 2vh;
 
   .experience-page__selector {
     width: 100%;
-
+    height : 30%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 
-    h3{
-      font-size: 8vw;
-      color : $secondary;
-    }
+    .selection {
 
-    button.experience-page__select-button{
-      all : unset;
-      color : $accent;
+      display : flex;
+      justify-content: space-around;
+      width : 100%;
+      h3 {
+        font-size: 8vw;
+        color: $secondary;
+      }
 
-      svg{
-        vertical-align: middle; //Ensure that the logo is centered vertically inside the button
-        font-size: 10vw;
+      button.experience-page__select-button {
+        all: unset;
+        color: $accent;
+
+        svg {
+          vertical-align: middle; //Ensure that the logo is centered vertically inside the button
+          font-size: 10vw;
+        }
       }
     }
 
-
+  p {
+    color: $slate-4;
+    font-weight: 600;
+    font-size: 2vh;
+  }
   }
 }
 </style>

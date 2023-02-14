@@ -4,11 +4,11 @@
             "name": "Capgemini",
             "website": "https://www.capgemini.com/"
         },
-        "contractType": "work-study program",
+        "contractType": "Work-study program",
         "begining": "August 2021",
-        "duration": 12,
+        "duration": "1 year",
         "title": "FullStack developer",
-        "description": "",
+        "description": "Project between capgemini and SNCF, the French's national railway company. The work consisted of sorting and transform brute data from IOT sources and make it accessible to users by developping web applications",
         "Skillsetlist": [
             {
                 "description": "client development",

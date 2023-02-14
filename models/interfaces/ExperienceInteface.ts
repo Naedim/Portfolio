@@ -4,7 +4,7 @@ export interface ExperienceInterface {
     company: Company;
     contractType: "work-study program" | "Business internship";
     begining: string;
-    duration: number;
+    duration: string;
     title: string;
     description: string;
     Skillsetlist: SkillsetInterface[];
