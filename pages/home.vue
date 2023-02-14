@@ -27,55 +27,41 @@
 </template>
 
 <style scoped lang="scss">
-
 .home-page {
-  box-sizing: border-box;
-  padding-left: 7%;
-  padding-right: 7%;
-  height: 100%;
+  flex-grow: 0.5;
+  display : flex;
 
-  display: flex;
+  align-items: center;
 
   .home-page__introduction {
-    padding-top: 25%;
-    
+
     display: flex;
     flex-direction: column;
-    padding-top: 25%;
 
     .home-page__introduction-first-line {
-      p {
-        font-size: clamp(1.25rem, 4vw, 2.5rem);
-        color: $primary;
-        font-weight: 500;
-      }
+      font-size: 3vh;
+      color: $accent;
+      font-weight: 500;
     }
 
     .home-page__introduction-second-line {
-      margin-top: -10px;
-
-      p {
-        font-size: clamp(2.5rem, 8vw, 7em);
-        color: $slate-2;
-        font-weight: 600;
-      }
+      font-size: 5vh;
+      color: $secondary;
+      font-weight: 600;
     }
 
     .home-page__introduction-third-line {
       margin-top: 20px;
+      font-size: 3.5vh;
+      color: $slate-5;
+      font-weight: 500;
 
-      p {
-        font-size: clamp(1.5rem, 3vw, 2.5rem);
-        color: $accent;
-        font-weight: 500;
+      .home-page__text {
+        display: none;
+      }
 
-        &.home-page__text {
-          display: none;
-        }
-
-        span {
-          color: $slate-2;
-        }
+      span {
+        color: $slate-2;
       }
     }
   }
@@ -83,34 +69,26 @@
 
 @media screen and (min-width: 552px) {
   .home-page {
-    padding-right: 15%;
-    padding-left: 15%;
 
+    height: 40%;
     display: flex;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
 
     .home-page__introduction {
-      padding-top: 15%;
-
       .home-page__introduction-third-line {
-      p {
-        &.home-page__mobile-text {
-          display: none;
-        }
+        p {
+          &.home-page__mobile-text {
+            display: none;
+          }
 
-        &.home-page__text {
-          display: block;
-        }
+          &.home-page__text {
+            display: block;
+          }
 
+        }
       }
     }
-    }
-
-    
-
   }
-
-
 }
 </style>

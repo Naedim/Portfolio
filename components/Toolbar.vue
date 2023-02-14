@@ -29,41 +29,34 @@ const pages = ["home", "experiences", "education", "about"];
 let isMobileMenuActive = ref(false);
 
 
-function menuToggle() : void{
+function menuToggle(): void {
   isMobileMenuActive.value = !isMobileMenuActive.value;
 };
 </script>
 
 
 <style scoped lang="scss">
-.toolbar {
-  height: 15%;
-}
 
 .toolbar__navbar {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  font-size: 3.5vh;
+
   .toolbar__navbar-logo {
-    margin-left: 7%;
     display: flex;
     align-items: center;
-    gap: 5px;
-    color: $neutral;
-
-    font-size: clamp(1.2rem, 2.25vw, 2.5rem);
+    gap: 2vw;
+    color: $slate-4;
     font-weight: 600;
 
-    .toolbar__navbar-log-icon {
-      font-size: clamp(1.5rem, 3vw, 3.75rem);
-    }
-  }
+    svg{
+  font-size: 5vh;
 
-  .nav-links {
-    margin-right: 7%;
-    font-size: clamp(1.3rem, 2vw, 1.7rem);
+    }
+
   }
 
   a {
@@ -77,10 +70,18 @@ function menuToggle() : void{
       color: $accent;
     }
   }
+
+
+  .menu-hamburger {
+    // height: 50px;
+    font-size: 6vh;
+    width: auto;
+    color: $secondary;
+    z-index: 1;
+  }
 }
 
 div.toolbar__current-page-container {
-  padding-left: 7%;
   display: flex;
   align-items: center;
   gap: 2%;
@@ -88,70 +89,56 @@ div.toolbar__current-page-container {
   .page-icon {
     color: $accent;
     margin-left: 0;
+    font-size: 3vh;
   }
 
   .current-page-name {
-    font-size: clamp(1rem, 2vw, 1.7rem);
+    font-size: 3vh;
     color: $accent;
     font-weight: 500;
   }
 }
 
-@media screen and (min-width: 676px) {
-  div.toolbar__current-page-container {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 675px) {
-  .toolbar__navbar-logo {
-    margin-top: 25px;
-  }
+//concerns the state of the menu bar for mobiles
+@media screen and (max-width: 1000px) {
 
   .nav-links {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.342);
     backdrop-filter: blur(9px);
-    margin-top: 90vh;
+    margin-left: -100%;
+    transition: all 0.5s ease;
 
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+
+    font-size: 4vh;
+    gap: 7vh;
     font-weight: 600;
-    margin-left: -100%;
-    transition: all 0.5s ease;
+
 
     &.mobile-menu {
       margin-left: 0;
     }
   }
-
-  .menu-hamburger {
-    margin-top: 25px;
-    margin-right: 30px;
-
-    // height: 50px;
-    height: 2.5rem;
-    width: auto;
-    color: $secondary;
-    z-index: 1;
-  }
 }
 
-@media screen and (min-width: 676px) {
+//higher then mobile
+@media screen and (min-width: 1000px) {
   .toolbar__navbar {
-    padding-top: 50px;
-
+    padding-top: 2vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     .toolbar__navbar-logo {
-      gap: 15px !important;
+      font-size: 2.5vw;
     }
   }
 
@@ -164,6 +151,11 @@ div.toolbar__current-page-container {
     display: flex;
     justify-content: space-evenly;
     font-weight: 500;
+    font-size: 2.5vw;
+
+    // a{
+    //   font-size: 2vw;
+    // }
   }
 
   .menu-hamburger {
