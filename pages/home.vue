@@ -40,13 +40,13 @@
 
     .home-page__introduction-first-line {
       font-size: 3vh;
-      color: $accent;
+      color: $secondary;
       font-weight: 500;
     }
 
     .home-page__introduction-second-line {
       font-size: 5vh;
-      color: $secondary;
+      color: $accent-2;
       font-weight: 600;
     }
 
@@ -61,7 +61,7 @@
       }
 
       span {
-        color: $slate-2;
+        color: $accent;
       }
     }
   }

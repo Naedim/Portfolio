@@ -51,7 +51,7 @@ const props = defineProps<{
 $gap-value : 5vw;
 
 .experience {
-  height: 40%;
+  flex : 2;
   width: 100%;
   display : flex;
   flex-direction: column;
@@ -61,6 +61,10 @@ $gap-value : 5vw;
   .experience__content {
     height: 100%;
     width: 100%;
+    border : 3px solid $slate-4;
+    border-radius: 25px;
+
+    
 
     display: grid;
     grid-template-rows: repeat(2, 1fr);
