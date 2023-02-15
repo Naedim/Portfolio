@@ -1,16 +1,16 @@
 <template>
   <div class="experience">
 
-    <div class="experience__content">
+    <div class="experience__summary">
 
-      <div class="experience__info">
+      <div class="experience__summary-info">
         <Icon icon="ic:baseline-code" title="navbar's logo's icon" />
         <h3>
           {{ experience.title }}
         </h3>
       </div>
 
-      <div class="experience__info">
+      <div class="experience__summary-info">
         <Icon icon="ic:outline-handshake" title="navbar's logo's icon" />
 
         <h3>
@@ -18,24 +18,20 @@
         </h3>
       </div>
 
-
-      <!-- <div class="experience__info">
-        <Icon icon="majesticons:rocket-3-start" title="navbar's logo's icon" />
-        <h3>
-          {{ experience.begining }}
-        </h3>
-
-      </div> -->
-
-      <div class="experience__info">
+      <div class="experience__summary-info">
         <Icon icon="ion:clock" title="navbar's logo's icon" />
 
         <h3>
           {{ experience.duration }} months
         </h3>
       </div>
+
     </div>
-  </div>
+
+    <div class="experience__subjects">
+      <p v-for="skillset in experience.Skillsetlist">{{ skillset.description }}</p>
+    </div>
+</div>
 </template>
 
 <script setup lang="ts">
@@ -51,30 +47,30 @@ const props = defineProps<{
 $gap-value : 5vw;
 
 .experience {
-  flex : 2;
+  height: 100%;
   width: 100%;
-  display : flex;
+  border: 3px solid $slate-4;
+  border-radius: 25px;
+
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
-  .experience__content {
-    height: 100%;
+  .experience__summary {
+    flex: 3;
+    // height: 50%;
+    // height : 50%;
     width: 100%;
-    border : 3px solid $slate-4;
-    border-radius: 25px;
-
-    
 
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
 
-    .experience__info {
+    .experience__summary-info {
       width: 100%;
       height: 100%;
 
-      grid-column : span 1;
+      grid-column: span 1;
 
       display: flex;
       flex-direction: column;
@@ -83,7 +79,7 @@ $gap-value : 5vw;
 
       svg {
         color: $accent;
-        font-size: 7vh;
+        font-size: 5vh;
 
         //height is defined in the iconify Icon component in the HTML (couldn't do it in css)
       }
@@ -91,7 +87,7 @@ $gap-value : 5vw;
       h3 {
         text-align: center;
         color: $secondary;
-        font-size: 2.5vh;
+        font-size: 2vh;
 
       }
 
@@ -102,25 +98,20 @@ $gap-value : 5vw;
       }
     }
 
+    experience__subjects {
+      flex : 2;
+      // height: 50%;
+      width: 100%;
 
-    // .experience__know-more {
-    //   flex: 2;
-    //   width: 100%;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-
-
-    //   button {
-    //     width: 80%;
-    //     height: 90%;
-    //     background-color: $primary;
-    //     color: $secondary;
-    //     border-radius: 5px;
-    //     border: none;
-    //   }
-    // }
+      p {
+        color: white;
+      }
+    }
   }
 }
 </style>

@@ -15,7 +15,10 @@
       </button>
     </div>
 
-    <Experience2 :experience="selectedExperience" />
+    <div class = "experience-page__experience-container">
+      <Experience2 :experience="selectedExperience" />
+    </div>
+
 
     <div class="experience-page__know-more">
       <button>
@@ -73,7 +76,7 @@ function selectExperience(index: number): void {
 
       svg {
         vertical-align: middle; //Ensure that the logo is centered vertically inside the button
-        color : #C2E812;
+        color : $accent-2;
         font-size: 10vw;
       }
     }
@@ -99,6 +102,10 @@ function selectExperience(index: number): void {
     }
   }
 
+  .experience-page__experience-container{
+    flex: 3;
+  }
+
   .experience-page__know-more {
     flex: 1;
     width: 100%;
@@ -108,7 +115,6 @@ function selectExperience(index: number): void {
 
     button{
       all : unset;
-      // border : 2px solid $accent;
       background-color: $primary;
       border-radius: 50%;
       height : 9vh;
