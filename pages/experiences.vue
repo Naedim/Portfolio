@@ -1,36 +1,36 @@
 <template>
-
   <div class="experience-page">
     <div class="experience-page__selector">
-      <button class="experience-page__select-button" title="">
-        <Icon icon="ic:baseline-arrow-back-ios" title="previous experience" />
+      <button class="experience-page__select-button reverse" title="next experience" @click="previousExperience"
+        :class="{ 'hidden': currentExperienceIndex === 0 }">
+        <Icon icon="ic:baseline-arrow-forward-ios" />
       </button>
       <div class="selection">
 
         <h3>{{ selectedExperience.company.name }}</h3>
         <p>{{ selectedExperience.begining }} - {{ selectedExperience.duration }}</p>
       </div>
-      <button class="experience-page__select-button" title="">
-        <Icon icon="ic:baseline-arrow-forward-ios" title="previous experience" />
+
+      <button class="experience-page__select-button" title="next experience" @click="nextExperience"
+        :class="{ 'hidden': currentExperienceIndex === experienceList.length - 1 }">
+        <Icon icon="ic:baseline-arrow-forward-ios" />
       </button>
     </div>
 
-    <div class = "experience-page__experience-container">
+    <div class="experience-page__experience-container">
       <Experience2 :experience="selectedExperience" />
     </div>
 
-
-    <div class="experience-page__know-more">
+    <!-- <div class="experience-page__know-more">
       <button>
         <Icon icon="ic:outline-arrow-downward" title="experience remaining-infos" />
       </button>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script setup lang="ts">
 import { ExperienceInterface } from "@/models/interfaces/ExperienceInteface";
-import ExperienceCard from "@/components/experience/ExperienceCard.vue";
 import Experience2 from "~~/components/experience/Experience2.vue";
 import { Icon } from "@iconify/vue";
 import { Ref } from "vue";
@@ -44,12 +44,28 @@ let experienceList: Array<ExperienceInterface> =
   experiences as Array<ExperienceInterface>;
 
 let selectedExperience: Ref<ExperienceInterface> = ref(experienceList[0]);
-let currentExperienceIndex: Ref<number> = ref(0);
+let currentExperienceIndex = 0;
+
+function nextExperience() {
+  console.log("next");
+  selectExperience(currentExperienceIndex + 1)
+}
+function previousExperience() {
+  selectExperience(currentExperienceIndex - 1)
+}
+
+function knowMore() {
+  console.log("Know more");
+}
 
 function selectExperience(index: number): void {
+  console.log("selectExperience with ", index);
   selectedExperience.value = experienceList[index];
-  currentExperienceIndex.value = index;
-  console.log(currentExperienceIndex);
+  currentExperienceIndex = index;
+  console.log("new index : " + currentExperienceIndex);
+  console.log("experience list : " + experienceList.length);
+
+
 };
 
 </script>
@@ -72,64 +88,76 @@ function selectExperience(index: number): void {
     justify-content: center;
 
     button.experience-page__select-button {
-      all: unset;
-
-      svg {
-        vertical-align: middle; //Ensure that the logo is centered vertically inside the button
-        color : $accent-2;
-        font-size: 10vw;
-      }
-    }
-
-    .selection {
-
+      color: $accent;
+      font-size: 6vw;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%;
 
-      h3 {
-        font-size: 8vw;
-        color: $secondary;
+      &.hidden {
+        visibility: hidden;
       }
+
+      &.reverse {
+        transform: rotate(180deg);
+      }
+
     }
 
-    p {
-      color: $accent-2;
-      font-weight: 600;
-      font-size: 2vh;
-    }
   }
 
-  .experience-page__experience-container{
-    flex: 3;
-  }
+  .selection {
 
-  .experience-page__know-more {
-    flex: 1;
-    width: 100%;
-    display : flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
-    button{
-      all : unset;
-      background-color: $primary;
-      border-radius: 50%;
-      height : 9vh;
-      width : 9vh;
-
-      svg{
-        font-size : 8vh;
-        color : $accent-2;
-        vertical-align: middle; 
-
-      }
+    h3 {
+      font-size: 6vw;
+      color: $secondary;
     }
-    
-    
   }
+
+  p {
+    color: $accent-2;
+    font-weight: 600;
+    font-size: 3vw;
+  }
+
+  .experience-page__experience-container {
+    flex: 5;
+    width: 90%;
+  }
+
+  // .experience-page__know-more {
+  //   flex: 1;
+  //   width: 100%;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+
+  //   button {
+  //     all: unset;
+  //     background-color: $primary;
+  //     border-radius: 50%;
+  //     height: 12vw;
+  //     width: 12vw;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+
+  //     svg {
+  //       font-size: 10vw;
+  //       color: $accent-2;
+  //       vertical-align: middle;
+  //       transform: rotate(90deg);
+
+  //     }
+  //   }
+
+  // }
 }
 </style>
 
