@@ -39,6 +39,10 @@ useHead({
   font-family: "Poppins", serif;
 }
 
+button{
+  all : unset;
+}
+
 .app-container {
   height: 100vh;
   width: 100vw;
