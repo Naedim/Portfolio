@@ -39,8 +39,6 @@ const props = defineProps<{
 .experience {
   height: 100%;
   width: 100%;
-  border: 3px solid $slate-4;
-  border-radius: 25px;
 
   display: flex; 
   flex-direction: column;
