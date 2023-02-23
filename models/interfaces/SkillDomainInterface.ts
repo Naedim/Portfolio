@@ -1,6 +1,6 @@
 import { SkillInterface } from "./SkillInterface";
 
-export interface SkillsetInterface {
-    description: string;
+export interface SkillDomainInterface {
+    title: string;
     skillList: SkillInterface[];
   }

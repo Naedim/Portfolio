@@ -20,12 +20,6 @@
     <div class="experience-page__experience-container">
       <Experience2 :experience="selectedExperience" />
     </div>
-
-    <!-- <div class="experience-page__know-more">
-      <button>
-        <Icon icon="ic:outline-arrow-downward" title="experience remaining-infos" />
-      </button>
-    </div> -->
   </div>
 </template>
 
@@ -130,34 +124,6 @@ function selectExperience(index: number): void {
     flex: 5;
     width: 90%;
   }
-
-  // .experience-page__know-more {
-  //   flex: 1;
-  //   width: 100%;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-
-  //   button {
-  //     all: unset;
-  //     background-color: $primary;
-  //     border-radius: 50%;
-  //     height: 12vw;
-  //     width: 12vw;
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-
-  //     svg {
-  //       font-size: 10vw;
-  //       color: $accent-2;
-  //       vertical-align: middle;
-  //       transform: rotate(90deg);
-
-  //     }
-  //   }
-
-  // }
 }
 </style>
 

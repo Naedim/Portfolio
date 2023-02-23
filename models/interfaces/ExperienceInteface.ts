@@ -1,5 +1,6 @@
-import { SkillsetInterface } from "~~/models/interfaces/SkillsetInterface";
+
 import { Company } from "./CompanyInterface";
+import { SkillDomainInterface } from "./SkillDomainInterface";
 export interface ExperienceInterface {
     company: Company;
     contractType: "work-study program" | "Business internship";
@@ -7,5 +8,5 @@ export interface ExperienceInterface {
     duration: string;
     title: string;
     description: string;
-    Skillsetlist: SkillsetInterface[];
+    skillDomainList: SkillDomainInterface[];
   }
