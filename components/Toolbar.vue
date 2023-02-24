@@ -43,7 +43,7 @@ function menuToggle(): void {
   justify-content: space-between;
   align-items: center;
 
-  font-size: 3.5vh;
+  font-size: 2.5vh;
 
   .toolbar__navbar-logo {
     display: flex;
@@ -53,7 +53,7 @@ function menuToggle(): void {
     font-weight: 600;
 
     svg{
-  font-size: 5vh;
+  font-size: 3vh;
 
     }
 
@@ -73,8 +73,7 @@ function menuToggle(): void {
 
 
   .menu-hamburger {
-    // height: 50px;
-    font-size: 6vh;
+    font-size: 4vh;
     width: auto;
     color: $secondary;
     z-index: 1;
@@ -89,13 +88,12 @@ div.toolbar__current-page-container {
   .page-icon {
     color: $accent;
     margin-left: 0;
-    font-size: 3vh;
+    font-size: 2vh;
   }
 
   .current-page-name {
-    font-size: 3vh;
+    font-size: 2vh;
     color: $accent;
-    font-weight: 500;
   }
 }
 
@@ -110,17 +108,17 @@ div.toolbar__current-page-container {
     height: 100vh;
     backdrop-filter: blur(9px);
     margin-left: -100%;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
+
+    padding-top : 20vh;
 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
-    font-size: 4vh;
-    gap: 7vh;
-    font-weight: 600;
+    font-size: 3vh;
+    gap: 5vh;
 
 
     &.mobile-menu {

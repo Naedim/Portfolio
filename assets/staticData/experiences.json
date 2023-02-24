@@ -15,12 +15,27 @@
                     {
                         "name": "angular",
                         "logoIsLocal": false,
-                        "logo": "vscode-icons:file-type-angular"
+                        "logo": "devicon-angularjs-plain colored"
                     },
                     {
                         "name": "typescript",
                         "logoIsLocal": false,
-                        "logo": "vscode-icons:file-type-typescript-official"
+                        "logo": "devicon-typescript-plain colored"
+                    },
+                    {
+                        "name": "primeNG",
+                        "logoIsLocal": true,
+                        "logo": "primeng-logo.svg"
+                    },
+                    {
+                        "name": "typescript",
+                        "logoIsLocal": false,
+                        "logo": "devicon-typescript-plain colored"
+                    },
+                    {
+                        "name": "typescript",
+                        "logoIsLocal": false,
+                        "logo": "devicon-typescript-plain colored"
                     }
                 ]
             },

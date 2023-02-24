@@ -1,25 +1,22 @@
 <template>
   <div class="experience-page">
     <div class="experience-page__selector">
-      <button class="experience-page__select-button reverse" title="next experience" @click="previousExperience"
+      <button class="reverse" title="next experience" @click="previousExperience"
         :class="{ 'hidden': currentExperienceIndex === 0 }">
         <Icon icon="ic:baseline-arrow-forward-ios" />
       </button>
-      <div class="selection">
 
-        <h3>{{ selectedExperience.company.name }}</h3>
-        <p>{{ selectedExperience.begining }} - {{ selectedExperience.duration }}</p>
-      </div>
+      <h2>{{ selectedExperience.company.name }}</h2>
 
-      <button class="experience-page__select-button" title="next experience" @click="nextExperience"
+      <button title="next experience" @click="nextExperience"
         :class="{ 'hidden': currentExperienceIndex === experienceList.length - 1 }">
         <Icon icon="ic:baseline-arrow-forward-ios" />
       </button>
+
+      <p>{{ selectedExperience.begining }} - {{ selectedExperience.duration }}</p>
     </div>
 
-    <div class="experience-page__experience-container">
-      <Experience2 :experience="selectedExperience" />
-    </div>
+    <Experience2 :experience="selectedExperience" />
   </div>
 </template>
 
@@ -48,10 +45,6 @@ function previousExperience() {
   selectExperience(currentExperienceIndex - 1)
 }
 
-function knowMore() {
-  console.log("Know more");
-}
-
 function selectExperience(index: number): void {
   console.log("selectExperience with ", index);
   selectedExperience.value = experienceList[index];
@@ -65,23 +58,30 @@ function selectExperience(index: number): void {
 </script>
 <style scoped lang="scss">
 .experience-page {
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
+  margin-top : 20%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 90%;
 
-  display: flex;
-  flex-direction: column;
+  row-gap: 5%;
+
+  justify-items: center;
   align-items: center;
 
   .experience-page__selector {
     width: 90%;
-    flex: 1;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 1fr;
 
-    display: flex;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
 
-    button.experience-page__select-button {
+
+    button {
+      grid-row: span 2;
       color: $accent;
       font-size: 6vw;
       display: flex;
@@ -98,32 +98,21 @@ function selectExperience(index: number): void {
 
     }
 
-  }
-
-  .selection {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    h3 {
+    h2 {
       font-size: 6vw;
       color: $secondary;
     }
+
+    p {
+
+      grid-area: 2 / 2 / 2 / 3;
+      color: $accent-2;
+      font-weight: 600;
+      font-size: 3vw;
+    }
+
   }
 
-  p {
-    color: $accent-2;
-    font-weight: 600;
-    font-size: 3vw;
-  }
-
-  .experience-page__experience-container {
-    flex: 5;
-    width: 90%;
-  }
 }
 </style>
 
