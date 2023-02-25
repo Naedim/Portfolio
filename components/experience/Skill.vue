@@ -1,6 +1,6 @@
 <template>
     <div class="skill">
-        <img v-if="skill.logoIsLocal" :src="`/assets/skillsPictures/${props.skill.logo}`" />
+        <img :src="`/assets/skillsPictures/${props.skill.logo}`" />
         <h5>{{ skill.name }}</h5>
     </div>
 </template>

@@ -63,6 +63,7 @@ function selectExperience(index: number): void {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 10% 90%;
+  background-color: $primary;
 
   row-gap: 5%;
 

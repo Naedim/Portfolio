@@ -13,19 +13,20 @@
                 "title": "client development",
                 "skillList": [
                     {
-                        "name": "angular",
-                        "logoIsLocal": true,
+                        "name": "Angular",
                         "logo": "angular.svg"
                     },
                     {
-                        "name": "typescript",
-                        "logoIsLocal": true,
+                        "name": "Typescript",
                         "logo": "typescript.svg"
                     },
                     {
-                        "name": "primeNG",
-                        "logoIsLocal": true,
+                        "name": "PrimeNG",
                         "logo": "primeng.svg"
+                    },
+                    {
+                        "name": "RxJS",
+                        "logo": "rxjs.svg"
                     }
                 ]
             },
@@ -34,13 +35,23 @@
                 "skillList": [
                     {
                         "name": "C#",
-                        "logoIsLocal": false,
-                        "logo": "vscode-icons:file-type-csharp"
+                        "logo": "C.svg"
                     },
                     {
-                        "name": "java",
-                        "logoIsLocal": false,
-                        "logo": "logos:java"
+                        "name": ".NET",
+                        "logo": "dot-net.svg"
+                    },
+                    {
+                        "name": "Java",
+                        "logo": "java.svg"
+                    },
+                    {
+                        "name": "Spring",
+                        "logo": "spring.svg"
+                    },
+                    {
+                        "name": "Swagger UI",
+                        "logo": "swagger.svg"
                     }
                 ]
             },
@@ -48,14 +59,29 @@
                 "title": "data processing",
                 "skillList": [
                     {
-                        "name": "python",
-                        "logoIsLocal": false,
-                        "logo": "vscode-icons:file-type-python"
+                        "name": "Databricks",
+                        "logo": "databricks.svg"
                     },
                     {
-                        "name": "java",
-                        "logoIsLocal": false,
-                        "logo": "logos:java"
+                        "name": "Python",
+                        "logo": "python.svg"
+                    },
+                    {
+                        "name": "Spark",
+                        "logo": "spark.svg"
+                    }
+                ]
+            },
+            {
+                "title": "data storage ",
+                "skillList": [
+                    {
+                        "name": "SQL Server",
+                        "logo": "sql-server.svg"
+                    },
+                    {
+                        "name": "PostgreSQL",
+                        "logo": "postgresql.svg"
                     }
                 ]
             }
@@ -77,12 +103,10 @@
                 "skillList": [
                     {
                         "name": "angular",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-angular"
                     },
                     {
                         "name": "typescript",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-typescript-official"
                     }
                 ]
@@ -92,12 +116,10 @@
                 "skillList": [
                     {
                         "name": "C#",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-csharp"
                     },
                     {
                         "name": "java",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-java"
                     }
                 ]
@@ -107,12 +129,10 @@
                 "skillList": [
                     {
                         "name": "python",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-python"
                     },
                     {
                         "name": "java",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-java"
                     }
                 ]
@@ -135,12 +155,10 @@
                 "skillList": [
                     {
                         "name": "angular",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-angular"
                     },
                     {
                         "name": "typescript",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-typescript-official"
                     }
                 ]
@@ -150,12 +168,10 @@
                 "skillList": [
                     {
                         "name": "C#",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-csharp"
                     },
                     {
                         "name": "java",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-java"
                     }
                 ]
@@ -165,12 +181,10 @@
                 "skillList": [
                     {
                         "name": "python",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-python"
                     },
                     {
                         "name": "java",
-                        "logoIsLocal": false,
                         "logo": "vscode-icons:file-type-java"
                     }
                 ]

@@ -69,11 +69,7 @@ const props = defineProps<{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 2vh;
-
-
-    .experience__skill-domain-container {
-      flex: 1;
-    }
   }
+
 }
 </style>
