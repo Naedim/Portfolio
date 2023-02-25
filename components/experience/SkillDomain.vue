@@ -6,7 +6,11 @@
 
     <div class="skill-domain__content">
 
-        <Skill v-for = "skill in skillDomain.skillList" :skill = skill /> 
+      <!-- <div class="skill-domain__skill-container" v-for="skill in skillDomain.skillList">
+        <Skill :skill=skill />
+      </div -->
+
+      <Skill v-for="skill in skillDomain.skillList" :skill=skill />
     </div>
   </div>
 </template>
@@ -26,7 +30,7 @@ const props = defineProps<{
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 9fr;
+  grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 2fr 9fr;
   align-items: center;
 
@@ -47,16 +51,27 @@ const props = defineProps<{
 
 
   .skill-domain__content {
-    grid-area: 2 /2 /-1 /-1;
-    align-self: center;
+    height : 100%;
+    grid-area: 2 /2 /-1 /3;
     display : grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     column-gap: 3vw;
-    row-gap: 1vw;
-    place-items: center;
-    align-self: flex-end;
+    row-gap: 2vw;
   }
 
+  // .skill-domain__content {
+  //   grid-area: 2 /2 /-1 /3;
+  //   height: 100%;
+  //   max-height: 100%;
+
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   align-items: flex-end;
+  // }
+
+  // .skill-domain__skill-container {
+  //   flex: 1;
+  // }
 }
 </style>

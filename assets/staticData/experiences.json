@@ -14,28 +14,18 @@
                 "skillList": [
                     {
                         "name": "angular",
-                        "logoIsLocal": false,
-                        "logo": "devicon-angularjs-plain colored"
+                        "logoIsLocal": true,
+                        "logo": "angular.svg"
                     },
                     {
                         "name": "typescript",
-                        "logoIsLocal": false,
-                        "logo": "devicon-typescript-plain colored"
+                        "logoIsLocal": true,
+                        "logo": "typescript.svg"
                     },
                     {
                         "name": "primeNG",
                         "logoIsLocal": true,
-                        "logo": "primeng-logo.svg"
-                    },
-                    {
-                        "name": "typescript",
-                        "logoIsLocal": false,
-                        "logo": "devicon-typescript-plain colored"
-                    },
-                    {
-                        "name": "typescript",
-                        "logoIsLocal": false,
-                        "logo": "devicon-typescript-plain colored"
+                        "logo": "primeng.svg"
                     }
                 ]
             },

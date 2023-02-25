@@ -58,7 +58,7 @@ function selectExperience(index: number): void {
 </script>
 <style scoped lang="scss">
 .experience-page {
-  margin-top : 20%;
+  margin-top : 10%;
   height: 80%;
   display: grid;
   grid-template-columns: 1fr;
