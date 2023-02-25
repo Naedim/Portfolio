@@ -48,7 +48,7 @@ button{
 }
 
 .app-container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background: $slate-9;
   box-sizing: border-box;
