@@ -67,8 +67,11 @@ const props = defineProps<{
     grid-column: 1 / -1;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 2vh;
+  }
+
+  .experience__skill-domain-container{
+    flex : 1;
   }
 
 }
