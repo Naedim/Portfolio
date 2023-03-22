@@ -1,10 +1,11 @@
 <template>
-  <div class="app-container">
+  <div class="h-screen w-screen bg-slate-900 box-border p-[5vw] flex flex-col overflow-auto">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
+
 
 <script setup>
 const title = ref("Damien NOEL's Portfolio");
@@ -25,10 +26,6 @@ useHead({
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css?family=Poppins",
     },
-    // {
-    //   rel : "stylesheet",
-    //   href : "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    // }
   ],
 });
 </script>
@@ -47,15 +44,4 @@ button{
   all : unset;
 }
 
-.app-container {
-  min-height: 100vh;
-  width: 100vw;
-  background: $slate-9;
-  box-sizing: border-box;
-  padding : 5vw;
-  display :flex;
-  flex-direction: column;
-  overflow : auto;
-
-}
 </style>
