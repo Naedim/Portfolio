@@ -1,5 +1,7 @@
 <template>
-  <Toolbar/>
+  <header>
+    <Toolbar/>
+  </header>
   <slot/>
 </template>
 

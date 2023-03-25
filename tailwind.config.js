@@ -6,6 +6,14 @@ module.exports = {
   theme: {
     colors :{
     },
+    screens: {
+      'sm': '280px',
+
+      'md': '1000px',
+
+      'lg': '1920px',
+
+    },
 
     extend: {
       width: {
