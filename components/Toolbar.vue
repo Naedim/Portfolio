@@ -19,7 +19,7 @@
       <ul
         id="toolbar__mobile-menu"
         :class="isMobileMenuActive ? 'ml-0' : 'ml-[-100%]'"
-        class="absolute top-0 left-0 box-border h-full w-full flex-col items-center gap-[5vh] pt-[20vh] text-[3vh] backdrop-blur transition-all duration-200 sm:flex md:hidden"
+        class="absolute top-0 left-0 box-border h-full w-full flex flex-col items-center justify-center gap-[5vh] text-[3vh] backdrop-blur transition-all duration-200 xs:flex md:hidden"
       >
         <li v-for="(page, path) in pages" :key="path">
           <NuxtLink
@@ -36,10 +36,8 @@
         class="hidden grow items-center justify-evenly transition-all duration-200 md:flex"
       >
         <li v-for="(page, path) in pages" :key="path">
-          <NuxtLink
-            :to="path"
-            class="hover:lime-400 focus:lime-400 text-white"
-            >{{ page}}
+          <NuxtLink :to="path" class="hover:lime-400 focus:lime-400 text-white"
+            >{{ page }}
           </NuxtLink>
         </li>
       </ul>
@@ -63,7 +61,7 @@
       />
 
       <h1 id="toolbar__current-page-name" title="current page's name">
-        {{ pages[route.name != 'index' ?  route.name : '/']}}
+        {{ pages[route.name != "index" ? route.name : "/"] }}
       </h1>
     </div>
   </nav>
@@ -73,7 +71,7 @@
 import { Icon } from "@iconify/vue";
 const route = useRoute();
 const pages = {
-  '/': "home",
+  "/": "home",
   experiences: "experiences",
   education: "education",
   about: "about",
