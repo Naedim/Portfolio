@@ -19,24 +19,25 @@
       <ul
         id="toolbar__mobile-menu"
         :class="isMobileMenuActive ? 'ml-0' : 'ml-[-100%]'"
-        class="absolute top-0 left-0 box-border h-full w-full flex flex-col items-center justify-center gap-[5vh] text-[3vh] backdrop-blur transition-all duration-200 xs:flex md:hidden"
+        class="absolute top-0 left-0 box-border h-full w-full flex flex-col items-center justify-center gap-[5vh] text-[6vw] font-medium backdrop-blur-md	
+         transition-all duration-200 xs:flex md:hidden"
       >
         <li v-for="(page, path) in pages" :key="path">
           <NuxtLink
             :to="path"
-            class="hover:lime-400 focus:lime-400 text-white"
+            class="hover:lime-400 focus:lime-400 text-slate-100"
             @click="menuToggle()"
-            >{{ page }}
+            >{{page}}
           </NuxtLink>
         </li>
       </ul>
 
       <ul
         id="toolbar__big-screen-menu"
-        class="hidden grow items-center justify-evenly transition-all duration-200 md:flex"
+        class="hidden grow-[0.4] items-center text-[2vw] justify-evenly transition-all duration-200 md:flex"
       >
         <li v-for="(page, path) in pages" :key="path">
-          <NuxtLink :to="path" class="hover:lime-400 focus:lime-400 text-white"
+          <NuxtLink :to="path" class=" hover:text-purple-700 focus:lime-400 text-white"
             >{{ page }}
           </NuxtLink>
         </li>
@@ -52,7 +53,7 @@
 
     <div
       id="toolbar__current-page-info"
-      class="flex items-center gap-2 text-[2vh] text-purple-700"
+      class="flex items-center gap-2 text-[2vh] font-bold text-purple-700"
     >
       <Icon
         icon="mdi:book-open-page-variant-outline"

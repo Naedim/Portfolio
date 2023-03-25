@@ -1,94 +1,33 @@
 <template>
-  <div class="home-page">
-    <div class="home-page__introduction">
-      <div class="home-page__introduction-first-line">
-        <p>Hello, I'm</p>
+  <div id="home-page" class="flex h-3/4  justify-center  md:justify-start  items-center">
+    <div id="home-page__introduction" class="flex flex-col">
+      <div
+        id="home-page__introduction-first-line"
+        class="text-[3vh] md:text-[3vw] font-medium text-white"
+      >
+        <p class = "font-bold">Hello, I'm</p>
       </div>
-
-      <div class="home-page__introduction-second-line">
+      <div
+        id="home-page__introduction-second-line"
+        class="text-[5vh] md:text-[5vw] font-semibold text-lime-400"
+      >
         <p>Damien NOEL</p>
       </div>
 
-      <div class="home-page__introduction-third-line">
-
-        <p class="home-page__mobile-text">
-          I'm a <span>software engineer</span>, <span>freelance developer</span> working as an
-          <span>IT teacher</span> in university.
+      <div
+        id="home-page__introduction-third-line"
+        class="mt-5 text-[6vw] md:text-[2vw] md:flex md:gap-4  font-bold text-slate-500 "
+      >
+        <p id="home-page__mobile-text" class = "hidden">
+          I'm a <span class="text-purple-700 font-medium">software engineer</span>,
+          <span class="text-purple-700 font-medium">freelance developer</span> working as an
+          <span class="text-purple-700 font-medium">IT teacher</span> in university.
         </p>
 
-        <p class="home-page__text">
-          <span>Software engineer</span> &&
-          <span>IT teacher in university</span> &&
-          <span>freelance developer</span>.
-        </p>
+          <p><span class = "text-purple-700">/$: </span>Software engineer</p>
+          <p><span class = "text-purple-700">&& </span>IT teacher in university</p>
+          <p><span class = "text-purple-700">&& </span>freelance developer</p>
       </div>
     </div>
   </div>
 </template>
-
-<style scoped lang="scss">
-.home-page {
-  flex-grow: 0.5;
-  display : flex;
-
-  align-items: center;
-
-  .home-page__introduction {
-
-    display: flex;
-    flex-direction: column;
-
-    .home-page__introduction-first-line {
-      font-size: 3vh;
-      color: $secondary;
-      font-weight: 500;
-    }
-
-    .home-page__introduction-second-line {
-      font-size: 5vh;
-      color: $accent-2;
-      font-weight: 600;
-    }
-
-    .home-page__introduction-third-line {
-      margin-top: 20px;
-      font-size: 3.5vh;
-      color: $slate-5;
-      font-weight: 500;
-
-      .home-page__text {
-        display: none;
-      }
-
-      span {
-        color: $accent;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 552px) {
-  .home-page {
-
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .home-page__introduction {
-      .home-page__introduction-third-line {
-        p {
-          &.home-page__mobile-text {
-            display: none;
-          }
-
-          &.home-page__text {
-            display: block;
-          }
-
-        }
-      }
-    }
-  }
-}
-</style>
