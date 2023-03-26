@@ -9,24 +9,24 @@
       </div>
       <div
         id="home-page__introduction-second-line"
-        class="text-[5vh] md:text-[5vw] font-semibold text-lime-400"
+        class="text-[5vh] md:text-[5vw] font-semibold text-orange-200"
       >
         <p>Damien NOEL</p>
       </div>
 
       <div
         id="home-page__introduction-third-line"
-        class="mt-5 text-[6vw] md:text-[2vw] md:flex md:gap-4  font-bold text-slate-500 "
+        class="mt-5 text-[6vw] md:text-[2vw] md:flex md:gap-4  font-bold text-slate-300 "
       >
         <p id="home-page__mobile-text" class = "hidden">
-          I'm a <span class="text-purple-700 font-medium">software engineer</span>,
-          <span class="text-purple-700 font-medium">freelance developer</span> working as an
-          <span class="text-purple-700 font-medium">IT teacher</span> in university.
+          I'm a <span class="text-red-500 font-medium">software engineer</span>,
+          <span class="text-red-500 font-medium">freelance developer</span> working as an
+          <span class="text-red-500 font-medium">IT teacher</span> in university.
         </p>
 
-          <p><span class = "text-purple-700">/$: </span>Software engineer</p>
-          <p><span class = "text-purple-700">&& </span>IT teacher in university</p>
-          <p><span class = "text-purple-700">&& </span>freelance developer</p>
+          <p><span class = "text-red-500">/$: </span>Software engineer</p>
+          <p><span class = "text-red-500">&& </span>IT teacher in university</p>
+          <p><span class = "text-red-500">&& </span>freelance developer</p>
       </div>
     </div>
   </div>

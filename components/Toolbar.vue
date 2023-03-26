@@ -25,7 +25,7 @@
         <li v-for="(page, path) in pages" :key="path">
           <NuxtLink
             :to="path"
-            class="hover:lime-400 focus:lime-400 text-slate-100"
+            class=" font-extrabold text-white"
             @click="menuToggle()"
             >{{page}}
           </NuxtLink>
@@ -37,7 +37,7 @@
         class="hidden grow-[0.4] items-center text-[2vw] justify-evenly transition-all duration-200 md:flex"
       >
         <li v-for="(page, path) in pages" :key="path">
-          <NuxtLink :to="path" class=" hover:text-purple-700 focus:lime-400 text-white"
+          <NuxtLink :to="path" class=" hover:text-red-500 focus:red-500 text-white"
             >{{ page }}
           </NuxtLink>
         </li>
@@ -53,7 +53,7 @@
 
     <div
       id="toolbar__current-page-info"
-      class="flex items-center gap-2 text-[2vh] font-bold text-purple-700"
+      class="flex items-center gap-2 text-[2vh] font-bold text-red-500"
     >
       <Icon
         icon="mdi:book-open-page-variant-outline"
