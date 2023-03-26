@@ -60,7 +60,7 @@ function previousExperience() {
   selectExperience(currentExperienceIndex - 1);
 }
 
-function selectExperience(index: number): void {
+const selectExperience = (index: number)=>{
   currentExperienceIndex = index;
   selectedExperience.value = props.experienceList[index];
   this.$emit('created', index);  
