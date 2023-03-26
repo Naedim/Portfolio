@@ -1,19 +1,35 @@
 <template>
-  <div class="experience-page">
-    <div class="experience-page__selector">
-      <button class="reverse" title="next experience" @click="previousExperience"
-        :class="{ 'hidden': currentExperienceIndex === 0 }">
+  <div id="experience-page" class="">
+    <div
+      id="experience-page__selector"
+      class="grid w-[90%] grid-flow-row grid-cols-6 grid-rows-3 items-center text-center"
+    >
+      <button
+        id="reverse"
+        class="selector-button row-span-1 row-start-2 rotate-180"
+        title="next experience"
+        @click="previousExperience"
+        :class="{ '': currentExperienceIndex === 0 }"
+      >
         <Icon icon="ic:baseline-arrow-forward-ios" />
       </button>
+      <h2 class="col-span-4 col-start-2 row-start-2 text-[6vw] text-white">
+        {{ selectedExperience.company.name }}
+      </h2>
 
-      <h2>{{ selectedExperience.company.name }}</h2>
-
-      <button title="next experience" @click="nextExperience"
-        :class="{ 'hidden': currentExperienceIndex === experienceList.length - 1 }">
+      <button
+        title="next experience"
+        @click="nextExperience"
+        :class="{ '': currentExperienceIndex === experienceList.length - 1 }"
+        class="selector-button col-start-6 row-start-2"
+      >
         <Icon icon="ic:baseline-arrow-forward-ios" />
       </button>
-
-      <p>{{ selectedExperience.begining }} - {{ selectedExperience.duration }}</p>
+      <p
+        class="col-span-4 col-start-2 row-start-3 text-[3vw] font-semibold text-red-300"
+      >
+        {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
+      </p>
     </div>
 
     <Experience2 :experience="selectedExperience" />
@@ -39,10 +55,10 @@ let currentExperienceIndex = 0;
 
 function nextExperience() {
   console.log("next");
-  selectExperience(currentExperienceIndex + 1)
+  selectExperience(currentExperienceIndex + 1);
 }
 function previousExperience() {
-  selectExperience(currentExperienceIndex - 1)
+  selectExperience(currentExperienceIndex - 1);
 }
 
 function selectExperience(index: number): void {
@@ -51,69 +67,11 @@ function selectExperience(index: number): void {
   currentExperienceIndex = index;
   console.log("new index : " + currentExperienceIndex);
   console.log("experience list : " + experienceList.length);
-
-
-};
-
+}
 </script>
-<style scoped lang="scss">
-.experience-page {
-  margin-top : 10%;
-  height: 80%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 10% 90%;
-  background-color: $primary;
-
-  row-gap: 5%;
-
-  justify-items: center;
-  align-items: center;
-
-  .experience-page__selector {
-    width: 90%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 2fr 1fr;
-
-    justify-items: center;
-    align-items: center;
-
-
-    button {
-      grid-row: span 2;
-      color: $accent;
-      font-size: 6vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &.hidden {
-        visibility: hidden;
-      }
-
-      &.reverse {
-        transform: rotate(180deg);
-      }
-
-    }
-
-    h2 {
-      font-size: 6vw;
-      color: $secondary;
-    }
-
-    p {
-
-      grid-area: 2 / 2 / 2 / 3;
-      color: $accent-2;
-      font-weight: 600;
-      font-size: 3vw;
-    }
-
-  }
-
+<style scoped>
+.selector-button {
+  @apply flex items-center justify-center text-[6vw] text-red-500 hover:text-orange-200;
 }
 </style>
 

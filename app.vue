@@ -42,6 +42,7 @@ useHead({
 
 button{
   all : unset;
+  cursor: pointer;
 }
 
 </style>
