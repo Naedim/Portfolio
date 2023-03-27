@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen w-screen bg-slate-900 box-border p-[5vw] md:p-[2vw] flex flex-col overflow-auto">
+  <div class="box-border flex flex-col w-screen h-screen p-6 overflow-auto bg-slate-900 md:p-10">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
