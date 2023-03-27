@@ -5,14 +5,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      'xs': '280px',
 
-      'sm': '552px',
+      'md': '500px',
 
-      'md': '900px',
-
-
-      'lg': '1025px',
+      'lg': '900px',
 
     },
 

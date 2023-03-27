@@ -1,43 +1,50 @@
 <template>
   <div
     id="experience-page__selector"
-    class="mt-[3vh] grid w-full grid-flow-row grid-cols-6 grid-rows-2 items-center text-center"
+    class="flex items-center justify-between w-full h-full md:w-4/5 lg:w-1/2"
   >
+  <!-- Left button -->
     <button
       id="reverse"
-      class="row-span-1 row-start-1 rotate-180 selector-button"
-      title="next experience"
+      class="rotate-180 selector-button"
+      title="preivous experience"
       @click="previousExperience"
       :class="{ hidden: currentExperienceIndex === 0 }"
     >
       <Icon icon="ic:baseline-arrow-forward-ios" />
     </button>
-    <h2 class="col-span-4 col-start-2 row-start-1 text-[8vw] text-white">
+
+      <!-- Company name center title -->
+    <div class = "flex flex-col items-center">
+      <h2 class=" text-[6vw] md:text-[5vw] lg:text-[3vw] text-white">
       {{ selectedExperience.company.name }}
     </h2>
+    <p
+      class="text-[4vw] md:text-[3vw] lg:text-[1.5vw] font-semibold text-red-300"
+    >
+      {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
+    </p>
+    </div>
+    
 
+    <!-- Right button -->
     <button
       title="next experience"
       @click="nextExperience"
       :class="{
         hidden: currentExperienceIndex === experienceList.length - 1,
       }"
-      class="col-start-6 row-start-1 selector-button"
-    >
+      class="col-start-6 selector-button">
       <Icon icon="ic:baseline-arrow-forward-ios" />
     </button>
 
-    <p
-      class="col-span-4 col-start-2 row-start-2 text-[5vw] font-semibold text-red-300"
-    >
-      {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
-    </p>
+    <!-- Lower duration -->
+   
   </div>
 </template>
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-import { Ref } from "vue";
 import { ExperienceInterface } from "~~/models/interfaces/ExperienceInteface";
 import experiencesData from "../../assets/staticData/experiences.json";
 
@@ -63,6 +70,6 @@ const selectExperience = (index: number)=>{
 
 <style scoped>
 .selector-button {
-  @apply flex items-center justify-center text-[9vw] text-red-500 hover:text-orange-200;
+  @apply flex items-center justify-center text-[9vw] md:text-[6vw] lg:text-[4vw] text-red-500 hover:text-orange-200;
 }
 </style>

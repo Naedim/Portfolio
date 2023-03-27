@@ -1,7 +1,7 @@
 <template class="@container">
   <nav>
     <div
-      class="flex w-full items-center justify-between text-[2.5vh] text-white"
+      class="flex w-full items-center justify-between text-[2.5vh] md:text-[3vh] text-white"
     >
       <NuxtLink
         id="toolbar__navbar-logo"
@@ -20,12 +20,12 @@
         id="toolbar__mobile-menu"
         :class="isMobileMenuActive ? 'ml-0' : 'ml-[-100%]'"
         class="absolute top-0 left-0 box-border h-full w-full flex flex-col items-center justify-center gap-[5vh] text-[6vw] font-medium backdrop-blur-md	
-         transition-all duration-200 xs:flex md:hidden"
+         transition-all duration-200 xs:flex lg:hidden"
       >
         <li v-for="(page, path) in pages" :key="path">
           <NuxtLink
             :to="path"
-            class=" font-extrabold text-white"
+            class="font-extrabold text-white "
             @click="menuToggle()"
             >{{page}}
           </NuxtLink>
@@ -34,17 +34,17 @@
 
       <ul
         id="toolbar__big-screen-menu"
-        class="hidden grow-[0.4] items-center text-[2vw] justify-evenly transition-all duration-200 md:flex"
+        class="hidden grow-[0.4] items-center text-[2vw] justify-evenly transition-all duration-200 lg:flex"
       >
         <li v-for="(page, path) in pages" :key="path">
-          <NuxtLink :to="path" class=" hover:text-red-500 focus:red-500 text-white"
+          <NuxtLink :to="path" class="text-white hover:text-red-500 focus:red-500"
             >{{ page }}
           </NuxtLink>
         </li>
       </ul>
 
       <button
-        class="z-10 w-auto text-[4vh] text-white md:hidden"
+        class="z-10 w-auto text-[4vh] md:text-[6vh] text-white lg:hidden"
         v-on:click="() => menuToggle()"
       >
         <Icon icon="mdi:menu" title="hamburger menu" />
