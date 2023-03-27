@@ -5,7 +5,7 @@
   >
     <button
       id="reverse"
-      class="selector-button row-span-1 row-start-1 rotate-180"
+      class="row-span-1 row-start-1 rotate-180 selector-button"
       title="next experience"
       @click="previousExperience"
       :class="{ hidden: currentExperienceIndex === 0 }"
@@ -22,7 +22,7 @@
       :class="{
         hidden: currentExperienceIndex === experienceList.length - 1,
       }"
-      class="selector-button col-start-6 row-start-1"
+      class="col-start-6 row-start-1 selector-button"
     >
       <Icon icon="ic:baseline-arrow-forward-ios" />
     </button>
@@ -37,20 +37,13 @@
 
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-import Experience2 from "~~/components/experience/Experience2.vue";
 import { Ref } from "vue";
 import { ExperienceInterface } from "~~/models/interfaces/ExperienceInteface";
+import experiencesData from "../../assets/staticData/experiences.json";
 
-const props = defineProps<{
-  experienceList: Array<ExperienceInterface>;
-}>();
-
+const experienceList: Array<ExperienceInterface> = experiencesData as Array<ExperienceInterface>;
 let currentExperienceIndex = 0;
-
-let selectedExperience: Ref<ExperienceInterface> = ref(
-  props.experienceList[currentExperienceIndex]
-);
-
+const selectedExperience = useState('selectedExperience', () => experienceList[currentExperienceIndex]);
 
 function nextExperience() {
   console.log("next");
@@ -60,10 +53,11 @@ function previousExperience() {
   selectExperience(currentExperienceIndex - 1);
 }
 
+
+
 const selectExperience = (index: number)=>{
   currentExperienceIndex = index;
-  selectedExperience.value = props.experienceList[index];
-  this.$emit('created', index);  
+  selectedExperience.value = experienceList[index];
 }
 </script>
 

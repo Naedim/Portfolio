@@ -1,10 +1,12 @@
 <template>
-  <div id="experience-page" class="flex flex-col items-center">
-    
-    <!-- <Experience2 :experience="selectedExperience" /> -->
-    <ExperienceSelector :experienceList="experienceList"/>
+  <div id="experience-page" class="flex flex-col items-center h-full">
 
-    {{ experienceList[experienceIndex].begining}}
+      <ExperienceSelector class="flex basis-1/5"/>
+
+
+      <ExperienceContract class="flex basis-1/5"/>
+
+
 
   </div>
 </template>
@@ -13,29 +15,10 @@
 
 import { Ref } from "vue";
 import { ExperienceInterface } from "~~/models/interfaces/ExperienceInteface";
-import experiencesData from "../assets/staticData/experiences.json";
-const experienceList: Array<ExperienceInterface> = experiencesData as Array<ExperienceInterface>;
-
-let experienceIndex : Ref<number> = ref(0);
-
-function updateExperience(index : number) {
-  console.log("updateExperience");
-  experienceIndex.value++;
-}
-
-
-
-
-/**
- * Informations about professionnal experiences, duration in months
- */
-
 
 
 </script>
-<style scoped>
-
-</style>
+<style scoped></style>
 
 // { // company: { // name: "Koust", // website: "http,s://www.capgemini.com/",
 // }, // contractType: "Business internship", // begining: "August 2021", //
