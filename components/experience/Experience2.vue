@@ -1,5 +1,5 @@
 <template>
-  <div class="experience">
+  <!-- <div class="experience">
     <div class="experience_contract-info" :title="experience.title">
       <Icon icon="ic:baseline-code" />
       <h4>
@@ -21,7 +21,7 @@
       </div>
     </div>
 
-  </div>
+  </div> -->
 </template>
 
 <script setup lang="ts">
