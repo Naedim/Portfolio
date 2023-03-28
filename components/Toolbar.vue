@@ -1,16 +1,22 @@
 <template >
   <nav>
     <div class="flex w-full items-center justify-between text-[2.5vh] md:text-[3vh] text-white">
-      <NuxtLink id="toolbar__navbar-logo" class="slate-400 flex items-center gap-[2vw] font-semibold" to="#"
+      <button>
+        <NuxtLink id="toolbar__navbar-logo" class="slate-400 flex items-center gap-[2vw] font-semibold" to="#"
         title="navbar's logo">
         Damien NOEL
-        <Icon icon="material-symbols:code" class="toolbar__navbar-log-icon" title="navbar's logo's icon" />
+        <Icon icon="material-symbols:code"  title="navbar's logo's icon" />
       </NuxtLink>
+      </button>
+     
       <ul id="toolbar__mobile-menu" :class="isMobileMenuActive ? 'ml-0' : 'ml-[-100%]'" class="absolute top-0 left-0 box-border h-full w-full flex flex-col items-center justify-center gap-[5vh] text-[6vw] font-medium backdrop-blur-md	
            transition-all duration-200 xs:flex lg:hidden">
         <li v-for="(page, path) in pages" :key="path">
-          <NuxtLink :to="path" class="font-extrabold text-white " @click="menuToggle()" :title="page">{{ page }}
+          <button>
+            <NuxtLink :to="path" class="font-extrabold text-white " @click="menuToggle()" :title="page">{{ page }}
           </NuxtLink>
+          </button>
+         
         </li>
       </ul>
 
