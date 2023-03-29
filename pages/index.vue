@@ -1,7 +1,7 @@
 <template>
   <div id="home-page" class="flex flex-col items-center justify-center w-full h-full ">
 
-    <main id = "presentation" class="flex flex-col items-start justify-center gap-5 md:gap-8 lg:gap-12 lg:w-4/6">
+    <main id = "home-page" class="flex flex-col items-start justify-center h-full gap-5 md:gap-8 lg:gap-12 lg:w-4/6">
       <div>
         <p id="home-page__introduction-first-line" class="text-3xl font-bold text-white md:text-5xl lg:text-6xl ">Hello,
           I'm</p>
@@ -19,7 +19,8 @@
       </div>
     </main>
 
-    <Footer class = "absolute top-0 right-0" />
+    <Footer class = "absolute bottom-0 w-full h-30 lg:hidden" />
+    <Footer class = "absolute top-0 right-0 flex-col hidden w-40 h-full lg:flex" />
 
   </div>
 </template>
