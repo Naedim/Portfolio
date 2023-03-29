@@ -9,7 +9,7 @@
       class="rotate-180 selector-button"
       title="preivous experience"
       @click="previousExperience"
-      :class="{ hidden: currentExperienceIndex === 0 }"
+      :class="{ 'invisible': currentExperienceIndex === 0 }"
     >
       <Icon icon="ic:baseline-arrow-forward-ios" />
     </button>
@@ -32,7 +32,7 @@
       title="next experience"
       @click="nextExperience"
       :class="{
-        hidden: currentExperienceIndex === experienceList.length - 1,
+        'invisibile': currentExperienceIndex === experienceList.length - 1,
       }"
       class="col-start-6 selector-button">
       <Icon icon="ic:baseline-arrow-forward-ios" />
@@ -65,6 +65,7 @@ function previousExperience() {
 const selectExperience = (index: number)=>{
   currentExperienceIndex = index;
   selectedExperience.value = experienceList[index];
+  console.log(currentExperienceIndex);
 }
 </script>
 
