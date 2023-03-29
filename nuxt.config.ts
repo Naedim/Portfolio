@@ -27,4 +27,11 @@ export default defineNuxtConfig({
     injectPosition: "first",
     viewer: true,
   },
+
+  head: {
+    htmlAttrs: {
+      lang: 'en'
+    }
+  }
+  
 });

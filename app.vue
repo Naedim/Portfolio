@@ -8,12 +8,16 @@
 
 
 <script setup>
-const title = ref("Damien NOEL's Portfolio");
-const description = ref(
-  "Hello I'm Damien NOEL, a newly graduated developper and this is the portfolio that tracks the project I'm working on"
-);
+const title = "Damien NOEL's Portfolio";
+const description =
+  "Hello I'm Damien NOEL, a newly graduated developper and this is the portfolio that tracks the project I'm working on";
 // This will be reactive even you change title/description above
 useHead({
+  htmlAttrs : {
+    lang : "eng"
+
+  },
+  
   title,
   meta: [
     {
@@ -27,6 +31,7 @@ useHead({
       href: "https://fonts.googleapis.com/css?family=Poppins",
     },
   ],
+
 });
 </script>
 

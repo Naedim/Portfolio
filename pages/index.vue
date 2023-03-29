@@ -1,7 +1,7 @@
 <template>
-  <div id="home-page" class="flex items-center justify-center w-full md:items-center">
+  <div id="home-page" class="flex flex-col items-center justify-center w-full h-full ">
 
-    <div class="flex flex-col items-start gap-5 mt-32 md:gap-8 lg:gap-12 lg:w-4/6">
+    <main id = "presentation" class="flex flex-col items-start justify-center gap-5 md:gap-8 lg:gap-12 lg:w-4/6">
       <div>
         <p id="home-page__introduction-first-line" class="text-3xl font-bold text-white md:text-5xl lg:text-6xl ">Hello,
           I'm</p>
@@ -17,7 +17,9 @@
         <p title="University IT teacher"><span class="text-red-500">&& </span>University IT teacher</p>
         <p title="freelance developer"><span class="text-red-500">&& </span>freelance developer</p>
       </div>
-    </div>
+    </main>
+
+    <Footer class = "absolute top-0 right-0" />
 
   </div>
 </template>

@@ -5,7 +5,7 @@
         <NuxtLink id="toolbar__navbar-logo" class="slate-400 flex items-center gap-[2vw] font-semibold" to="#"
         title="navbar's logo">
         Damien NOEL
-        <Icon icon="material-symbols:code"  title="navbar's logo's icon" />
+        <Icon   icon="material-symbols:code"  title="navbar's logo's icon" />
       </NuxtLink>
       </button>
      
@@ -34,7 +34,7 @@
     </div>
 
     <div id="toolbar__current-page-info" class="flex items-center gap-2 text-[2vh] font-bold text-red-500">
-      <Icon icon="mdi:book-open-page-variant-outline" title="navbar's logo's icon" class="" />
+      <Icon id = "navbar-logo" icon="mdi:book-open-page-variant-outline" title="navbar's logo's icon" aria-label="navbar's logo icon" class="" />
 
       <h1 id="toolbar__current-page-name"
         :title="'currently at ' + pages[route.name != 'index' ? route.name : '/'] + ' page'" alt="The current page name">
@@ -60,4 +60,8 @@ function menuToggle(): void {
   console.log("menuToggle");
   isMobileMenuActive.value = !isMobileMenuActive.value;
 }
+
 </script>
+
+<style>
+</style>

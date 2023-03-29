@@ -1,8 +1,8 @@
 <template>
-    <footer class = "flex items-center w-full p-3 justify-evenly h-30">
+    <footer class = "box-border flex flex-col items-center justify-center w-40 h-full gap-20 p-3">
         
-        <NuxtLink v-for="(icon, index) in iconlist" :to= urlList[index] target="_blank" class = "flex flex-col items-center text-orange-200">
-            <Icon :icon=icon title="linkedin link" class = "text-4xl" />
+        <NuxtLink v-for="(icon, index) in iconlist" :to= urlList[index] target="_blank" :title = "`${labelList[index]} link`" class = "flex flex-col items-center text-orange-200">
+            <Icon :icon=icon  class = "text-4xl" />
             <p class = "text-xl" >{{ labelList[index]}}</p>
         </NuxtLink>
         
