@@ -1,16 +1,15 @@
 <template >
   <nav>
-    <div class="flex w-full items-center justify-between text-[2.5vh] md:text-[3vh] text-white">
+    <div id = "navbar-logo" class="flex items-center justify-between w-full text-orange-100">
       <button>
-        <NuxtLink id="toolbar__navbar-logo" class="slate-400 flex items-center gap-[2vw] font-semibold" to="#"
+        <NuxtLink id="toolbar__navbar-logo" class="flex items-center gap-2 text-xl font-semibold slate-400 md:text-3xl md:gap-3" to="#"
         title="navbar's logo">
         Damien NOEL
-        <Icon   icon="material-symbols:code"  title="navbar's logo's icon" />
+        <Icon   icon="material-symbols:code"  title="navbar's logo's icon" class = "text-2xl md:text-4xl"/>
       </NuxtLink>
       </button>
      
-      <ul id="toolbar__mobile-menu" :class="isMobileMenuActive ? 'ml-0' : 'ml-[-100%]'" class="absolute top-0 left-0 box-border h-full w-full flex flex-col items-center justify-center gap-[5vh] text-[6vw] font-medium backdrop-blur-md	
-           transition-all duration-200 xs:flex lg:hidden">
+      <ul id="toolbar__mobile-menu" :class="isMobileMenuActive ? 'ml-0' : 'ml-[-100%]'" class="box-border absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full gap-20 text-2xl font-medium transition-all duration-200 md:text-4xl md: backdrop-blur-md xs:flex lg:hidden">
         <li v-for="(page, path) in pages" :key="path">
           <button>
             <NuxtLink :to="path" class="font-extrabold text-white " @click="menuToggle()" :title="page">{{ page }}
@@ -21,19 +20,19 @@
       </ul>
 
       <ul id="toolbar__big-screen-menu"
-        class="hidden grow-[0.4] items-center text-[2vw] justify-evenly transition-all duration-200 lg:flex">
+        class="items-center hidden w-4/6 text-3xl transition-all duration-200 justify-evenly lg:flex">
         <li v-for="(page, path) in pages" :key="path">
-          <NuxtLink :to="path" :title="page" class="text-white hover:text-red-500 focus:red-500">{{ page }}
+          <NuxtLink :to="path" :title="page" class="font-semibold text-white hover:text-orange-300 focus:text-red-500">{{ page }}
           </NuxtLink>
         </li>
       </ul>
 
-      <button class="z-10 w-auto text-[4vh] md:text-[6vh] text-white lg:hidden" v-on:click="() => menuToggle()">
+      <button class="z-10 w-auto text-4xl text-white md:text-5xl lg:hidden" v-on:click="() => menuToggle()">
         <Icon icon="mdi:menu" title="hamburger menu" />
       </button>
     </div>
 
-    <div id="toolbar__current-page-info" class="flex items-center gap-2 text-[2vh] font-bold text-red-500">
+    <div id="toolbar__current-page-info" class="flex items-center gap-2 text-xl font-bold text-red-500">
       <Icon id = "navbar-logo" icon="mdi:book-open-page-variant-outline" title="navbar's logo's icon" aria-label="navbar's logo icon" class="" />
 
       <h1 id="toolbar__current-page-name"
@@ -62,6 +61,3 @@ function menuToggle(): void {
 }
 
 </script>
-
-<style>
-</style>
