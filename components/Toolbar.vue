@@ -22,7 +22,7 @@
       <ul id="toolbar__big-screen-menu"
         class="items-center hidden w-4/6 text-3xl transition-all duration-200 justify-evenly lg:flex">
         <li v-for="(page, path) in pages" :key="path">
-          <NuxtLink :to="path" :title="page" class="font-semibold text-white hover:text-orange-300 focus:text-red-500">{{ page }}
+          <NuxtLink :to="path" :title="page" class="font-semibold text-white hover:underline hover:text-orange-300 focus:text-red-500 focus:underline">{{ page }}
           </NuxtLink>
         </li>
       </ul>
