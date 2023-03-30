@@ -1,23 +1,16 @@
 <template>
   <div id="experience-page" class="flex flex-col items-center h-full">
 
-      <ExperienceSelector class="flex basis-1/5"/>
+      <ExperienceSelector class="flex mt-5 lg:mt-20 basis-1/6"/>
 
 
-      <ExperienceContract class="flex basis-1/5"/>
+      <ExperienceContract class="flex basis-1/12"/>
 
 
 
   </div>
 </template>
 
-<script setup lang="ts">
-
-import { Ref } from "vue";
-import { ExperienceInterface } from "~~/models/interfaces/ExperienceInteface";
-
-
-</script>
 <style scoped></style>
 
 // { // company: { // name: "Koust", // website: "http,s://www.capgemini.com/",

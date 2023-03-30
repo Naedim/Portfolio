@@ -1,45 +1,31 @@
 <template>
-  <div
-    id="experience-page__selector"
-    class="flex items-center justify-between w-full h-full md:w-4/5 lg:w-1/2"
-  >
-  <!-- Left button -->
-    <button
-      id="reverse"
-      class="rotate-180 selector-button"
-      title="preivous experience"
-      @click="previousExperience"
-      :class="{ 'invisible': currentExperienceIndex === 0 }"
-    >
+  <div id="experience-page__selector" class="flex items-center justify-between w-full h-full md:w-7/12 lg:w-4/12">
+    <!-- Left button -->
+    <button id="reverse" class="rotate-180 selector-button" title="preivous experience" @click="previousExperience"
+      :class="currentExperienceIndex === 0 ? 'disabled' : 'active'">
       <Icon icon="ic:baseline-arrow-forward-ios" />
     </button>
 
-      <!-- Company name center title -->
-    <div class = "flex flex-col items-center">
-      <h2 class=" text-[6vw] md:text-[5vw] lg:text-[3vw] text-white">
-      {{ selectedExperience.company.name }}
-    </h2>
-    <p
-      class="text-[4vw] md:text-[3vw] lg:text-[1.5vw] font-semibold text-red-300"
-    >
-      {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
-    </p>
+    <!-- Company name center title -->
+    <div class="flex flex-col items-center">
+      <h2 class="text-base font-bold text-red-500 sm:text-xl md:text-2xl lg:text-3xl">
+        {{ selectedExperience.company.name }}
+      </h2>
+      <p class="text-xs font-medium text-gray-200 sm:text-sm md:text-base lg:text-lg">
+        {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
+      </p>
     </div>
-    
+
 
     <!-- Right button -->
-    <button
-      title="next experience"
-      @click="nextExperience"
-      :class="{
-        'invisibile': currentExperienceIndex === experienceList.length - 1,
-      }"
-      class="col-start-6 selector-button">
+    <button title="next experience" @click="nextExperience" class="col-start-6 selector-button"
+      :class="currentExperienceIndex === experienceList.length - 1 ? 'disabled' : 'active'">
+
       <Icon icon="ic:baseline-arrow-forward-ios" />
     </button>
 
     <!-- Lower duration -->
-   
+
   </div>
 </template>
 
@@ -53,7 +39,6 @@ let currentExperienceIndex = 0;
 const selectedExperience = useState('selectedExperience', () => experienceList[currentExperienceIndex]);
 
 function nextExperience() {
-  console.log("next");
   selectExperience(currentExperienceIndex + 1);
 }
 function previousExperience() {
@@ -62,15 +47,24 @@ function previousExperience() {
 
 
 
-const selectExperience = (index: number)=>{
+const selectExperience = (index: number) => {
+  if(index < 0 || index >= experienceList.length) return;
   currentExperienceIndex = index;
   selectedExperience.value = experienceList[index];
-  console.log(currentExperienceIndex);
 }
 </script>
 
 <style scoped>
+
 .selector-button {
-  @apply flex items-center justify-center text-[9vw] md:text-[6vw] lg:text-[4vw] text-red-500 hover:text-orange-200;
+  @apply flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+}
+
+.active {
+  @apply text-red-500 hover:text-orange-200
+}
+
+.disabled {
+  @apply text-gray-400;
 }
 </style>
