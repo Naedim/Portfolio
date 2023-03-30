@@ -4,7 +4,7 @@
       <ExperienceSelector class="flex mt-5 lg:mt-20 basis-1/6"/>
 
 
-      <!-- <ExperienceContract class="flex basis-1/12"/> -->
+      <ExperienceContract class="flex basis-1/12"/>
 
 
 

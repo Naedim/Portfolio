@@ -8,10 +8,10 @@
 
     <!-- Company name center title -->
     <div class="flex flex-col items-center">
-      <h2 class="text-base font-bold text-white sm:text-xl md:text-2xl lg:text-3xl">
+      <h2 class="text-base font-bold text-red-500 sm:text-xl md:text-2xl lg:text-3xl">
         {{ selectedExperience.company.name }}
       </h2>
-      <p class="text-xs font-medium text-red-300 sm:text-sm md:text-base lg:text-lg">
+      <p class="text-xs font-medium text-gray-200 sm:text-sm md:text-base lg:text-lg">
         {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
       </p>
     </div>
@@ -39,7 +39,6 @@ let currentExperienceIndex = 0;
 const selectedExperience = useState('selectedExperience', () => experienceList[currentExperienceIndex]);
 
 function nextExperience() {
-  console.log("next");
   selectExperience(currentExperienceIndex + 1);
 }
 function previousExperience() {
@@ -52,7 +51,6 @@ const selectExperience = (index: number) => {
   if(index < 0 || index >= experienceList.length) return;
   currentExperienceIndex = index;
   selectedExperience.value = experienceList[index];
-  console.log(currentExperienceIndex);
 }
 </script>
 

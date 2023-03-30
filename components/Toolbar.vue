@@ -65,7 +65,6 @@ const pages = {
 let isMobileMenuActive = ref(false);
 
 function menuToggle(): void {
-  console.log("menuToggle");
   isMobileMenuActive.value = !isMobileMenuActive.value;
 }
 
