@@ -1,10 +1,10 @@
 <template>
   <div id="experience-page" class="flex flex-col items-center h-full">
 
-      <ExperienceSelector class="flex basis-1/5"/>
+      <ExperienceSelector class="flex basis-1/6"/>
 
 
-      <ExperienceContract class="flex basis-1/5"/>
+      <ExperienceContract class="flex basis-1/6"/>
 
 
 
