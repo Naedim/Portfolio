@@ -1,31 +1,32 @@
 <template>
-    <div class="grid items-center w-full grid-cols-2 grid-rows-2 p-2 font-bold border-orange-300 md:w-3/4 sm:p-3 justify-items-center border-y-2 g-white">
-        <Icon icon="ic:baseline-code" class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl" />
-        <Icon icon="ic:outline-handshake" class="text-xl sm:text-2xl md:text-3xl lg:text-4xl" />
-
-        <p>{{ experience.title }}</p>
-
-        <p> {{ experience.contractType }} </p>
-    </div>
+ <div class="flex gap-2 sm:gap-2 md:gap-6">
+  <div class="info">
+   <Icon icon="ic:baseline-code" class="text-2xl sm:text-3xl md:text-5xl lg:text-4xl" />
+   <Icon icon="ic:outline-handshake" class="text-xl sm:text-2xl md:text-4xl lg:text-3xl" />
+  </div>
+  <div class="info">
+   <p>{{ experience.title }}</p>
+   <p>{{ experience.contractType }}</p>
+  </div>
+ </div>
 </template>
 
 <script setup lang="ts">
-import { Ref } from 'nuxt/dist/app/compat/vue-demi';
-import { ExperienceInterface } from '~~/models/interfaces/ExperienceInteface';
-import { Icon } from "@iconify/vue";
+import {Ref} from "nuxt/dist/app/compat/vue-demi";
+import {ExperienceInterface} from "~~/models/interfaces/ExperienceInteface";
+import {Icon} from "@iconify/vue";
 
-let experience: Ref<ExperienceInterface> = useState('selectedExperience');
-
+let experience: Ref<ExperienceInterface> = useState("selectedExperience");
 </script>
+<style scoped>
+.info {
+ @apply flex flex-col items-start justify-between gap-1 sm:gap-2 md:gap-3;
+}
 
-<style scoped >
-
-svg{
-    @apply text-red-500;
+svg {
+ @apply col-span-1 text-red-500;
 }
 p {
-    @apply text-[10px] sm:text-xs md:text-sm text-gray-200;
+ @apply col-span-7   text-base text-orange-100 sm:text-xl md:text-2xl;
 }
 </style>
-
-

@@ -2,12 +2,7 @@
   <div id="experience-page" class="flex flex-col items-center h-full">
 
       <ExperienceSelector class="flex mt-5 lg:mt-20 basis-1/6"/>
-
-
       <ExperienceContract class="flex basis-1/12"/>
-
-
-
   </div>
 </template>
 
