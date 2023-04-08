@@ -6,6 +6,7 @@
         },
         "contractType": "Work-study program",
         "begining": "August 2021",
+        "description" : "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
         "duration": "1 year",
         "title": "FullStack developer",
         "skillDomainList": [
@@ -96,7 +97,7 @@
         "begining": "September 2020",
         "duration": "1 year",
         "title": "FullStack developer",
-        "description": "",
+        "description" : "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
         "skillDomainList": [
             {
                 "title": "client development",
@@ -147,8 +148,9 @@
         "contractType": "work-study program",
         "begining": "October 2019",
         "duration": 12,
+
         "title": "FullStack developer",
-        "description": "",
+        "description" : "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
         "skillDomainList": [
             {
                 "title": "client development",

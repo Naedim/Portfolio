@@ -9,7 +9,7 @@
         @click="previousExperience"
         :class="currentExperienceIndex === 0 ? 'disabled' : 'active'"
       >
-        <Icon icon="ic:baseline-arrow-forward-ios" />
+        <Icon aria-label = "previous experience" icon="ic:baseline-arrow-forward-ios" />
       </button>
 
       <!-- Company name center title -->
@@ -30,7 +30,7 @@
         class="selector-button col-start-6"
         :class="currentExperienceIndex === experienceList.length - 1 ? 'disabled' : 'active'"
       >
-        <Icon icon="ic:baseline-arrow-forward-ios" />
+        <Icon aria-label = "next experience" icon="ic:baseline-arrow-forward-ios" />
       </button>
     </div>
 
@@ -47,7 +47,6 @@ import { SkillDomainInterface } from "~~/models/interfaces/SkillDomainInterface"
 const experienceList: Array<ExperienceInterface> = experiencesData as Array<ExperienceInterface>;
 let currentExperienceIndex = 0;
 const selectedExperience = useState("selectedExperience", () => experienceList[currentExperienceIndex]);
-const selectedDomain = useState<SkillDomainInterface>("selectedDomain", () => null);
 
 function nextExperience() {
   selectExperience(currentExperienceIndex + 1);
@@ -60,7 +59,6 @@ const selectExperience = (index: number) => {
   if (index < 0 || index >= experienceList.length) return;
   currentExperienceIndex = index;
   selectedExperience.value = experienceList[index];
-  selectedDomain.value = null;
 };
 </script>
 
