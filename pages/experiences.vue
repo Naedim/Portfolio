@@ -1,6 +1,6 @@
 <template>
   <div id="experience-page" class="flex h-full flex-col items-center justify-around">
-    <ExperienceSelector class="mt-5 flex basis-1/6 lg:mt-20" />
+  <ExperienceSelector class="mt-5 flex lg:mt-20" />
     <ExperienceContract class="flex basis-1/12" />
     <div class="flex w-full flex-wrap gap-2">
       <button
