@@ -42,10 +42,12 @@
 import {Icon} from "@iconify/vue";
 import {ExperienceInterface} from "~~/models/interfaces/ExperienceInteface";
 import experiencesData from "../../assets/staticData/experiences.json";
+import { SkillDomainInterface } from "~~/models/interfaces/SkillDomainInterface";
 
 const experienceList: Array<ExperienceInterface> = experiencesData as Array<ExperienceInterface>;
 let currentExperienceIndex = 0;
 const selectedExperience = useState("selectedExperience", () => experienceList[currentExperienceIndex]);
+const selectedDomain = useState<SkillDomainInterface>("selectedDomain", () => null);
 
 function nextExperience() {
   selectExperience(currentExperienceIndex + 1);
@@ -58,6 +60,7 @@ const selectExperience = (index: number) => {
   if (index < 0 || index >= experienceList.length) return;
   currentExperienceIndex = index;
   selectedExperience.value = experienceList[index];
+  selectedDomain.value = null;
 };
 </script>
 
