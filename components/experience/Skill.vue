@@ -1,5 +1,5 @@
 <template>
-  <button class="flex min-w-20 rounded-full grow gap-2 p-1 sm:p-2 bg-slate-200 justify-center items-center ">
+  <button class="flex min-w-20 sm:min-w-25 rounded-full grow gap-2 sm:gap-3 p-1 sm:p-2 bg-slate-200 justify-center items-center ">
     <img :title = "skill.name" class="h-5" :src="`/assets/skillsPictures/${props.skill.logo}`" />
     <h5 class="text-xs sm:text-sm font-semibold text-black">{{ skill.name }}</h5>
   </button>

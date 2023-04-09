@@ -2,7 +2,7 @@
   <div id="experience-description" class="flex flex-col items-center gap-2">
     <div class="flex w-full justify-between gap-2 sm:gap-2 md:gap-6">
       <div class="info">
-        <Icon aria-label="job info" icon="ic:baseline-code" class="text-xl sm:text-xl md:text-5xl lg:text-4xl" />
+        <Icon aria-label="job info" icon="ic:baseline-code" class="text-xl sm:text-2xl md:text-5xl lg:text-4xl" />
         <p>{{ experience.title }}</p>
       </div>
       <div class="info">
@@ -10,7 +10,7 @@
         <p>{{ experience.contractType }}</p>
       </div>
     </div>
-    <p class="text-justify text-xs font-semibold tracking-tight text-gray-200">{{ experience.description }}</p>
+    <p class="text-justify text-xs sm:text-base font-semibold tracking-tight text-gray-200">{{ experience.description }}</p>
   </div>
 </template>
 
@@ -23,13 +23,13 @@ let experience: Ref<ExperienceInterface> = useState("selectedExperience");
 </script>
 <style scoped>
 .info {
-  @apply flex items-center justify-between text-orange-300 gap-1 sm:gap-2 md:gap-3;
+  @apply flex items-center justify-between text-orange-300 gap-1 md:gap-3;
 }
 
 svg {
   @apply col-span-1;
 }
 .info p {
-  @apply col-span-7 text-[9px] font-bold  sm:text-xl md:text-2xl;
+  @apply col-span-7 text-[9px] font-bold  sm:text-xs md:text-2xl;
 }
 </style>

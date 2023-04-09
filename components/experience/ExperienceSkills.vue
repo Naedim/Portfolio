@@ -5,9 +5,9 @@
         v-for="(domain, index) in selectedExperience.skillDomainList"
         @click=" selectedDomainIndex= index"
         :class=" index === selectedDomainIndex ? 'bg-orange-200' : 'bg-red-700'"
-        class=" box-content h-6 grow rounded-full px-2 text-white focus:bg-orange-200"
+        class=" box-content h-6 sm:h-8 grow rounded-full px-2 sm:px-3 text-white focus:bg-orange-200"
       >
-        <p class="text-center text-xs font-bold">{{ domain.title }}</p>
+        <p class="text-center text-xs sm:text-base font-bold">{{ domain.title }}</p>
       </button>
     </div>
     <div class="auto border-3 flex w-full flex-wrap items-start justify-center gap-3 self-start rounded-lg pt-10">
