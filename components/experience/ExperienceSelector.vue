@@ -18,7 +18,7 @@
           {{ selectedExperience.company.name }}
         </h2>
         <!-- Lower duration -->
-        <p class="text-[11px] font-medium text-gray-200 sm:text-sm md:text-2xl lg:text-lg">
+        <p class="text-[11px] font-semibold lg:font-bold text-gray-200 sm:text-sm md:text-2xl lg:text-lg">
           {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
         </p>
       </div>
@@ -64,7 +64,7 @@ const selectExperience = (index: number) => {
 
 <style scoped>
 .selector-button {
-  @apply flex items-center justify-center text-xl sm:text-2xl md:text-4xl lg:text-5xl;
+  @apply flex items-center justify-center text-xl sm:text-2xl md:text-4xl lg:text-4xl;
 }
 
 .active {
