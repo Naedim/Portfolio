@@ -5,64 +5,14 @@
             "website": "https://www.capgemini.com/"
         },
         "contractType": "Work-study program",
-        "begining": "August 2021",
+        "begining": "August 2020",
         "description" : "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
-        "duration": "1 year",
+        "duration": "1,5 years",
         "title": "FullStack developer",
         "skillDomainList": [
             {
-                "title": "client development",
-                "skillList": [
-                    {
-                        "name": "Angular",
-                        "logo": "angular.svg"
-                    },
-                    {
-                        "name": "Typescript",
-                        "logo": "typescript.svg"
-                    },
-                    {
-                        "name": "PrimeNG",
-                        "logo": "primeng.svg"
-                    },
-                    {
-                        "name": "RxJS",
-                        "logo": "rxjs.svg"
-                    }
-                ]
-            },
-            {
-                "title": "API development",
-                "skillList": [
-                    {
-                        "name": "C#",
-                        "logo": "C.svg"
-                    },
-                    {
-                        "name": ".NET",
-                        "logo": "dot-net.svg"
-                    },
-                    {
-                        "name": "Java",
-                        "logo": "java.svg"
-                    },
-                    {
-                        "name": "Spring",
-                        "logo": "spring.svg"
-                    },
-                    {
-                        "name": "Swagger UI",
-                        "logo": "swagger.svg"
-                    }
-                ]
-            },
-            {
                 "title": "data processing",
                 "skillList": [
-                    {
-                        "name": "Databricks",
-                        "logo": "databricks.svg"
-                    },
                     {
                         "name": "Python",
                         "logo": "python.svg"
@@ -70,6 +20,10 @@
                     {
                         "name": "Spark",
                         "logo": "spark.svg"
+                    },
+                    {
+                        "name": "Databricks",
+                        "logo": "databricks.svg"
                     }
                 ]
             },
@@ -85,56 +39,50 @@
                         "logo": "postgresql.svg"
                     }
                 ]
-            }
-        ]
-    },
-    {
-        "company": {
-            "name": "Capgemini",
-            "website": "https://www.capgemini.com/"
-        },
-        "contractType": "work-study program",
-        "begining": "September 2020",
-        "duration": "1 year",
-        "title": "FullStack developer",
-        "description" : "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
-        "skillDomainList": [
-            {
-                "title": "client development",
-                "skillList": [
-                    {
-                        "name": "angular",
-                        "logo": "vscode-icons:file-type-angular"
-                    },
-                    {
-                        "name": "typescript",
-                        "logo": "vscode-icons:file-type-typescript-official"
-                    }
-                ]
             },
             {
                 "title": "API development",
                 "skillList": [
                     {
-                        "name": "C#",
-                        "logo": "vscode-icons:file-type-csharp"
+                        "name": "Java",
+                        "logo": "java.svg"
                     },
                     {
-                        "name": "java",
-                        "logo": "vscode-icons:file-type-java"
+                        "name": "Spring",
+                        "logo": "spring.svg"
+                    },
+                    {
+                        "name": "C#",
+                        "logo": "C.svg"
+                    },
+                    {
+                        "name": ".NET",
+                        "logo": "dot-net.svg"
+                    },
+                    {
+                        "name": "Swagger UI",
+                        "logo": "swagger.svg"
                     }
                 ]
             },
             {
-                "title": "data processing",
+                "title": "client development",
                 "skillList": [
                     {
-                        "name": "python",
-                        "logo": "vscode-icons:file-type-python"
+                        "name": "Angular",
+                        "logo": "angular.svg"
                     },
                     {
-                        "name": "java",
-                        "logo": "vscode-icons:file-type-java"
+                        "name": "PrimeNG",
+                        "logo": "primeng.svg"
+                    },
+                    {
+                        "name": "Typescript",
+                        "logo": "typescript.svg"
+                    },
+                    {
+                        "name": "RxJS",
+                        "logo": "rxjs.svg"
                     }
                 ]
             }

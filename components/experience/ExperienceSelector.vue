@@ -4,12 +4,12 @@
       <!-- Left button -->
       <button
         id="reverse"
-        class="selector-button rotate-180"
+        class="selector-button"
         title="preivous experience"
         @click="previousExperience"
         :class="currentExperienceIndex === 0 ? 'disabled' : 'active'"
       >
-        <Icon aria-label = "previous experience" icon="ic:baseline-arrow-forward-ios" />
+        <Icon aria-label = "previous experience" icon="ic:baseline-arrow-back-ios" />
       </button>
 
       <!-- Company name center title -->
