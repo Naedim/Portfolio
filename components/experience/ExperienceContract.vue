@@ -2,7 +2,7 @@
   <div id="experience-description" class="flex flex-col items-center gap-2">
     <div class="flex w-full justify-between gap-2 sm:gap-2 md:gap-6">
       <div class="info">
-        <Icon aria-label="job info" icon="ic:baseline-code" class="text-xl sm:text-3xl md:text-5xl lg:text-4xl" />
+        <Icon aria-label="job info" icon="ic:baseline-code" class="text-xl sm:text-xl md:text-5xl lg:text-4xl" />
         <p>{{ experience.title }}</p>
       </div>
       <div class="info">
