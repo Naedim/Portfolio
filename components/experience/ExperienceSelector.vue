@@ -47,7 +47,7 @@ import { SkillDomainInterface } from "~~/models/interfaces/SkillDomainInterface"
 const experienceList: Array<ExperienceInterface> = experiencesData as Array<ExperienceInterface>;
 let currentExperienceIndex = 0;
 const selectedExperience = useState("selectedExperience", () => experienceList[currentExperienceIndex]);
-
+const selectedDomainIndex = useState("selectedDomainIndex", () => 0);
 function nextExperience() {
   selectExperience(currentExperienceIndex + 1);
 }
@@ -59,6 +59,7 @@ const selectExperience = (index: number) => {
   if (index < 0 || index >= experienceList.length) return;
   currentExperienceIndex = index;
   selectedExperience.value = experienceList[index];
+  selectedDomainIndex.value = 0;
 };
 </script>
 
