@@ -1,16 +1,13 @@
 <template>
   <div id="experience-page" class="flex h-full flex-col items-center justify-around">
-  <ExperienceSelector class="mt-5 flex lg:mt-20" />
-    <ExperienceContract class="flex basis-1/12" />
-   <ExperienceSkills/> 
+    <ExperienceSelector class="mt-5 flex lg:mt-20" />
+    <ExperienceDescription class="flex basis-1/12" />
+    <ExperienceSkills />
   </div>
 </template>
 <script setup lang="ts">
-import Skill from "~~/components/experience/Skill.vue";
 import {Ref} from "vue";
 import {ExperienceInterface} from "~~/models/interfaces/ExperienceInteface";
-import {SkillDomainInterface} from "~~/models/interfaces/SkillDomainInterface";
-
 const experience: Ref<ExperienceInterface> = useState("selectedExperience");
 const selectedDomainIndex = ref(0);
 </script>

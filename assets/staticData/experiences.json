@@ -95,7 +95,7 @@
         },
         "contractType": "work-study program",
         "begining": "October 2019",
-        "duration": 12,
+        "duration": "12 months",
 
         "title": "FullStack developer",
         "description" : "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",

@@ -1,5 +1,5 @@
 <template>
-  <div id = "experience-selector" class="flex w-full flex-col items-center justify-center md:w-7/12 lg:w-5/12">
+  <div id = "experience-selector" class="flex w-full flex-col items-center justify-center md:w-9/12 lg:w-5/12">
     <div class="flex justify-around w-full">
       <!-- Left button -->
       <button
@@ -13,12 +13,12 @@
       </button>
 
       <!-- Company name center title -->
-      <div class="flex flex-col items-center">
-        <h2 class="text-base font-bold text-red-500 sm:text-xl md:text-2xl lg:text-3xl">
+      <div class="flex flex-col items-center md:gap-2">
+        <h2 class="text-xl font-bold text-red-500 sm:text-xl md:text-4xl lg:text-3xl">
           {{ selectedExperience.company.name }}
         </h2>
         <!-- Lower duration -->
-        <p class="text-xs font-medium text-gray-200 sm:text-sm md:text-base lg:text-lg">
+        <p class="text-[11px] font-medium text-gray-200 sm:text-sm md:text-2xl lg:text-lg">
           {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
         </p>
       </div>
@@ -42,7 +42,6 @@
 import {Icon} from "@iconify/vue";
 import {ExperienceInterface} from "~~/models/interfaces/ExperienceInteface";
 import experiencesData from "../../assets/staticData/experiences.json";
-import { SkillDomainInterface } from "~~/models/interfaces/SkillDomainInterface";
 
 const experienceList: Array<ExperienceInterface> = experiencesData as Array<ExperienceInterface>;
 let currentExperienceIndex = 0;
@@ -65,7 +64,7 @@ const selectExperience = (index: number) => {
 
 <style scoped>
 .selector-button {
-  @apply flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+  @apply flex items-center justify-center text-xl sm:text-2xl md:text-4xl lg:text-5xl;
 }
 
 .active {
