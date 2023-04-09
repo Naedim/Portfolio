@@ -1,6 +1,6 @@
 <template>
   <div id="experience-description" class="flex flex-col items-center gap-2">
-    <div class="flex w-full justify-between gap-2 sm:gap-2 md:gap-6">
+    <div class="flex w-full justify-between lg:justify-center gap-2 sm:gap-2 md:gap-6 lg:gap-60">
       <div class="info">
         <Icon aria-label="job info" icon="ic:baseline-code" class="text-xl sm:text-2xl md:text-5xl lg:text-4xl" />
         <p>{{ experience.title }}</p>
@@ -10,7 +10,7 @@
         <p>{{ experience.contractType }}</p>
       </div>
     </div>
-    <p class="text-justify text-xs sm:text-base md:text-2xl font-semibold tracking-tight text-gray-200">{{ experience.description }}</p>
+    <p class="text-justify text-xs sm:text-base md:text-2xl lg:pt-5 font-semibold tracking-tight text-gray-200">{{ experience.description }}</p>
   </div>
 </template>
 
