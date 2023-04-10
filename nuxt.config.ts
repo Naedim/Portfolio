@@ -1,15 +1,6 @@
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss"],
-
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@import "@/assets/scss/global.scss";',
-        },
-      },
-    },
-  },
+  modules: ["@nuxtjs/tailwindcss", "nuxt-icon"],
+  target : "static",
 
   router: {
     extendRoutes(routes, resolve) {

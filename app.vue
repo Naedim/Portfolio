@@ -35,7 +35,7 @@ useHead({
 });
 </script>
 
-<style lang="scss">
+<style>
 
 * {
   margin: 0;
