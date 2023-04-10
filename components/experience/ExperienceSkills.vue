@@ -2,6 +2,7 @@
   <div class="flex h-2/5 lg:h-1/5 lg:w-2/3 flex-col">
     <div class="flex flex-wrap gap-2  md:gap-4 lg:gap-8">
       <button
+        :title = "`domain of ${domain.title}`"
         v-for="(domain, index) in selectedExperience.skillDomainList"
         @click=" selectedDomainIndex= index"
         :class=" index === selectedDomainIndex ? 'bg-orange-200 text-neutral-700' : 'bg-red-700 text-white'"
