@@ -14,7 +14,7 @@ const description =
 // This will be reactive even you change title/description above
 useHead({
   htmlAttrs : {
-    lang : "eng"
+    lang : "en"
 
   },
   

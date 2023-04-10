@@ -44,7 +44,7 @@
       </li>
     </ul>
 
-    <button class="z-10 w-auto text-4xl text-white md:text-5xl lg:hidden" v-on:click="() => menuToggle()">
+    <button class="z-10 w-auto text-4xl text-white md:text-5xl lg:hidden" name = "menu unfold button" v-on:click="() => menuToggle()">
       <Icon name="mdi:menu" aria-label="hamburger menu" />
     </button>
 
