@@ -54,5 +54,29 @@
     "RxJS" : {
         "logo" : "rxjs.svg", 
         "website" : "https://rxjs.dev/"
+    },
+    "Oracle Database" : {
+        "logo" : "oracle.svg", 
+        "website" : "https://www.oracle.com/database/"
+    },
+    "PL/SQL" : {
+        "logo" : "plsql.svg", 
+        "website" : "https://www.oracle.com/database/technologies/appdev/plsql.html"
+    },
+    "Oracle APEX" : {
+        "logo" : "apex.svg", 
+        "website" : "https://www.oracle.com/database/technologies/appdev/apex.html"
+    },
+    "React Native" : {
+        "logo" : "react.svg", 
+        "website" : "https://reactnative.dev/"
+    },
+    "Expo" : {
+        "logo" : "expo.svg", 
+        "website" : "https://expo.io/"
+    },
+    "Ionic" : {
+        "logo" : "ionic.svg", 
+        "website" : "https://ionicframework.com/"
     }
 }
