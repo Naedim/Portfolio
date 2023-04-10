@@ -14,7 +14,7 @@ const props = defineProps<{
   skill: SkillInterface;
 }>();
 
-const logoPath = `/assets/skillsPictures/${props.skill.logo}`;
+const logoPath = `/skillsPictures/${props.skill.logo}`;
 
 
 </script>
