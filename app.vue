@@ -14,7 +14,7 @@ const description =
 // This will be reactive even you change title/description above
 useHead({
   htmlAttrs : {
-    lang : "eng"
+    lang : "en"
 
   },
   
@@ -25,24 +25,18 @@ useHead({
       content: description,
     },
   ],
-  link: [
-    {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css?family=Poppins",
-    },
-  ],
 
 });
 </script>
 
-<style lang="scss">
+<style>
 
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "Poppins", serif;
+  font-family: 'Poppins';
 }
 
 button{

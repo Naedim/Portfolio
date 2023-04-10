@@ -1,0 +1,58 @@
+{
+    "Python" : {
+        "logo" : "python.svg",
+        "website" : "https://www.python.org/"
+    },
+    "Pyspark" : {
+        "logo" : "spark.svg", 
+        "website" : "https://spark.apache.org/docs/latest/api/python/index.html"
+    }, 
+    "Databricks" : {
+        "logo" : "databricks.svg", 
+        "website" : "https://databricks.com/"
+    },
+    "SQL Server" : {
+        "logo" : "sql-server.svg", 
+        "website" : "https://www.microsoft.com/en-us/sql-server/sql-server-2019"
+    },
+    "PostgreSQL" : {
+        "logo" : "postgresql.svg", 
+        "website" : "https://www.postgresql.org/"
+    },
+    "Java" : {
+        "logo" : "java.svg", 
+        "website" : "https://www.java.com/en/"
+    },
+    "Spring" : {
+        "logo" : "spring.svg", 
+        "website" : "https://spring.io/"
+    },
+    "C#" : {
+        "logo" : "CSharp.svg", 
+        "website" : "https://docs.microsoft.com/en-us/dotnet/csharp/"
+    },
+    ".NET" : {
+        "logo" : "dot-net.svg", 
+        "website" : "https://dotnet.microsoft.com/"
+    },
+    "Swagger UI" : {
+        "logo" : "swagger.svg", 
+        "website" : "https://swagger.io/tools/swagger-ui/"
+    },
+    "Angular" : {
+        "logo" : "angular.svg", 
+        "website" : "https://angular.io/"
+    },
+    "PrimeNG" : {
+        "logo" : "primeng.svg", 
+        "website" : "https://www.primefaces.org/primeng/"
+    },
+    "TypeScript" : {
+        "logo" : "typescript.svg", 
+        "website" : "https://www.typescriptlang.org/"
+    },
+    "RxJS" : {
+        "logo" : "rxjs.svg", 
+        "website" : "https://rxjs.dev/"
+    }
+}

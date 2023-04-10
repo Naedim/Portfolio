@@ -2,7 +2,9 @@
   <header>
     <Toolbar/>
   </header>
-  <slot/>
+  <main class = "h-full">
+    <slot/>
+  </main>
 </template>
 
 
