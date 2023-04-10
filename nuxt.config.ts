@@ -10,7 +10,14 @@ export default defineNuxtConfig({
       })
     }
   },
-
+   buildModules: [
+    '@nuxtjs/google-fonts'
+  ],
+  googleFonts : {
+    families : {
+      Poppins : true,
+    }
+  },
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
     configPath: "tailwind.config",

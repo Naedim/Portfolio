@@ -25,12 +25,6 @@ useHead({
       content: description,
     },
   ],
-  link: [
-    {
-      rel: "stylesheet",
-      href: "https://fonts.googleapis.com/css?family=Poppins",
-    },
-  ],
 
 });
 </script>
@@ -42,7 +36,7 @@ useHead({
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "Poppins", serif;
+  font-family: 'Poppins';
 }
 
 button{
