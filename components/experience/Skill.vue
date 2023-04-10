@@ -1,6 +1,6 @@
 <template>
   <button 
-      :title="`what is ${props.skill.name}`" class = " grow transform transition duration-500 hover:scale-120">
+      :title="`what is ${props.skill.name}`" class = " grow  duration-500">
     <NuxtLink
       :to="skillInfos[props.skill.name].website"
       target="_blank"
