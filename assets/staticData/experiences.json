@@ -6,7 +6,7 @@
         },
         "contractType": "Work-study program",
         "begining": "August 2020",
-        "description" : "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
+        "description": "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
         "duration": "1,5 years",
         "title": "FullStack developer",
         "skillDomainList": [
@@ -14,16 +14,13 @@
                 "title": "data processing",
                 "skillList": [
                     {
-                        "name": "Python",
-                        "logo": "python.svg"
+                        "name": "Python"
                     },
                     {
-                        "name": "Spark",
-                        "logo": "spark.svg"
+                        "name": "Pyspark"
                     },
                     {
-                        "name": "Databricks",
-                        "logo": "databricks.svg"
+                        "name": "Databricks"
                     }
                 ]
             },
@@ -31,12 +28,10 @@
                 "title": "data storage ",
                 "skillList": [
                     {
-                        "name": "SQL Server",
-                        "logo": "sql-server.svg"
+                        "name": "SQL Server"
                     },
                     {
-                        "name": "PostgreSQL",
-                        "logo": "postgresql.svg"
+                        "name": "PostgreSQL"
                     }
                 ]
             },
@@ -44,24 +39,19 @@
                 "title": "API development",
                 "skillList": [
                     {
-                        "name": "Java",
-                        "logo": "java.svg"
+                        "name": "Java"
                     },
                     {
-                        "name": "Spring",
-                        "logo": "spring.svg"
+                        "name": "Spring"
                     },
                     {
-                        "name": "C#",
-                        "logo": "C.svg"
+                        "name": "C#"
                     },
                     {
-                        "name": ".NET",
-                        "logo": "dot-net.svg"
+                        "name": ".NET"
                     },
                     {
-                        "name": "Swagger UI",
-                        "logo": "swagger.svg"
+                        "name": "Swagger UI"
                     }
                 ]
             },
@@ -69,76 +59,21 @@
                 "title": "client development",
                 "skillList": [
                     {
-                        "name": "Angular",
-                        "logo": "angular.svg"
+                    
+                        "name": "Angular"
                     },
                     {
-                        "name": "PrimeNG",
-                        "logo": "primeng.svg"
+                        "name": "PrimeNG"
                     },
                     {
-                        "name": "Typescript",
-                        "logo": "typescript.svg"
+                        "name": "TypeScript"
                     },
                     {
-                        "name": "RxJS",
-                        "logo": "rxjs.svg"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "company": {
-            "name": "Capgemini",
-            "website": "https://www.capgemini.com/"
-        },
-        "contractType": "work-study program",
-        "begining": "October 2019",
-        "duration": "12 months",
-
-        "title": "FullStack developer",
-        "description" : "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
-        "skillDomainList": [
-            {
-                "title": "client development",
-                "skillList": [
-                    {
-                        "name": "angular",
-                        "logo": "vscode-icons:file-type-angular"
-                    },
-                    {
-                        "name": "typescript",
-                        "logo": "vscode-icons:file-type-typescript-official"
-                    }
-                ]
-            },
-            {
-                "title": "API development",
-                "skillList": [
-                    {
-                        "name": "C#",
-                        "logo": "vscode-icons:file-type-csharp"
-                    },
-                    {
-                        "name": "java",
-                        "logo": "vscode-icons:file-type-java"
-                    }
-                ]
-            },
-            {
-                "title": "data processing",
-                "skillList": [
-                    {
-                        "name": "python",
-                        "logo": "vscode-icons:file-type-python"
-                    },
-                    {
-                        "name": "java",
-                        "logo": "vscode-icons:file-type-java"
+                        "name": "RxJS"
                     }
                 ]
             }
         ]
     }
+    
 ]
