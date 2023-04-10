@@ -4,7 +4,6 @@
       <div
         id="toolbar__navbar-logo"
         class="slate-400 flex items-center gap-2 text-sm font-semibold sm:text-base md:gap-3 md:text-3xl"
-        to="#"
         title="navbar's logo"
       >
         Damien NOEL

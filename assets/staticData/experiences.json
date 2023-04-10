@@ -5,11 +5,28 @@
             "website": "https://www.capgemini.com/"
         },
         "contractType": "Work-study program",
-        "begining": "August 2020",
+        "begining": "2020",
         "description": "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
         "duration": "1,5 years",
         "title": "FullStack developer",
         "skillDomainList": [
+            {
+                "title": "client development",
+                "skillList": [
+                    {
+                        "name": "Angular"
+                    },
+                    {
+                        "name": "PrimeNG"
+                    },
+                    {
+                        "name": "TypeScript"
+                    },
+                    {
+                        "name": "RxJS"
+                    }
+                ]
+            },
             {
                 "title": "data processing",
                 "skillList": [
@@ -54,26 +71,86 @@
                         "name": "Swagger UI"
                     }
                 ]
-            },
+            }
+        ]
+    },
+    {
+        "company": {
+            "name": "Koust",
+            "website": "https://koust.net/"
+        },
+        "contractType": "Internship",
+        "begining": "2020",
+        "duration": "4 months",
+        "title": "Application developer",
+        "description": "Development of staff's task management web application applied to the needs of restaurants",
+        "skillDomainList": [
             {
-                "title": "client development",
+                "title": "Web development",
                 "skillList": [
                     {
-                    
-                        "name": "Angular"
+                        "name": "Oracle APEX"
+                    }
+                ]
+            },
+            {
+                "title": "Mobile development",
+                "skillList": [
+                    {
+                        "name": "React Native"
                     },
                     {
-                        "name": "PrimeNG"
+                        "name": "Expo"
                     },
                     {
                         "name": "TypeScript"
                     },
                     {
+                        "name": "Angular"
+                    },
+                    {
+                        "name": "Ionic"
+                    },
+                    {
                         "name": "RxJS"
+                    }
+                ]
+            },
+            {
+                "title": "Database",
+                "skillList": [
+                    {
+                        "name": "Oracle Database"
+                    },
+                    {
+                        "name": "PL/SQL"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "company": {
+            "name": "Intia",
+            "website": "http,s://www.capgemini.com/"
+        },
+        "contractType": "Internship",
+        "begining": "2019",
+        "duration": "2 months",
+        "title": "Web/mobile developer",
+        "description": "Development of a service shortening the companies's susbscription process by retrieving public necessary information about them (ex : SIRENE database)",
+        "skillDomainList": [
+            {
+                "title": "Web development",
+                "skillList": [
+                    {
+                        "name": "Angular"
+                    },
+                    {
+                        "name": "TypeScript"
                     }
                 ]
             }
         ]
     }
-    
 ]
