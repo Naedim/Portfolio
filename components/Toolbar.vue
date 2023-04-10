@@ -6,13 +6,13 @@
           class="flex items-center gap-2 text-sm font-semibold slate-400 sm:text-base md:text-3xl md:gap-3" to="#"
           title="navbar's logo">
           Damien NOEL
-          <Icon icon="material-symbols:code" aria-label="navbar's logo's icon" class="text-base sm:text-2xl md:text-4xl" />
+          <Icon name="material-symbols:code" aria-label="navbar's logo's icon" class="text-base sm:text-2xl md:text-4xl" />
         </NuxtLink>
       </button>
 
 
       <div id="toolbar__current-page-info" class="flex items-center gap-2 text-xs font-semibold text-red-500 sm:font-bold lg:text-xl md:text-base sm:text-sm">
-        <Icon id="navbar-logo" icon="mdi:book-open-page-variant-outline"
+        <Icon id="navbar-logo" name="mdi:book-open-page-variant-outline"
           aria-label="navbar's logo icon" class="" />
 
         <h1 id="toolbar__current-page-name"
@@ -45,7 +45,7 @@
     </ul>
 
     <button class="z-10 w-auto text-4xl text-white md:text-5xl lg:hidden" v-on:click="() => menuToggle()">
-      <Icon icon="mdi:menu" aria-label="hamburger menu" />
+      <Icon name="mdi:menu" aria-label="hamburger menu" />
     </button>
 
 
@@ -53,7 +53,6 @@
 </template>
 
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
 const route = useRoute();
 const pages = {
   "/": "home",

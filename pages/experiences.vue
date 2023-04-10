@@ -1,6 +1,6 @@
 <template>
-  <div id="experience-page" class="flex h-full flex-col items-center justify-around">
-    <ExperienceSelector class="mt-5 flex lg:mt-20" />
+  <div id="experience-page" class="flex h-full flex-col items-center justify-evenly">
+    <ExperienceSelector class="flex " />
     <ExperienceDescription class="flex basis-1/12" />
     <ExperienceSkills />
   </div>

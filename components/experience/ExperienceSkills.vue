@@ -1,6 +1,6 @@
 <template>
   <div class="flex h-2/5 lg:h-1/5 lg:w-2/3 flex-col">
-    <div class="flex flex-wrap gap-2  md:gap-4 lg:gap-12">
+    <div class="flex flex-wrap gap-2  md:gap-4 lg:gap-8">
       <button
         v-for="(domain, index) in selectedExperience.skillDomainList"
         @click=" selectedDomainIndex= index"
@@ -20,7 +20,6 @@
 import Skill from "~~/components/experience/Skill.vue";
 import {Ref} from "vue";
 import {ExperienceInterface} from "~~/models/interfaces/ExperienceInteface";
-import experiencesData from "../../assets/staticData/experiences.json";
 
 const selectedExperience: Ref<ExperienceInterface> = useState("selectedExperience");
 const selectedDomainIndex : Ref<number> = useState("selectedDomainIndex");

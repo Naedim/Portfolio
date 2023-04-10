@@ -9,7 +9,7 @@
         @click="previousExperience"
         :class="currentExperienceIndex === 0 ? 'disabled' : 'active'"
       >
-        <Icon aria-label = "previous experience" icon="ic:baseline-arrow-back-ios" />
+        <Icon aria-label = "previous experience" name="ic:baseline-arrow-back-ios" />
       </button>
 
       <!-- Company name center title -->
@@ -30,7 +30,7 @@
         class="selector-button col-start-6"
         :class="currentExperienceIndex === experienceList.length - 1 ? 'disabled' : 'active'"
       >
-        <Icon aria-label = "next experience" icon="ic:baseline-arrow-forward-ios" />
+        <Icon aria-label = "next experience" name="ic:baseline-arrow-forward-ios" />
       </button>
     </div>
 
@@ -39,7 +39,6 @@
 </template>
 
 <script setup lang="ts">
-import {Icon} from "@iconify/vue";
 import {ExperienceInterface} from "~~/models/interfaces/ExperienceInteface";
 import experiencesData from "../../assets/staticData/experiences.json";
 
