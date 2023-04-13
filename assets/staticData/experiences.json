@@ -86,14 +86,6 @@
         "description": "Development of staff's task management web application applied to the needs of restaurants",
         "skillDomainList": [
             {
-                "title": "Web development",
-                "skillList": [
-                    {
-                        "name": "Oracle APEX"
-                    }
-                ]
-            },
-            {
                 "title": "Mobile development",
                 "skillList": [
                     {
@@ -113,6 +105,14 @@
                     },
                     {
                         "name": "RxJS"
+                    }
+                ]
+            },
+            {
+                "title": "Web development",
+                "skillList": [
+                    {
+                        "name": "Oracle APEX"
                     }
                 ]
             },

@@ -1,11 +1,8 @@
 <template>
   <header>
-    <Toolbar/>
+    <Toolbar />
   </header>
-  <main class = "h-full">
-    <slot/>
+    <main>
+    <slot />
   </main>
 </template>
-
-
-
