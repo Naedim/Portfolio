@@ -10,7 +10,7 @@
         <p>{{ experience.contractType }}</p>
       </div>
     </div>
-    <p class="text-justify text-xs sm:text-base md:text-2xl lg:pt-5 font-semibold tracking-tight text-gray-200">{{ experience.description }}</p>
+    <p class="text-left text-xs sm:text-base md:text-2xl lg:pt-5 font-semibold text-gray-200">{{ experience.description }}</p>
   </div>
 </template>
 
