@@ -45,4 +45,7 @@ button {
   all: unset;
   cursor: pointer;
 }
+button:hover{
+  transform : scale(1.05);
+}
 </style>
