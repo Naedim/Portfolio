@@ -1,7 +1,7 @@
 <template>
   <button :id = "'skill-button' + props.skill.name"
     :title="`what is ${props.skill.name}`"
-    class=" h-8 box-border min-w-[4rem] sm:min-w-[6rem] grow p-1 sm:h-12 sm:p-2 md:h-12  md:min-w-[30vw] md:p-3 lg:h-13 lg:min-w-[15rem] bg-slate-200 rounded-full  "
+    class=" h-8 box-border min-w-[4rem] sm:min-w-[6rem] grow p-1 sm:h-12 sm:p-2 md:h-12  md:min-w-[30vw] md:p-3 lg:h-13 lg:min-w-[15rem] lg:max-w-[60rem] bg-slate-200 rounded-full  "
   >
     <NuxtLink
       :to="skillInfos[props.skill.name].website"

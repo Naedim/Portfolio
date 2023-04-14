@@ -1,6 +1,46 @@
 [
     {
         "company": {
+            "name": "UBO",
+            "website": "https://www.univ-brest.fr/GB"
+        },
+        "contractType": "Teacher contract",
+        "begining": "2022",
+        "description": "Education of 2nd and 3rd years students in the field of computer science",
+        "duration": "10 months",
+        "title": "University teacher",
+        "skillDomainList": [
+            {
+                "title": "Application Development",
+                "skillList": [
+                    {
+                        "name": "Java"
+                    }
+                ]
+            },
+            {
+                "title": "Network programming",
+                "skillList": [
+                    {
+                        "name": "C"
+                    }
+                ]
+            },
+            {
+                "title": "Fundamental Algorithms, graph theory and test",
+                "skillList": [
+                    {
+                        "name": "C"
+                    },
+                    {
+                        "name": "Graph"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "company": {
             "name": "Capgemini",
             "website": "https://www.capgemini.com/"
         },

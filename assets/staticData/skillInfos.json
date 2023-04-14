@@ -1,82 +1,90 @@
 {
-    "Python" : {
-        "logo" : "python.svg",
-        "website" : "https://www.python.org/"
+    "Python": {
+        "logo": "python.svg",
+        "website": "https://www.python.org/"
     },
-    "Pyspark" : {
-        "logo" : "spark.svg", 
-        "website" : "https://spark.apache.org/docs/latest/api/python/index.html"
-    }, 
-    "Databricks" : {
-        "logo" : "databricks.svg", 
-        "website" : "https://databricks.com/"
+    "Pyspark": {
+        "logo": "spark.svg",
+        "website": "https://spark.apache.org/docs/latest/api/python/index.html"
     },
-    "SQL Server" : {
-        "logo" : "sql-server.svg", 
-        "website" : "https://www.microsoft.com/en-us/sql-server/sql-server-2019"
+    "Databricks": {
+        "logo": "databricks.svg",
+        "website": "https://databricks.com/"
     },
-    "PostgreSQL" : {
-        "logo" : "postgresql.svg", 
-        "website" : "https://www.postgresql.org/"
+    "SQL Server": {
+        "logo": "sql-server.svg",
+        "website": "https://www.microsoft.com/en-us/sql-server/sql-server-2019"
     },
-    "Java" : {
-        "logo" : "java.svg", 
-        "website" : "https://www.java.com/en/"
+    "PostgreSQL": {
+        "logo": "postgresql.svg",
+        "website": "https://www.postgresql.org/"
     },
-    "Spring" : {
-        "logo" : "spring.svg", 
-        "website" : "https://spring.io/"
+    "Java": {
+        "logo": "java.svg",
+        "website": "https://www.java.com/en/"
     },
-    "C#" : {
-        "logo" : "CSharp.svg", 
-        "website" : "https://docs.microsoft.com/en-us/dotnet/csharp/"
+    "Spring": {
+        "logo": "spring.svg",
+        "website": "https://spring.io/"
     },
-    ".NET" : {
-        "logo" : "dot-net.svg", 
-        "website" : "https://dotnet.microsoft.com/"
+    "C#": {
+        "logo": "CSharp.svg",
+        "website": "https://docs.microsoft.com/en-us/dotnet/csharp/"
     },
-    "Swagger UI" : {
-        "logo" : "swagger.svg", 
-        "website" : "https://swagger.io/tools/swagger-ui/"
+    ".NET": {
+        "logo": "dot-net.svg",
+        "website": "https://dotnet.microsoft.com/"
     },
-    "Angular" : {
-        "logo" : "angular.svg", 
-        "website" : "https://angular.io/"
+    "Swagger UI": {
+        "logo": "swagger.svg",
+        "website": "https://swagger.io/tools/swagger-ui/"
     },
-    "PrimeNG" : {
-        "logo" : "primeng.svg", 
-        "website" : "https://www.primefaces.org/primeng/"
+    "Angular": {
+        "logo": "angular.svg",
+        "website": "https://angular.io/"
     },
-    "TypeScript" : {
-        "logo" : "typescript.svg", 
-        "website" : "https://www.typescriptlang.org/"
+    "PrimeNG": {
+        "logo": "primeng.svg",
+        "website": "https://www.primefaces.org/primeng/"
     },
-    "RxJS" : {
-        "logo" : "rxjs.svg", 
-        "website" : "https://rxjs.dev/"
+    "TypeScript": {
+        "logo": "typescript.svg",
+        "website": "https://www.typescriptlang.org/"
     },
-    "Oracle Database" : {
-        "logo" : "oracle.svg", 
-        "website" : "https://www.oracle.com/database/"
+    "RxJS": {
+        "logo": "rxjs.svg",
+        "website": "https://rxjs.dev/"
     },
-    "PL/SQL" : {
-        "logo" : "plsql.svg", 
-        "website" : "https://www.oracle.com/database/technologies/appdev/plsql.html"
+    "Oracle Database": {
+        "logo": "oracle.svg",
+        "website": "https://www.oracle.com/database/"
     },
-    "Oracle APEX" : {
-        "logo" : "apex.svg", 
-        "website" : "https://www.oracle.com/database/technologies/appdev/apex.html"
+    "PL/SQL": {
+        "logo": "plsql.svg",
+        "website": "https://www.oracle.com/database/technologies/appdev/plsql.html"
     },
-    "React Native" : {
-        "logo" : "react.svg", 
-        "website" : "https://reactnative.dev/"
+    "Oracle APEX": {
+        "logo": "apex.svg",
+        "website": "https://www.oracle.com/database/technologies/appdev/apex.html"
     },
-    "Expo" : {
-        "logo" : "expo.svg", 
-        "website" : "https://expo.io/"
+    "React Native": {
+        "logo": "react.svg",
+        "website": "https://reactnative.dev/"
     },
-    "Ionic" : {
-        "logo" : "ionic.svg", 
-        "website" : "https://ionicframework.com/"
+    "Expo": {
+        "logo": "expo.svg",
+        "website": "https://expo.io/"
+    },
+    "Ionic": {
+        "logo": "ionic.svg",
+        "website": "https://ionicframework.com/"
+    },
+    "C": {
+        "logo": "C.png",
+        "website": "https://fr.wikipedia.org/wiki/C_(langage)"
+    },
+    "Graph": {
+        "logo": "graph.png",
+        "website": "https://en.wikipedia.org/wiki/Graph_theory"
     }
 }
