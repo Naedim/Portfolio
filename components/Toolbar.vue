@@ -29,7 +29,7 @@
     <ul
       id="toolbar__mobile-menu"
       :class="isMobileMenuActive ? 'ml-0' : 'ml-[-100%]'"
-      class="md: xs:flex absolute top-0 left-0 box-border flex h-full w-full flex-col items-center justify-center gap-20 text-2xl font-medium backdrop-blur-md transition-all duration-200 md:text-4xl lg:hidden"
+      class="md: xs:flex absolute top-0 left-0 box-border flex h-screen landscape:overflow-x-hidden w-full flex-col items-center portrait:justify-center portrait:gap-20 landscape:justify-evenly text-2xl font-medium backdrop-blur-md transition-all duration-200 md:text-4xl lg:hidden"
     >
       <li v-for="(page, path) in pages" :key="path">
         <button title="page navigation">
@@ -40,7 +40,7 @@
       </li>
     </ul>
 
-    <ul id="toolbar__big-screen-menu" class="hidden w-4/6 items-center justify-evenly text-3xl transition-all duration-200 lg:flex">
+    <ul id="toolbar__big-screen-menu" class="hidden w-4/6 items-center justify-evenly lg:text-2xl xl:text-3xl transition-all duration-200 lg:flex ">
       <li v-for="(page, path) in pages" :key="path">
         <button title="page navigation">
           <NuxtLink
@@ -60,6 +60,8 @@
 </template>
 
 <script setup lang="ts">
+import { Ref } from 'vue';
+
 const route = useRoute();
 const pages = {
   "/": "home",
@@ -68,7 +70,8 @@ const pages = {
   about: "about",
 };
 
-let isMobileMenuActive = ref(false);
+const isMobileMenuActive :Ref<Boolean> = useState("isMobileMenuActive");
+
 
 function menuToggle(): void {
   isMobileMenuActive.value = !isMobileMenuActive.value;
