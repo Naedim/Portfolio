@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.1",
+    "@nuxtjs/robots": "^3.0.0",
     "@rollup/plugin-terser": "^0.4.0",
     "@types/node": "^18.11.11",
     "nuxi": "^3.0.0-rc.11",

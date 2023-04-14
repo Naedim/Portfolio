@@ -5,11 +5,3 @@
     <ExperienceSkills />
   </div>
 </template>
-<script setup lang="ts">
-import {Ref} from "vue";
-import {ExperienceInterface} from "~~/models/interfaces/ExperienceInteface";
-const experience: Ref<ExperienceInterface> = useState("selectedExperience");
-const selectedDomainIndex = ref(0);
-</script>
-
-<style scoped></style>
