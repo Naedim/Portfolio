@@ -28,5 +28,3 @@
     <Footer class="absolute right-0 top-0 hidden h-full w-40 flex-col lg:flex" />
   </div>
 </template>
-
-<style></style>
