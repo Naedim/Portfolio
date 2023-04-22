@@ -27,13 +27,13 @@
                 ]
             },
             {
-                "title": "Fundamental Algorithms, graph theory and test",
+                "title": "Algorithms and graphs",
                 "skillList": [
                     {
                         "name": "C"
                     },
                     {
-                        "name": "Graph"
+                        "name": "Graph Theory"
                     }
                 ]
             }
