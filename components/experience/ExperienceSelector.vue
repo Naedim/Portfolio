@@ -1,6 +1,6 @@
 <template>
-  <div id = "experience-selector" class="flex w-full flex-col items-center justify-center md:w-9/12 lg:w-5/12">
-    <div class="flex justify-around w-full">
+  <div id="experience-selector" class="flex w-full flex-col items-center justify-center md:w-9/12 lg:w-5/12">
+    <div class="flex w-full justify-around">
       <!-- Left button -->
       <button
         id="reverse"
@@ -9,16 +9,27 @@
         @click="previousExperience"
         :class="currentExperienceIndex === 0 ? 'disabled' : 'active'"
       >
-        <Icon aria-label = "previous experience" name="ic:baseline-arrow-back-ios" />
+        <Icon aria-label="previous experience" name="ic:baseline-arrow-back-ios" />
       </button>
 
       <!-- Company name center title -->
       <div class="flex flex-col items-center md:gap-2">
-        <h2 class="text-xl font-bold text-red-500 sm:text-xl md:text-4xl lg:text-3xl">
-          {{ selectedExperience.company.name }}
-        </h2>
+        <button>
+          <NuxtLink
+            :to= selectedExperience.company.website
+            target="_blank"
+            :title="`${selectedExperience.company.name}`"
+            class="flex items-center gap-2 text-xl font-bold text-red-500 hover:text-orange-300 sm:text-xl md:text-4xl lg:text-3xl"
+          >
+            <h2>
+              {{ selectedExperience.company.name }}
+            </h2>
+            <Icon class="h-5" name="material-symbols:arrow-forward" :aria-label="`${selectedExperience.company.name} website link`" />
+          </NuxtLink>
+        </button>
+
         <!-- Lower duration -->
-        <p class="text-[11px] font-semibold lg:font-bold text-gray-200 sm:text-sm md:text-2xl lg:text-lg">
+        <p class="text-[11px] font-semibold text-gray-200 sm:text-sm md:text-2xl lg:text-lg lg:font-bold">
           {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
         </p>
       </div>
@@ -30,7 +41,7 @@
         class="selector-button col-start-6"
         :class="currentExperienceIndex === experienceList.length - 1 ? 'disabled' : 'active'"
       >
-        <Icon aria-label = "next experience" name="ic:baseline-arrow-forward-ios" />
+        <Icon aria-label="next experience" name="ic:baseline-arrow-forward-ios" />
       </button>
     </div>
 
