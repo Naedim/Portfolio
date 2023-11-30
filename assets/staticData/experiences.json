@@ -1,196 +1,259 @@
 [
-    {
-        "company": {
-            "name": "UBO",
-            "website": "https://www.univ-brest.fr/GB"
-        },
-        "contractType": "Teacher contract",
-        "begining": "2022",
-        "description": "Education of 2nd and 3rd years students in the field of computer science",
-        "duration": "10 months",
-        "title": "University teacher",
-        "skillDomainList": [
-            {
-                "title": "Application Development",
-                "skillList": [
-                    {
-                        "name": "Java"
-                    }
-                ]
-            },
-            {
-                "title": "Network programming",
-                "skillList": [
-                    {
-                        "name": "C"
-                    }
-                ]
-            },
-            {
-                "title": "Algorithms and graphs",
-                "skillList": [
-                    {
-                        "name": "C"
-                    },
-                    {
-                        "name": "Graph Theory"
-                    }
-                ]
-            }
-        ]
+  {
+    "company": {
+      "name": "Stryker",
+      "website": "https://www.stryker.com"
     },
-    {
-        "company": {
-            "name": "Capgemini",
-            "website": "https://www.capgemini.com/"
-        },
-        "contractType": "Work-study program",
-        "begining": "2020",
-        "description": "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
-        "duration": "1,5 years",
-        "title": "FullStack developer",
-        "skillDomainList": [
-            {
-                "title": "client development",
-                "skillList": [
-                    {
-                        "name": "Angular"
-                    },
-                    {
-                        "name": "PrimeNG"
-                    },
-                    {
-                        "name": "TypeScript"
-                    },
-                    {
-                        "name": "RxJS"
-                    }
-                ]
-            },
-            {
-                "title": "data processing",
-                "skillList": [
-                    {
-                        "name": "Python"
-                    },
-                    {
-                        "name": "Pyspark"
-                    },
-                    {
-                        "name": "Databricks"
-                    }
-                ]
-            },
-            {
-                "title": "data storage ",
-                "skillList": [
-                    {
-                        "name": "SQL Server"
-                    },
-                    {
-                        "name": "PostgreSQL"
-                    }
-                ]
-            },
-            {
-                "title": "API development",
-                "skillList": [
-                    {
-                        "name": "Java"
-                    },
-                    {
-                        "name": "Spring"
-                    },
-                    {
-                        "name": "C#"
-                    },
-                    {
-                        "name": ".NET"
-                    },
-                    {
-                        "name": "Swagger UI"
-                    }
-                ]
-            }
+    "contractType": "Freelance",
+    "begining": "2023",
+    "description": "Development of surgery preparation applications",
+    "duration": "6 months",
+    "title": "FullStack developer",
+    "skillDomainList": [
+      {
+        "title": "Front-end development",
+        "skillList": [
+          {
+            "name": "React"
+          },
+          {
+            "name": "React Query"
+          },
+          {
+            "name": "TailwindCSS"
+          },
+          {
+            "name": "Ant-design"
+          }
         ]
+      },
+      {
+        "title": "back-end development",
+        "skillList": [
+          {
+            "name": "Flask"
+          },
+          {
+            "name": "Python"
+          },
+          {
+            "name": "Pymongo"
+          }
+        ]
+      },
+      {
+        "title": "Database",
+        "skillList": [
+          {
+            "name": "Azure CosmoDB"
+          }
+        ]
+      },
+      {
+        "title": "Testing",
+        "skillList": [
+          {
+            "name": "Cypress"
+          },
+          {
+            "name": "Pytest"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "UBO",
+      "website": "https://www.univ-brest.fr/GB"
     },
-    {
-        "company": {
-            "name": "Koust",
-            "website": "https://koust.net/"
-        },
-        "contractType": "Internship",
-        "begining": "2020",
-        "duration": "4 months",
-        "title": "Application developer",
-        "description": "Development of a task management web application applied to the needs of restaurants",
-        "skillDomainList": [
-            {
-                "title": "Mobile development",
-                "skillList": [
-                    {
-                        "name": "React Native"
-                    },
-                    {
-                        "name": "Expo"
-                    },
-                    {
-                        "name": "TypeScript"
-                    },
-                    {
-                        "name": "Angular"
-                    },
-                    {
-                        "name": "Ionic"
-                    },
-                    {
-                        "name": "RxJS"
-                    }
-                ]
-            },
-            {
-                "title": "Web development",
-                "skillList": [
-                    {
-                        "name": "Oracle APEX"
-                    }
-                ]
-            },
-            {
-                "title": "Database",
-                "skillList": [
-                    {
-                        "name": "Oracle Database"
-                    },
-                    {
-                        "name": "PL/SQL"
-                    }
-                ]
-            }
+    "contractType": "Teacher contract",
+    "begining": "2022",
+    "description": "Education of 2nd and 3rd years students in the field of computer science",
+    "duration": "10 months",
+    "title": "University teacher",
+    "skillDomainList": [
+      {
+        "title": "Application Development",
+        "skillList": [
+          {
+            "name": "Java"
+          }
         ]
+      },
+      {
+        "title": "Network programming",
+        "skillList": [
+          {
+            "name": "C"
+          }
+        ]
+      },
+      {
+        "title": "Algorithms and graphs",
+        "skillList": [
+          {
+            "name": "C"
+          },
+          {
+            "name": "Graph Theory"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "Capgemini",
+      "website": "https://www.capgemini.com/"
     },
-    {
-        "company": {
-            "name": "Intia",
-            "website": "http,s://www.capgemini.com/"
-        },
-        "contractType": "Internship",
-        "begining": "2019",
-        "duration": "2 months",
-        "title": "Web/mobile developer",
-        "description": "Development of a service shortening the companies's susbscription process by retrieving public necessary information about them (ex : SIRENE database)",
-        "skillDomainList": [
-            {
-                "title": "Web development",
-                "skillList": [
-                    {
-                        "name": "Angular"
-                    },
-                    {
-                        "name": "TypeScript"
-                    }
-                ]
-            }
+    "contractType": "Work-study program",
+    "begining": "2020",
+    "description": "Project for the SNCF (national France's railway company) to manage the data used to monitor the railway network in real time.",
+    "duration": "1,5 years",
+    "title": "FullStack developer",
+    "skillDomainList": [
+      {
+        "title": "client development",
+        "skillList": [
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "PrimeNG"
+          },
+          {
+            "name": "TypeScript"
+          },
+          {
+            "name": "RxJS"
+          }
         ]
-    }
+      },
+      {
+        "title": "data processing",
+        "skillList": [
+          {
+            "name": "Python"
+          },
+          {
+            "name": "Pyspark"
+          },
+          {
+            "name": "Databricks"
+          }
+        ]
+      },
+      {
+        "title": "data storage ",
+        "skillList": [
+          {
+            "name": "SQL Server"
+          },
+          {
+            "name": "PostgreSQL"
+          }
+        ]
+      },
+      {
+        "title": "API development",
+        "skillList": [
+          {
+            "name": "Java"
+          },
+          {
+            "name": "Spring"
+          },
+          {
+            "name": "C#"
+          },
+          {
+            "name": ".NET"
+          },
+          {
+            "name": "Swagger UI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "Koust",
+      "website": "https://koust.net/"
+    },
+    "contractType": "Internship",
+    "begining": "2020",
+    "duration": "4 months",
+    "title": "Application developer",
+    "description": "Development of a task management web application applied to the needs of restaurants",
+    "skillDomainList": [
+      {
+        "title": "Mobile development",
+        "skillList": [
+          {
+            "name": "React Native"
+          },
+          {
+            "name": "Expo"
+          },
+          {
+            "name": "TypeScript"
+          },
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "Ionic"
+          },
+          {
+            "name": "RxJS"
+          }
+        ]
+      },
+      {
+        "title": "Web development",
+        "skillList": [
+          {
+            "name": "Oracle APEX"
+          }
+        ]
+      },
+      {
+        "title": "Database",
+        "skillList": [
+          {
+            "name": "Oracle Database"
+          },
+          {
+            "name": "PL/SQL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "company": {
+      "name": "Intia",
+      "website": "http,s://www.capgemini.com/"
+    },
+    "contractType": "Internship",
+    "begining": "2019",
+    "duration": "2 months",
+    "title": "Web/mobile developer",
+    "description": "Development of a service shortening the companies's susbscription process by retrieving public necessary information about them (ex : SIRENE database)",
+    "skillDomainList": [
+      {
+        "title": "Web development",
+        "skillList": [
+          {
+            "name": "Angular"
+          },
+          {
+            "name": "TypeScript"
+          }
+        ]
+      }
+    ]
+  }
 ]
