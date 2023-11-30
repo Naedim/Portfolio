@@ -23,7 +23,7 @@
             "name": "TailwindCSS"
           },
           {
-            "name": "Ant-design"
+            "name": "Ant design"
           }
         ]
       },
@@ -35,9 +35,6 @@
           },
           {
             "name": "Python"
-          },
-          {
-            "name": "Pymongo"
           }
         ]
       },
@@ -45,7 +42,7 @@
         "title": "Database",
         "skillList": [
           {
-            "name": "Azure CosmoDB"
+            "name": "MongoDB"
           }
         ]
       },

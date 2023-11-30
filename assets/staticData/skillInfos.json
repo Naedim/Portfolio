@@ -1,7 +1,39 @@
 {
+    "React": {
+        "logo": "react.svg",
+        "website": "https://react.dev"
+    },
+    "React Query": {
+        "logo": "react-query.svg",
+        "website": "https://tanstack.com/query/"
+    },
+    "TailwindCSS": {
+        "logo": "tailwindcss.svg",
+        "website": "https://tailwindcss.com/"
+    },
+    "Ant design": {
+        "logo": "ant-design.svg",
+        "website": "https://ant.design/"
+    },
+    "Flask": {
+        "logo": "flask.svg",
+        "website": "https://flask.palletsprojects.com"
+    },
     "Python": {
         "logo": "python.svg",
-        "website": "https://www.python.org/"
+        "website": "https://docs.pytest.org/"
+    },
+    "MongoDB": {
+        "logo": "mongodb.svg",
+        "website": "https://www.mongodb.com"
+    },
+    "Cypress": {
+        "logo": "cypress.svg",
+        "website": "https://www.cypress.io/"
+    },
+    "Pytest": {
+        "logo": "pytest.svg",
+        "website": "https://docs.pytest.org/"
     },
     "Pyspark": {
         "logo": "spark.svg",
