@@ -1,6 +1,6 @@
+import type { Company } from "./CompanyInterface";
+import type { SkillDomainInterface } from "./SkillDomainInterface";
 
-import { Company } from "./CompanyInterface";
-import { SkillDomainInterface } from "./SkillDomainInterface";
 export interface ExperienceInterface {
     company: Company;
     contractType: "work-study program" | "Business internship";

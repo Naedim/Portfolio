@@ -18,7 +18,7 @@
 
         <h1
           id="toolbar__current-page-name"
-          :title="'currently at ' + pages[route.name != 'index' ? route.name : '/'] + ' page'"
+          :title="'currently at ' + pages[route.fullPath != 'index' ? route.name : '/'] + ' page'"
           alt="The current page name"
         >
           {{ pages[route.name != "index" ? route.name : "/"] }}
@@ -60,14 +60,13 @@
 </template>
 
 <script setup lang="ts">
-import { Ref } from 'vue';
+const route = useRoute()
+console.log("route : ", route)
 
-const route = useRoute();
 const pages = {
   "/": "home",
-  experiences: "experiences",
-  education: "education",
-  about: "about",
+  "experiences": "experiences",
+"education": "education",
 };
 
 const isMobileMenuActive :Ref<Boolean> = useState("isMobileMenuActive");
