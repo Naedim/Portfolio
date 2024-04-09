@@ -12,7 +12,7 @@
     "@nuxtjs/google-fonts": "^3.0.0",
     "@nuxtjs/tailwindcss": "^6.6.4",
     "autoprefixer": "^10.4.14",
-    "nuxt": "3.0.0-rc.11",
+    "nuxt": "^3.11.2",
     "nuxt-icon": "^0.3.3",
     "postcss": "^8.4.21",
     "prettier": "^2.8.7",
@@ -24,9 +24,11 @@
     "@nuxtjs/robots": "^3.0.0",
     "@rollup/plugin-terser": "^0.4.0",
     "@types/node": "^18.11.11",
+    "consola": "^3.2.3",
     "nuxi": "^3.0.0-rc.11",
     "sass": "^1.56.1",
     "sass-loader": "^13.1.0",
+    "tailwind": "^4.0.0",
     "undici": "^5.21.0",
     "webpack": "^5.76.3"
   }

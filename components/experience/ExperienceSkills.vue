@@ -17,10 +17,10 @@
   </div>
 </template>
 <script setup lang="ts">
+import type { ExperienceInterface } from "~/models/interfaces/ExperienceInterface";
 import Skill from "~~/components/experience/Skill.vue";
-import {Ref} from "vue";
-import {ExperienceInterface} from "~~/models/interfaces/ExperienceInteface";
 
 const selectedExperience: Ref<ExperienceInterface> = useState("selectedExperience");
 const selectedDomainIndex: Ref<number> = useState("selectedDomainIndex");
 </script>
+~/models/interfaces/ExperienceInterface

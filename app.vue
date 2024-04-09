@@ -11,7 +11,6 @@
 
 <script setup lang="ts">
 
-import {Ref} from "vue";
 const isMobileMenuActive: Ref<Boolean> = useState("isMobileMenuActive", () => false);
 const title = "Damien NOEL's Portfolio";
 const description =
@@ -38,7 +37,7 @@ useHead({
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "Poppins";
+  overscroll-behavior: none;
 }
 
 button {

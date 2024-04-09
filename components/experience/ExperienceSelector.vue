@@ -50,7 +50,7 @@
 </template>
 
 <script setup lang="ts">
-import {ExperienceInterface} from "~~/models/interfaces/ExperienceInteface";
+import type { ExperienceInterface } from "~/models/interfaces/ExperienceInterface";
 import experiencesData from "../../assets/staticData/experiences.json";
 
 const experienceList: Array<ExperienceInterface> = experiencesData as Array<ExperienceInterface>;
@@ -85,3 +85,4 @@ const selectExperience = (index: number) => {
   @apply text-gray-400;
 }
 </style>
+~/models/interfaces/ExperienceInterface
