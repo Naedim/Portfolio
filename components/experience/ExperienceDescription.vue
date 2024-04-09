@@ -15,7 +15,8 @@
 </template>
 
 <script setup lang="ts">
-import type { ExperienceInterface } from '~/models/interfaces/ExperienceInteface';
+import type { ExperienceInterface } from '~/models/interfaces/ExperienceInterface';
+
 
 
 let experience: Ref<ExperienceInterface> = useState("selectedExperience");

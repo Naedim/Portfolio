@@ -69,7 +69,8 @@ const pages = {
 "education": "education",
 };
 
-const isMobileMenuActive :Ref<Boolean> = useState("isMobileMenuActive");
+const isMobileMenuActive: Ref<Boolean> = ref(false);
+// const isMobileMenuActive: Ref<Boolean> = useState( () => false);
 
 
 function menuToggle(): void {
