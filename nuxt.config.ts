@@ -22,10 +22,10 @@ export default defineNuxtConfig({
   },
 
   tailwindcss: {
-    cssPath: ["~/assets/css/tailwind.css", 
-    { injectPosition: "first" }],
+    cssPath: "~/assets/css/tailwind.css",
     configPath: "tailwind.config",
     exposeConfig: false,
+    injectPosition: "first",
     viewer: true,
   },
 
