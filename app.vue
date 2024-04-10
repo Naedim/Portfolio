@@ -35,6 +35,7 @@ useHead({
   padding: 0;
   text-decoration: none;
   list-style: none;
+  overscroll-behavior: none;
 }
 
 button {

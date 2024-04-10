@@ -24,7 +24,6 @@
       </div>
     </div>
 
-    <Footer class="h-30 portrait:absolute portrait:bottom-0  w-full lg:hidden" />
-    <Footer class="absolute right-0 top-0 hidden h-full w-40 flex-col lg:flex" />
+    <Footer class="h-30 portrait:absolute portrait:bottom-0 landscape:p-0 pb-3 sm:pb-6 md:pb-10 lg:absolute lg:bottom-10  w-full " />
   </div>
 </template>
