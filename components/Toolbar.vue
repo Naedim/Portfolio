@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex w-full items-start justify-between text-orange-100 z-10">
+  <nav class="flex w-full items-start text-orange-100 z-10">
     <div class="flex flex-col">
       <div
         id="toolbar__navbar-logo"
@@ -29,7 +29,7 @@
     <ul
       id="toolbar__mobile-menu"
       :class="isMobileMenuActive ? 'ml-0' : 'ml-[-100%]'"
-      class="absolute top-0 left-0 box-border flex h-screen landscape:overflow-x-hidden w-full flex-col items-center portrait:justify-center portrait:gap-20 landscape:justify-evenly text-2xl font-medium backdrop-blur-md transition-all duration-200 md:text-4xl lg:hidden"
+      class="absolute top-0 left-0 box-border flex h-[100vh] landscape:overflow-x-hidden w-full flex-col items-center portrait:justify-center portrait:gap-20 landscape:justify-evenly text-2xl font-medium backdrop-blur-md transition-all duration-200 md:text-4xl lg:hidden"
     >
       <li v-for="(page, path) in pages" :key="path">
         <button title="page navigation">
@@ -40,7 +40,7 @@
       </li>
     </ul>
 
-    <ul id="toolbar__big-screen-menu" class="hidden w-4/6 items-center justify-evenly lg:text-2xl xl:text-3xl transition-all duration-200 lg:flex ">
+    <ul id="toolbar__big-screen-menu" class="hidden w-4/6 grow  items-center justify-end gap-32 lg:text-2xl xl:text-3xl transition-all duration-200 lg:flex ">
       <li v-for="(page, path) in pages" :key="path">
         <button title="page navigation">
           <NuxtLink
@@ -53,7 +53,7 @@
       </li>
     </ul>
 
-    <button class="z-10 w-auto text-4xl text-white md:text-5xl lg:hidden" title ="menu unfold button" v-on:click="() => menuToggle()">
+    <button class="z-10 w-auto ml-auto text-4xl text-white md:text-5xl lg:hidden" title ="menu unfold button" v-on:click="() => menuToggle()">
       <Icon name="mdi:menu" aria-label="hamburger menu" />
     </button>
   </nav>
