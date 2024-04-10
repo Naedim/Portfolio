@@ -1,7 +1,6 @@
 <template>
   <div id = "app"
     class="box-border flex min-h-[100vh] w-screen flex-col bg-neutral-900 p-3 sm:p-6 md:p-10 "
-    :class="isMobileMenuActive ? 'overscroll-none' : 'landscape:overflow-y-scroll'"
   >
     <NuxtLayout>
       <NuxtPage />
@@ -11,7 +10,6 @@
 
 <script setup lang="ts">
 
-const isMobileMenuActive: Ref<Boolean> = useState("isMobileMenuActive", () => false);
 const title = "Damien NOEL's Portfolio";
 const description =
   "Hello I'm Damien NOEL, a newly graduated developper and this is the portfolio that tracks the project I'm working on";
