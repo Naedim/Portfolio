@@ -1,6 +1,6 @@
 <template>
   <div id = "app"
-    class="box-border flex min-h-[100vh] w-screen flex-col bg-neutral-900 p-3 sm:p-6 md:p-10 "
+    class="box-border flex min-h-screen w-screen flex-col bg-neutral-900 p-3 sm:p-6 md:p-10 "
   >
     <NuxtLayout>
       <NuxtPage />

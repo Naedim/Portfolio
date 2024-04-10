@@ -61,8 +61,6 @@
 
 <script setup lang="ts">
 const route = useRoute()
-console.log("route : ", route)
-
 const pages = {
   "/": "home",
   "experiences": "experiences"
