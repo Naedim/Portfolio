@@ -24,6 +24,7 @@
     "@nuxtjs/robots": "^3.0.0",
     "@rollup/plugin-terser": "^0.4.0",
     "@types/node": "^18.11.11",
+    "@vercel/analytics": "^1.2.2",
     "consola": "^3.2.3",
     "nuxi": "^3.0.0-rc.11",
     "sass": "^1.56.1",
