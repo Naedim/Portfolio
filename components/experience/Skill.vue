@@ -17,9 +17,9 @@
 </template>
 
 <script setup lang="ts">
-import {SkillInterface} from "~~/models/interfaces/SkillInterface";
-import {SkillInfosInterface} from "~/models/interfaces/skillInfoInterface";
 import skillsInfosData from "~/assets/staticData/skillInfos.json";
+import type { SkillInfosInterface } from "~/models/interfaces/SkillInfosInterface";
+import type { SkillInterface } from "~/models/interfaces/SkillInterface";
 
 const skillInfos = skillsInfosData as SkillInfosInterface;
 const props = defineProps<{

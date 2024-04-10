@@ -1,6 +1,6 @@
 <template>
-  <div id="home-page" class="flex h-full gap-28 pt-28 sm:gap-36 sm:pt-36 md:gap-48 md:pt-48 w-full flex-col items-center justify-center">
-    <div id = "home-page__introduction" class="flex h-full  flex-col items-start justify-center gap-5 md:gap-8 lg:w-4/6 lg:gap-10">
+  <div id="home-page" class="flex  w-full pt-28  flex-col items-center justify-between">
+    <div id = "home-page__introduction" class="flex self-center flex-col items-start justify-center gap-5 md:gap-8 lg:w-4/6 lg:gap-10">
       <div>
         <p id="home-page__introduction-first-line" class="text-xl font-bold text-white sm:text-3xl md:text-5xl lg:text-4xl">
           Hello, I'm
@@ -24,7 +24,6 @@
       </div>
     </div>
 
-    <Footer class="h-30 portrait:absolute portrait:bottom-0  w-full lg:hidden" />
-    <Footer class="absolute right-0 top-0 hidden h-full w-40 flex-col lg:flex" />
+    <Footer class="h-30 landscape:p-0 pb-3 sm:pb-6 md:pb-10 lg:absolute lg:bottom-10  w-full " />
   </div>
 </template>

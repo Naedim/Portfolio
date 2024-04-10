@@ -15,8 +15,9 @@
 </template>
 
 <script setup lang="ts">
-import {Ref} from "nuxt/dist/app/compat/vue-demi";
-import {ExperienceInterface} from "~~/models/interfaces/ExperienceInteface";
+import type { ExperienceInterface } from '~/models/interfaces/ExperienceInterface';
+
+
 
 let experience: Ref<ExperienceInterface> = useState("selectedExperience");
 </script>
@@ -32,3 +33,4 @@ svg {
   @apply col-span-7 text-[9px] font-bold  sm:text-xs md:text-[3vw] lg:text-[1.5vw];
 }
 </style>
+~/models/interfaces/ExperienceInterface
