@@ -7,8 +7,3 @@
     <slot />
   </main>
 </template>
-<style>
-main{
-  flex:1;
-}
-</style>

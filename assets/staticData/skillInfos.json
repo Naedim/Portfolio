@@ -3,6 +3,10 @@
         "logo": "react.svg",
         "website": "https://react.dev"
     },
+    "VueJS": {
+        "logo": "vueJS.svg",
+        "website": "https://vuejs.org/"
+    },
     "React Query": {
         "logo": "react-query.svg",
         "website": "https://tanstack.com/query/"
@@ -15,13 +19,21 @@
         "logo": "ant-design.svg",
         "website": "https://ant.design/"
     },
-    "Flask": {
-        "logo": "flask.svg",
-        "website": "https://flask.palletsprojects.com"
+    "NodeJS": {
+        "logo": "nodeJS.svg",
+        "website": "https://nodejs.org/en"
+    },
+    "Moleculer": {
+        "logo": "moleculer.svg",
+        "website": "https://moleculer.services/"
     },
     "Python": {
         "logo": "python.svg",
         "website": "https://docs.pytest.org/"
+    },
+    "Flask": {
+        "logo": "flask.svg",
+        "website": "https://flask.palletsprojects.com"
     },
     "MongoDB": {
         "logo": "mongodb.svg",
