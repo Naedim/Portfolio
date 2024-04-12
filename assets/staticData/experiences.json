@@ -1,4 +1,54 @@
-[
+[{
+    "company": {
+      "name": "Ownily",
+      "website": "https://www.ownily.fr/"
+    },
+    "contractType": "Freelance",
+    "begining": "2023",
+    "description": "Addition of key features for a real-estate management application",
+    "duration": "4 months",
+    "title": "FullStack developer",
+    "skillDomainList": [
+      {
+        "title": "Front-end development",
+        "skillList": [
+          {
+            "name": "VueJS"
+          },
+          {
+            "name": "TailwindCSS"
+          } 
+        ]
+      },
+      {
+        "title": "back-end development",
+        "skillList": [
+          {
+            "name": "NodeJS"
+          },
+          {
+            "name": "Moleculer"
+          }
+        ]
+      },
+      {
+        "title": "Database",
+        "skillList": [
+          {
+            "name": "MongoDB"
+          }
+        ]
+      },
+      {
+        "title": "Testing",
+        "skillList": [
+          {
+            "name": "Cypress"
+          }
+        ]
+      }
+    ]
+  },
   {
     "company": {
       "name": "Stryker",
