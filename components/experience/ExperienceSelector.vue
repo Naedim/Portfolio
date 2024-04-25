@@ -19,7 +19,7 @@
             :to= selectedExperience.company.website
             target="_blank"
             :title="`${selectedExperience.company.name}`"
-            class="flex items-center gap-2 text-xl font-bold text-red-500 hover:text-orange-300 sm:text-xl md:text-4xl lg:text-3xl"
+            class="flex items-center gap-2 text-xl font-bold text-purple-500 hover:text-purple-500 sm:text-xl md:text-4xl lg:text-3xl"
           >
             <h2>
               {{ selectedExperience.company.name }}
@@ -29,7 +29,7 @@
         </button>
 
         <!-- Lower duration -->
-        <p class="text-[11px] font-semibold text-gray-200 sm:text-sm md:text-2xl lg:text-lg lg:font-bold">
+        <p class="text-[11px] font-semibold text-gray-900 sm:text-sm md:text-2xl lg:text-lg lg:font-bold">
           {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
         </p>
       </div>
@@ -78,7 +78,7 @@ const selectExperience = (index: number) => {
 }
 
 .active {
-  @apply text-red-500 hover:text-orange-200;
+  @apply text-purple-500 hover:text-orange-500;
 }
 
 .disabled {

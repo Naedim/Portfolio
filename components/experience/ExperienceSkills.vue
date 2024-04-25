@@ -5,8 +5,8 @@
         :title="`domain of ${domain.title}`"
         v-for="(domain, index) in selectedExperience.skillDomainList"
         @click="selectedDomainIndex = index"
-        :class="index === selectedDomainIndex ? 'bg-orange-200 text-neutral-700' : 'bg-red-700 text-white'"
-        class="box-content h-6 grow rounded-full px-2 focus:bg-orange-200 sm:h-8 sm:px-3 md:h-16 md:px-[2vw] xl:max-w-[20rem]"
+        :class="index === selectedDomainIndex ? 'border-orange-500 text-black'  : 'border-purple-700 text-black'"
+        class="box-content h-6 grow rounded-full  shadow-lg px-2 border-solid  border-2 sm:h-8 sm:px-3 md:h-16 md:px-[2vw] xl:max-w-[20rem]"
       >
           <p class="text-center text-xs font-bold sm:text-base md:text-[2.5vw] lg:text-[1.8vw] xl:text-[1vw] lg:font-semibold">{{ domain.title }}</p>
       </button>
