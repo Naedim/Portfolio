@@ -24,7 +24,11 @@ module.exports = {
         
       }
     },
-    
+    extends : {
+  colors : {
+    'dark-purple' : '#310D20'
+  }
+    }
   },
   plugins: [],
 };

@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex w-full items-start text-orange-500 z-10">
+  <nav class="flex w-full items-star text-purple-500 z-10 p-4">
     <div class="flex flex-col">
       <div
         id="toolbar__navbar-logo"
@@ -12,7 +12,7 @@
 
       <div
         id="toolbar__current-page-info"
-        class="flex items-center gap-2 text-xs font-semibold text-purple-500 sm:text-sm sm:font-bold md:text-base lg:text-xl"
+        class="flex items-center gap-2 text-xs font-semibold text-lime-500 sm:text-sm sm:font-bold md:text-base lg:text-xl"
       >
         <Icon id="navbar-logo" name="mdi:book-open-page-variant-outline" aria-label="navbar's logo icon" class="" />
 
@@ -33,7 +33,7 @@
     >
       <li v-for="(page, path) in pages" :key="path">
         <button title="page navigation">
-          <NuxtLink :to="path" class="font-extrabold text-black" @click="menuToggle()" :title="`go to page ${page}`"
+          <NuxtLink :to="path" class="font-extrabold text-violet-500" @click="menuToggle()" :title="`go to page ${page}`"
             >{{ page }}
           </NuxtLink>
         </button>
@@ -53,7 +53,7 @@
       </li>
     </ul>
 
-    <button class="z-10 w-auto ml-auto text-4xl text-black md:text-5xl lg:hidden" title ="menu unfold button" v-on:click="() => menuToggle()">
+    <button class="z-10 w-auto ml-auto text-4xl md:text-5xl lg:hidden" title ="menu unfold button" v-on:click="() => menuToggle()">
       <Icon name="mdi:menu" aria-label="hamburger menu" />
     </button>
   </nav>

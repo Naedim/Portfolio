@@ -1,12 +1,8 @@
 <template>
-  <div id = "app"
-    class="box-border flex min-h-screen w-screen flex-col p-6  bg-purple-200 "
-  >
-  <div class = "p-4 h-[100%] w-full bg-white rounded-lg">
+  <div id = "app" >
     <NuxtLayout >
       <NuxtPage />
     </NuxtLayout>
-  </div>
   </div>
 </template>
 

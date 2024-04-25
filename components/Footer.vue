@@ -1,7 +1,7 @@
 <template>
     <footer class = "box-border flex items-center justify-center gap-10 md:gap-20">
         
-        <NuxtLink v-for="(media, index) in medias" :to= media.url target="_blank" :title = "`${media.label} link`" class = "flex flex-col items-center text-black hover:text-purple-500 ">
+        <NuxtLink v-for="(media, index) in medias" :to= media.url target="_blank" :title = "`${media.label} link`" class = "flex flex-col items-center text-violet-500 hover:text-rose-300 ">
             <Icon :name = "media.iconName" :aria-label = "`${media.label} link`" class = "text-4xl md:text-6xl" />
             <p class = "text-sm md:text-lg" >{{media.label}}</p>
         </NuxtLink>
