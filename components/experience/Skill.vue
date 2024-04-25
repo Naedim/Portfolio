@@ -10,7 +10,7 @@
       class="flex h-full items-center justify-center gap-2 sm:gap-x-3 md:gap-4"
       :title="`what is ${props.skill.name}`"
     >
-      <img :title="skill.name" class="h-4 w-auto sm:h-6 md:h-9" :src="`/skillsPictures/${skillInfos[props.skill.name].logo}`" />
+      <img :title="`${skill.name} logo`" class="h-4 w-auto sm:h-6 md:h-9" :src="`/skillsPictures/${skillInfos[props.skill.name].logo}`" />
       <p class="text-xs font-semibold text-neutral-700 sm:text-sm md:text-xl">{{ skill.name }}</p>
     </NuxtLink>
   </button>
