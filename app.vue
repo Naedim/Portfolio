@@ -1,5 +1,5 @@
 <template>
-  <div id = "app" class = "h-screen w-screen">
+  <div id = "app" class = "h-screen landscape:h-max w-screen">
     <NuxtLayout >
       <NuxtPage />
     </NuxtLayout>
