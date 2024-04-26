@@ -21,7 +21,7 @@
             :to= selectedExperience.company.website
             target="_blank"
             :title="`${selectedExperience.company.name}`"
-            class="flex items-center gap-2 text-xl font-bold  hover:text-rose-300 sm:text-xl md:text-4xl lg:text-3xl"
+            class="flex items-center gap-2 text-xl font-bold sm:text-xl md:text-4xl lg:text-3xl"
           >
             <h2>
               {{ selectedExperience.company.name }}
