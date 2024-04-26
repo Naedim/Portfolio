@@ -6,8 +6,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-
+<script setup>
 const title = "Damien NOEL's Portfolio";
 const description =
   "Hello I'm Damien NOEL, a newly graduated developper and this is the portfolio that tracks the project I'm working on";
@@ -39,10 +38,11 @@ useHead({
 button {
   all: unset;
   cursor: pointer;
-  @apply filter shadow-md shadow-violet-200
+  @apply filter text-white shadow-md  
 }
 
 button:hover{
   transform : scale(1.05);
+  @apply text-rose-300 transition-all duration-300 underline underline-offset-8
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="home-page" class="flex  w-full pt-28  flex-col items-center justify-between">
+  <div id="home-page" class="flex  w-full flex-col items-center justify-between">
     <div id = "home-page__introduction" class="flex self-center flex-col items-start justify-center gap-5 md:gap-8 lg:w-4/6 lg:gap-10">
       <div>
         <p id="home-page__introduction-first-line" class="text-xl font-bold text-violet-400 sm:text-3xl md:text-5xl lg:text-4xl">

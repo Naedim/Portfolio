@@ -2,7 +2,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "./node_modules/tw-elements/js/**/*.js" ],
   theme: {
     screens: {
 
@@ -30,5 +30,5 @@ module.exports = {
   }
     }
   },
-  plugins: [],
+  plugins: [require("tw-elements/plugin.cjs")],
 };

@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex w-full items-star text-white z-10 p-4">
+  <nav class="flex w-full items-star text-white z-10">
     <div class="flex flex-col">
       <div
         id="toolbar__navbar-logo"
@@ -32,8 +32,8 @@
       class="absolute top-0 left-0 box-border flex h-[100vh] landscape:overflow-x-hidden w-full flex-col items-center portrait:justify-center portrait:gap-20 landscape:justify-evenly text-2xl font-medium backdrop-blur-md transition-all duration-200 md:text-4xl lg:hidden"
     >
       <li v-for="(page, path) in pages" :key="path">
-        <button title="page navigation">
-          <NuxtLink :to="path" class="font-extrabold text-violet-500" @click="menuToggle()" :title="`go to page ${page}`"
+        <button title="page navigation" class = "shadow-none">
+          <NuxtLink :to="path" class="font-extrabold" @click="menuToggle()" :title="`go to page ${page}`"
             >{{ page }}
           </NuxtLink>
         </button>
@@ -46,7 +46,7 @@
           <NuxtLink
             :to="path"
             :title="`go to page ${page}`"
-            class="font-semibold text-black hover:text-purple-500 hover:underline focus:text-purple-500 focus:underline"
+            class="font-semibold" 
             >{{ page }}
           </NuxtLink>
         </button>

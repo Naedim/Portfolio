@@ -6,15 +6,17 @@
         id="reverse"
         class="selector-button"
         title="preivous experience"
+        data-twe-ripple-init
+        data-twe-ripple-color="light"
         @click="previousExperience"
-        :class="currentExperienceIndex === 0 ? 'disabled' : 'active'"
+        :class="currentExperienceIndex === 0 && 'disabled'"
       >
-        <Icon aria-label="previous experience" name="ic:baseline-arrow-back-ios" />
+        <Icon  class = "rotate-180 h-6" aria-label="previous experience" name="ic:baseline-arrow-forward-ios" />
       </button>
 
       <!-- Company name center title -->
       <div class="flex flex-col items-center md:gap-2">
-        <button class = "text-violet-500 shadow-none">
+        <button class =  "shadow-none">
           <NuxtLink
             :to= selectedExperience.company.website
             target="_blank"
@@ -37,11 +39,13 @@
       <!-- Right button -->
       <button
         title="next experience"
+        data-twe-ripple-init
+        data-twe-ripple-color="light"
         @click="nextExperience"
         class="selector-button col-start-6"
         :class="currentExperienceIndex === experienceList.length - 1 ? 'disabled' : 'active'"
       >
-        <Icon aria-label="next experience" name="ic:baseline-arrow-forward-ios" />
+        <Icon class = "h-6" aria-label="next experience" name="ic:baseline-arrow-forward-ios" />
       </button>
     </div>
 
@@ -52,6 +56,12 @@
 <script setup lang="ts">
 import type { ExperienceInterface } from "~/models/interfaces/ExperienceInterface";
 import experiencesData from "../../assets/staticData/experiences.json";
+import {
+  Ripple,
+  initTWE,
+} from "tw-elements";
+
+initTWE({ Ripple });
 
 const experienceList: Array<ExperienceInterface> = experiencesData as Array<ExperienceInterface>;
 let currentExperienceIndex = 0;
@@ -74,15 +84,12 @@ const selectExperience = (index: number) => {
 
 <style scoped>
 .selector-button {
-  @apply  border-solid border-2 border-violet-200 h-10 w-10  hover:border-rose-100 focus:border-rose-100 rounded-full flex items-center justify-center sm:text-2xl md:text-4xl lg:text-4xl;
+  @apply  border-solid border-2 border-white h-10 w-10  hover:border-rose-300 rounded-full flex items-center justify-center sm:text-2xl md:text-4xl lg:text-4xl;
 }
 
-.active {
-  @apply text-purple-500 hover:text-rose-300;
-}
 
 .disabled {
-  @apply text-gray-400;
+  @apply text-gray-400 border-gray-400 hover:border-gray-400 transition-none transform-none;
 }
 </style>
 ~/models/interfaces/ExperienceInterface

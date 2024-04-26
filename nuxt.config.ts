@@ -21,14 +21,6 @@ export default defineNuxtConfig({
     }
   },
 
-  tailwindcss: {
-    cssPath: "~/assets/css/tailwind.css",
-    configPath: "tailwind.config",
-    exposeConfig: false,
-    injectPosition: "first",
-    viewer: true,
-  },
-
   head: {
     htmlAttrs: {
       lang: 'en'
@@ -37,5 +29,12 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true
-  }
+  },
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 });
