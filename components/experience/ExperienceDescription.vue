@@ -23,7 +23,7 @@ let experience: Ref<ExperienceInterface> = useState("selectedExperience");
 </script>
 <style scoped>
 .info {
-  @apply flex items-center justify-between text-purple-500 border-solid border-2 shadow-lg rounded-full px-3 py-1 gap-1 md:gap-3;
+  @apply flex items-center justify-between text-lime-500 border-solid border-2 border-lime-300 rounded-full px-3 py-1 gap-1 md:gap-3;
 }
 
 svg {

@@ -1,9 +1,9 @@
 <template>
-  <nav class="flex w-full items-star text-purple-500 z-10 p-4">
+  <nav class="flex w-full items-star text-white z-10 p-4">
     <div class="flex flex-col">
       <div
         id="toolbar__navbar-logo"
-        class="slate-400 flex items-center gap-2 text-sm font-semibold sm:text-base md:gap-3 md:text-3xl"
+        class="flex items-center gap-2 text-violet-600 text-sm font-semibold sm:text-base md:gap-3 md:text-3xl"
         title="navbar's logo"
       >
         Damien NOEL
@@ -53,7 +53,7 @@
       </li>
     </ul>
 
-    <button class="z-10 w-auto ml-auto text-4xl md:text-5xl lg:hidden" title ="menu unfold button" v-on:click="() => menuToggle()">
+    <button class="z-10 w-auto ml-auto  text-4xl md:text-5xl lg:hidden shadow-none" title ="menu unfold button" v-on:click="() => menuToggle()">
       <Icon name="mdi:menu" aria-label="hamburger menu" />
     </button>
   </nav>

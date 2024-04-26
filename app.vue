@@ -1,5 +1,5 @@
 <template>
-  <div id = "app" >
+  <div id = "app" class = "h-screen w-screen">
     <NuxtLayout >
       <NuxtPage />
     </NuxtLayout>
@@ -39,7 +39,9 @@ useHead({
 button {
   all: unset;
   cursor: pointer;
+  @apply filter shadow-md shadow-violet-200
 }
+
 button:hover{
   transform : scale(1.05);
 }

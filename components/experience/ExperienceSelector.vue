@@ -14,12 +14,12 @@
 
       <!-- Company name center title -->
       <div class="flex flex-col items-center md:gap-2">
-        <button>
+        <button class = "text-violet-500 shadow-none">
           <NuxtLink
             :to= selectedExperience.company.website
             target="_blank"
             :title="`${selectedExperience.company.name}`"
-            class="flex items-center gap-2 text-xl font-bold text-purple-500 hover:text-purple-500 sm:text-xl md:text-4xl lg:text-3xl"
+            class="flex items-center gap-2 text-xl font-bold  hover:text-rose-300 sm:text-xl md:text-4xl lg:text-3xl"
           >
             <h2>
               {{ selectedExperience.company.name }}
@@ -29,7 +29,7 @@
         </button>
 
         <!-- Lower duration -->
-        <p class="text-[11px] font-semibold text-gray-900 sm:text-sm md:text-2xl lg:text-lg lg:font-bold">
+        <p class="text-[11px] font-semibold text-lime-500 sm:text-sm md:text-2xl lg:text-lg lg:font-bold">
           {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
         </p>
       </div>
@@ -74,11 +74,11 @@ const selectExperience = (index: number) => {
 
 <style scoped>
 .selector-button {
-  @apply flex items-center justify-center text-xl sm:text-2xl md:text-4xl lg:text-4xl;
+  @apply  border-solid border-2 border-violet-200 h-10 w-10  hover:border-rose-100 focus:border-rose-100 rounded-full flex items-center justify-center sm:text-2xl md:text-4xl lg:text-4xl;
 }
 
 .active {
-  @apply text-purple-500 hover:text-orange-500;
+  @apply text-purple-500 hover:text-rose-300;
 }
 
 .disabled {
