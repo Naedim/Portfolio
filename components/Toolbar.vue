@@ -40,9 +40,9 @@
       </li>
     </ul>
 
-    <ul id="toolbar__big-screen-menu" class="hidden w-4/6 grow  items-center justify-end gap-32 lg:text-2xl xl:text-3xl transition-all duration-200 lg:flex ">
+    <ul id="toolbar__big-screen-menu" class="hidden w-4/6 grow  items-center justify-end gap-32  xl:text-xl transition-all duration-200 xl:flex ">
       <li v-for="(page, path) in pages" :key="path">
-        <button title="page navigation">
+        <button title="page navigation" class = "border-solid px-4 py-2 rounded-full border-violet-500">
           <NuxtLink
             :to="path"
             :title="`go to page ${page}`"
@@ -53,7 +53,7 @@
       </li>
     </ul>
 
-    <button class="z-10 w-auto ml-auto  text-4xl md:text-5xl lg:hidden shadow-none" title ="menu unfold button" v-on:click="() => menuToggle()">
+    <button class="z-10 w-auto ml-auto  text-4xl md:text-5xl xl:hidden shadow-none" title ="menu unfold button" v-on:click="() => menuToggle()">
       <Icon name="mdi:menu" aria-label="hamburger menu" />
     </button>
   </nav>

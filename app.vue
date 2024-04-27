@@ -1,5 +1,5 @@
 <template>
-  <div id = "app" class = "h-screen landscape:h-max w-screen">
+  <div id = "app" class = "h-screen landscape:h-max landscape:xl:h-screen">
     <NuxtLayout >
       <NuxtPage />
     </NuxtLayout>
@@ -43,6 +43,6 @@ button {
 
 button:hover{
   transform : scale(1.05);
-  @apply text-rose-300 transition-all duration-300 underline underline-offset-8
+  @apply text-rose-300  border-rose-300 transition-all duration-300 
 }
 </style>

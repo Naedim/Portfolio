@@ -86,7 +86,8 @@ const selectExperience = (index: number) => {
 
 <style scoped>
 .selector-button {
-  @apply  border-solid border-2 border-white h-10 w-10  hover:border-rose-300 rounded-full flex items-center justify-center sm:text-2xl md:text-4xl lg:text-4xl;
+  /* @apply  border-solid border-2 border-white h-10 w-10  hover:border-rose-300 rounded-full flex items-center justify-center sm:text-2xl md:text-4xl lg:text-4xl; */
+  @apply  h-10 w-10 rounded-full flex items-center justify-center sm:text-2xl md:text-4xl lg:text-4xl;
 }
 
 
