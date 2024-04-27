@@ -42,7 +42,7 @@
         data-twe-ripple-init
         data-twe-ripple-color="light"
         @click="nextExperience"
-        class="selector-button col-start-6"
+        class="selector-button col-start-6 hover:text-rose-300"
         :class="currentExperienceIndex === experienceList.length - 1 ? 'disabled' : 'active'"
       >
         <Icon class = "h-6" aria-label="next experience" name="ic:baseline-arrow-forward-ios" />
@@ -61,7 +61,9 @@ import {
   initTWE,
 } from "tw-elements";
 
-initTWE({ Ripple });
+onMounted(() => {
+  initTWE({Ripple });
+});
 
 const experienceList: Array<ExperienceInterface> = experiencesData as Array<ExperienceInterface>;
 let currentExperienceIndex = 0;
@@ -92,4 +94,3 @@ const selectExperience = (index: number) => {
   @apply text-gray-400 border-gray-400 hover:border-gray-400 transition-none transform-none;
 }
 </style>
-~/models/interfaces/ExperienceInterface
