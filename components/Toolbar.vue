@@ -53,7 +53,7 @@
       </li>
     </ul>
 
-    <button class="z-10 w-auto ml-auto  text-4xl md:text-5xl xl:hidden shadow-none" title ="menu unfold button" v-on:click="() => menuToggle()">
+    <button class="z-10 w-auto ml-auto  text-4xl xl:hidden shadow-none" title ="menu unfold button" v-on:click="() => menuToggle()">
       <Icon name="mdi:menu" aria-label="hamburger menu" />
     </button>
   </nav>

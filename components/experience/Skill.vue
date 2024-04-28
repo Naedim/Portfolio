@@ -2,7 +2,7 @@
   <button
     :id="'skill-button' + props.skill.name"
     :title="`what is ${props.skill.name}`"
-    class="lg:h-13 box-border h-8 min-w-[4rem] grow rounded-full bg-slate-200 p-1 sm:h-12 sm:min-w-[6rem] sm:p-2 md:h-12 md:min-w-[30vw] md:p-3 lg:min-w-[15rem] lg:max-w-[30rem]"
+    class="box-border grow rounded-full bg-slate-200 px-6 py-4"
   >
     <NuxtLink
       :to="skillInfos[props.skill.name].website"

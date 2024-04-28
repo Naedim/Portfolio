@@ -2,21 +2,31 @@
   <div id="experience-skills" class="flex w-full  flex-col">
     <div class="flex flex-wrap justify-center gap-3 md:gap-6 lg:gap-8">
       <button
+        data-twe-ripple-init
+        data-twe-ripple-color="light"
         :title="`domain of ${domain.title}`"
         v-for="(domain, index) in selectedExperience.skillDomainList"
         @click="selectedDomainIndex = index"
-        :class="index === selectedDomainIndex ? 'border-orange-500 text-black'  : 'border-purple-700 text-black'"
-        class="box-content h-6 grow rounded-full   px-2 border-solid  border-2 sm:h-8 sm:px-3 md:h-16 md:px-[2vw] xl:max-w-[20rem]"
+        :class="index === selectedDomainIndex && 'border-rose-300 text-rose-300'"
+        class="box-content h-6 grow text-2xl rounded-full p-2 border-solid  border-2"
       >
-          <p class="text-center text-xs font-bold sm:text-base md:text-[2.5vw] lg:text-[1.8vw] xl:text-[1vw] lg:font-semibold">{{ domain.title }}</p>
+          <p class="text-center text-xs font-bold ">{{ domain.title }}</p>
       </button>
     </div>
-  <div class="sm:pt-15 flex w-full flex-wrap items-center h-auto justify-center gap-3 pt-6 rounded-lg md:pt-12 md:gap-6 lg:pt-16 lg:gap-5">
+    <div class="flex  flex-wrap items-center h-auto justify-start gap-3 pt-12 rounded-lg">
       <Skill v-for="skill in selectedExperience.skillDomainList[selectedDomainIndex].skillList" :skill="skill" />
     </div>
   </div>
 </template>
 <script setup lang="ts">
+import {
+  Ripple,
+  initTWE,
+} from "tw-elements";
+
+onMounted(() => {
+  initTWE({Ripple });
+});
 import type { ExperienceInterface } from "~/models/interfaces/ExperienceInterface";
 import Skill from "~~/components/experience/Skill.vue";
 

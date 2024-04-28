@@ -1,9 +1,11 @@
 <template>
-  <div id="experience-page" class="items-center w-full h-full ">
-    <div class = "flex flex-col lg:w-2/3 gap-12 md:gap-28  lg:gap-14  self-center items-center">
-      <ExperienceSelector class="flex" />
-      <ExperienceDescription/>
-      <ExperienceSkills />
+  <div id="experience-page" class="items-center w-full h-full box-content">
+    <div class = "flex flex-col self-center items-center">
+      <ExperienceSelector/>
+      <Separator class = "pt-12" :title="'Description'"/>
+      <ExperienceDescription class = "pt-2"/>
+      <Separator class = "pt-6" :title="'technologies'"/>
+      <ExperienceSkills class = "pt-2"/>
     </div>
   </div>
 </template>
