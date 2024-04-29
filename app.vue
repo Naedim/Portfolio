@@ -45,7 +45,7 @@ button:hover{
   transform : scale(1.05);
   @apply  transition-all duration-300 
 }
-button:focus {
+button:focus, button.focused-skill {
  @apply bg-none bg-white text-violet-900
 }
 </style>

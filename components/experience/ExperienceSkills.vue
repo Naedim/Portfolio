@@ -7,7 +7,7 @@
         :title="`domain of ${domain.title}`"
         v-for="(domain, index) in selectedExperience.skillDomainList"
         @click="selectedDomainIndex = index"
-        :class="index === selectedDomainIndex && 'border-violet-800 text-violet-800 bg-none bg-white'"
+        :class="index === selectedDomainIndex && 'focused-skill'"
         class="box-content h-6 grow text-2xl p-2  rounded-full"
       >
           <p class="text-center text-xs font-bold ">{{ domain.title }}</p>
@@ -35,3 +35,9 @@ import Skill from "~~/components/experience/Skill.vue";
 const selectedExperience: Ref<ExperienceInterface> = useState("selectedExperience");
 const selectedDomainIndex: Ref<number> = useState("selectedDomainIndex");
 </script>
+
+<style>
+button:first{
+  
+}
+</style>

@@ -4,10 +4,10 @@
         <div v-for="(media, index) in medias"  >
         <button class = "p-2">
         <NuxtLink :to= media.url target="_blank" :title = "`${media.label} link`" class = "flex flex-col items-center">
-            <Icon :name = "media.iconName" :aria-label = "`${media.label} link`" class = "text-4xl md:text-6xl" />
+            <Icon :name = "media.iconName" :aria-label = "`${media.label} link`" class = "text-4xl " />
         </NuxtLink>
         </button>
-        <p class = " text-white font-bold text-center text-sm md:text-lg" >{{media.label}}</p>
+        <p class = " text-white font-bold text-center text-sm  xl:text-base" >{{media.label}}</p>
         </div>
     </footer>
 </template>

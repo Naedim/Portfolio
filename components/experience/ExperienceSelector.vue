@@ -1,6 +1,6 @@
 <template>
-  <div id="experience-selector" class="flex w-full flex-col items-center justify-center md:w-9/12 lg:w-5/12">
-    <div class="flex w-full justify-around">
+  <div id="experience-selector" class="flex w-full flex-col items-center justify-center">
+    <div class="flex w-full justify-around items-center">
       <!-- Left button -->
       <button
         id="reverse"
@@ -21,18 +21,13 @@
             :to= selectedExperience.company.website
             target="_blank"
             :title="`${selectedExperience.company.name}`"
-            class="flex items-center gap-2 text-xl font-bold sm:text-xl md:text-4xl lg:text-3xl"
+            class="flex items-center gap-2 text-xl font-bold sm:text-xl"
           >
             <h2>
               {{ selectedExperience.company.name }}
             </h2>
           </NuxtLink>
         </button>
-
-        <!-- Lower duration -->
-        <p class="text-[11px] font-semibold text-violet-900 sm:text-sm md:text-2xl lg:text-lg lg:font-bold">
-          {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
-        </p>
       </div>
 
       <!-- Right button -->
@@ -46,6 +41,12 @@
       >
         <Icon class = "h-6" aria-label="next experience" name="ic:baseline-arrow-forward-ios" />
       </button>
+    </div>
+    <div class = "flex w-full justify-center">
+        <!-- Lower duration -->
+        <p class="text-[11px] font-semibold text-violet-900">
+          {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
+        </p>
     </div>
 
     <!-- <ExperienceContract class="flex basis-1/12" /> -->
@@ -85,7 +86,7 @@ const selectExperience = (index: number) => {
 
 <style scoped>
 .selector-button {
-  @apply  h-10 w-10 rounded-full flex items-center justify-center sm:text-2xl md:text-4xl lg:text-4xl;
+  @apply  h-10 w-10 rounded-full flex items-center justify-center;
 }
 
 
