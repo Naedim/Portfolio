@@ -38,7 +38,7 @@ useHead({
 button {
   all: unset;
   cursor: pointer;
-  @apply filter text-white  bg-gradient-to-r from-violet-900 to-violet-600 rounded-full shadow-lg transition-all duration-200
+  @apply filter text-white  bg-gradient-to-r from-violet-900 to-violet-600 rounded-full shadow-lg transition-all duration-200 
 }
 
 button:hover{
