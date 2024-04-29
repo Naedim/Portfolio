@@ -1,19 +1,21 @@
 <template>
-  <div id="experience-skills" class="flex w-full  flex-col">
-    <div class="flex flex-wrap justify-center gap-3 md:gap-6 lg:gap-8">
+  <div id="experience-skills" class="flex w-full flex-col gap-6">
+    <div class="flex flex-wrap justify-center gap-3">
       <button
         data-twe-ripple-init
-        data-twe-ripple-color="light"
+        data-twe-ripple-color="dark"
         :title="`domain of ${domain.title}`"
         v-for="(domain, index) in selectedExperience.skillDomainList"
         @click="selectedDomainIndex = index"
-        :class="index === selectedDomainIndex && 'border-rose-300 text-rose-300'"
-        class="box-content h-6 grow text-2xl rounded-full p-2 border-solid  border-2"
+        :class="index === selectedDomainIndex && 'border-violet-800 text-violet-800 bg-none bg-white'"
+        class="box-content h-6 grow text-2xl p-2  rounded-full"
       >
           <p class="text-center text-xs font-bold ">{{ domain.title }}</p>
       </button>
     </div>
-    <div class="flex  flex-wrap items-center h-auto justify-start gap-3 pt-12 rounded-lg">
+    <!-- dashed separator -->
+    <div class="w-1/2 border-dashed border-t-[1px] border-violet-300 self-center"/>
+    <div class="flex  flex-wrap items-center h-auto justify-start gap-3 rounded-lg">
       <Skill v-for="skill in selectedExperience.skillDomainList[selectedDomainIndex].skillList" :skill="skill" />
     </div>
   </div>

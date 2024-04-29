@@ -1,14 +1,14 @@
 <template>
-  <div id="home-page" class="flex  w-full flex-col items-center justify-between">
-    <div id = "home-page__introduction" class="flex self-center flex-col items-start justify-center gap-5">
+  <div id="home-page" class="flex w-full flex-col items-center justify-between">
+    <div id = "home-page__introduction" class="flex self-center w-3/4 flex-col items-start justify-center gap-5">
       <div>
-        <p id="home-page__introduction-first-line" class="text-xl font-bold text-violet-400">
+        <p id="home-page__introduction-first-line" class="text-2xl font-bold text-violet-900">
           Hello, I'm
         </p>
         <p
           title="Damien NOEL"
           id="home-page__introduction-second-line"
-          class="text-3xl font-semibold text-violet-600"
+          class="text-4xl font-semibold text-white"
         >
           Damien NOEL
         </p>
@@ -16,11 +16,11 @@
 
       <div
         id="home-page__introduction-third-line"
-        class="flex flex-col gap-1 text-lg font-bold"
+        class="flex flex-col gap-1 text-xl font-bold"
       >
-        <p class = "text-violet-400" title="Software engineer"><span class="text-lime-500">/$: </span>Software engineer</p>
-        <p class = "text-violet-400" title="University IT teacher"><span class="text-lime-500">&& </span>University IT teacher</p>
-        <p class = "text-violet-400" title="freelance developer"><span class="text-lime-500">&& </span>freelance developer</p>
+        <p class = "text-white" title="Software engineer"><span class="text-violet-900">/$: </span>Software engineer</p>
+        <p class = "text-white" title="University IT teacher"><span class="text-violet-900">&& </span>University IT teacher</p>
+        <p class = "text-white" title="freelance developer"><span class="text-violet-900">&& </span>freelance developer</p>
       </div>
     </div>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class = "box-border flex flex-col  p-4 bg-gradient-to-b from-violet-950 to-black h-full">
+  <div class = "box-border flex flex-col  p-4 bg-gradient-to-b from-violet-400 to-violet-500 h-full">
    <header>
     <Toolbar />
   </header>

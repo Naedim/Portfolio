@@ -38,11 +38,14 @@ useHead({
 button {
   all: unset;
   cursor: pointer;
-  @apply filter text-white shadow-md  
+  @apply filter text-white  bg-gradient-to-r from-violet-900 to-violet-600 rounded-full shadow-lg transition-all duration-200
 }
 
 button:hover{
   transform : scale(1.05);
-  @apply text-rose-300  border-rose-300 transition-all duration-300 
+  @apply  transition-all duration-300 
+}
+button:focus {
+ @apply bg-none bg-white text-violet-900
 }
 </style>

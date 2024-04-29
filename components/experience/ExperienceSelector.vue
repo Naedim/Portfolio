@@ -7,7 +7,7 @@
         class="selector-button"
         title="preivous experience"
         data-twe-ripple-init
-        data-twe-ripple-color="light"
+        data-twe-ripple-color="dark"
         @click="previousExperience"
         :class="currentExperienceIndex === 0 && 'disabled'"
       >
@@ -15,8 +15,8 @@
       </button>
 
       <!-- Company name center title -->
-      <div class="flex flex-col items-center md:gap-2">
-        <button class =  "shadow-none">
+      <div class="flex flex-col items-center">
+        <button class =  "px-4 py-2">
           <NuxtLink
             :to= selectedExperience.company.website
             target="_blank"
@@ -26,12 +26,11 @@
             <h2>
               {{ selectedExperience.company.name }}
             </h2>
-            <Icon class="h-5" name="material-symbols:arrow-forward" :aria-label="`${selectedExperience.company.name} website link`" />
           </NuxtLink>
         </button>
 
         <!-- Lower duration -->
-        <p class="text-[11px] font-semibold text-lime-500 sm:text-sm md:text-2xl lg:text-lg lg:font-bold">
+        <p class="text-[11px] font-semibold text-violet-900 sm:text-sm md:text-2xl lg:text-lg lg:font-bold">
           {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
         </p>
       </div>
@@ -40,9 +39,9 @@
       <button
         title="next experience"
         data-twe-ripple-init
-        data-twe-ripple-color="light"
+        data-twe-ripple-color="dark"
         @click="nextExperience"
-        class="selector-button col-start-6 hover:text-rose-300"
+        class="selector-button col-start-6"
         :class="currentExperienceIndex === experienceList.length - 1 ? 'disabled' : 'active'"
       >
         <Icon class = "h-6" aria-label="next experience" name="ic:baseline-arrow-forward-ios" />
@@ -86,7 +85,6 @@ const selectExperience = (index: number) => {
 
 <style scoped>
 .selector-button {
-  /* @apply  border-solid border-2 border-white h-10 w-10  hover:border-rose-300 rounded-full flex items-center justify-center sm:text-2xl md:text-4xl lg:text-4xl; */
   @apply  h-10 w-10 rounded-full flex items-center justify-center sm:text-2xl md:text-4xl lg:text-4xl;
 }
 

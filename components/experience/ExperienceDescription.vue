@@ -10,7 +10,7 @@
         <p>{{ experience.contractType }}</p>
       </div>
     </div>
-    <p class="text-sm  text-violet-400">{{ experience.description }}</p>
+    <p class="text-sm  text-white font-bold">{{ experience.description }}</p>
   </div>
 </template>
 
@@ -23,8 +23,8 @@ let experience: Ref<ExperienceInterface> = useState("selectedExperience");
 </script>
 <style scoped>
 .info {
-  /* @apply flex items-center justify-between text-lime-500 border-solid border-[1px] border-lime-300 rounded-full px-3 py-1 gap-1 md:gap-3; */
-  @apply flex items-center justify-between text-lime-500 border-solid border-[1px] border-lime-300 rounded-full px-2 py-1 gap-1 md:gap-3;
+  @apply flex items-center justify-between text-violet-900 bg-violet-200 rounded-full  font-bold px-2 py-1 gap-1 md:gap-3;
+  
 }
 
 svg {
@@ -34,4 +34,3 @@ svg {
   @apply   text-xs;
 }
 </style>
-~/models/interfaces/ExperienceInterface
