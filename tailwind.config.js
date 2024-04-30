@@ -2,17 +2,12 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "./node_modules/tw-elements/js/**/*.js" ],
   theme: {
     screens: {
 
-      'sm' : '360px',
-
-      'md': '500px',
-
-      'lg': '900px',
-
-      'xl': '1200px'
+      'lg': '700px',
+      'xl': '1050px'
 
     },
 
@@ -24,7 +19,11 @@ module.exports = {
         
       }
     },
-    
+    extends : {
+  colors : {
+    'dark-purple' : '#310D20'
+  }
+    }
   },
-  plugins: [],
+  plugins: [require("tw-elements/plugin.cjs")],
 };

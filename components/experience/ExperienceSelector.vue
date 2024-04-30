@@ -1,48 +1,53 @@
 <template>
-  <div id="experience-selector" class="flex w-full flex-col items-center justify-center md:w-9/12 lg:w-5/12">
-    <div class="flex w-full justify-around">
+  <div id="experience-selector" class="flex w-full flex-col items-center justify-center">
+    <div class="flex w-full lg:w-4/5  justify-between items-center">
       <!-- Left button -->
       <button
         id="reverse"
         class="selector-button"
         title="preivous experience"
+        data-twe-ripple-init
+        data-twe-ripple-color="dark"
         @click="previousExperience"
-        :class="currentExperienceIndex === 0 ? 'disabled' : 'active'"
+        :class="currentExperienceIndex === 0 && 'disabled'"
       >
-        <Icon aria-label="previous experience" name="ic:baseline-arrow-back-ios" />
+        <Icon  class = "rotate-180 h-6" aria-label="previous experience" name="ic:baseline-arrow-forward-ios" />
       </button>
 
       <!-- Company name center title -->
-      <div class="flex flex-col items-center md:gap-2">
-        <button>
+      <div class="flex flex-col items-center">
+        <button class = " px-6 py-4">
           <NuxtLink
             :to= selectedExperience.company.website
             target="_blank"
             :title="`${selectedExperience.company.name}`"
-            class="flex items-center gap-2 text-xl font-bold text-red-500 hover:text-orange-300 sm:text-xl md:text-4xl lg:text-3xl"
+            class="flex items-center gap-2 text-xl lg:text-3xl font-bold sm:text-xl"
           >
             <h2>
               {{ selectedExperience.company.name }}
             </h2>
-            <Icon class="h-5" name="material-symbols:arrow-forward" :aria-label="`${selectedExperience.company.name} website link`" />
           </NuxtLink>
         </button>
-
-        <!-- Lower duration -->
-        <p class="text-[11px] font-semibold text-gray-200 sm:text-sm md:text-2xl lg:text-lg lg:font-bold">
-          {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
-        </p>
       </div>
 
       <!-- Right button -->
       <button
         title="next experience"
+        data-twe-ripple-init
+        data-twe-ripple-color="dark"
         @click="nextExperience"
         class="selector-button col-start-6"
-        :class="currentExperienceIndex === experienceList.length - 1 ? 'disabled' : 'active'"
+        :class="currentExperienceIndex === experienceList.length - 1 && 'disabled'"
       >
-        <Icon aria-label="next experience" name="ic:baseline-arrow-forward-ios" />
+        <Icon class = "h-6" aria-label="next experience" name="ic:baseline-arrow-forward-ios" />
       </button>
+    </div>
+    
+    <!-- Lower duration -->
+    <div class = "flex w-full justify-center">
+        <p class="text-sm font-semibold text-violet-900">
+          {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
+        </p>
     </div>
 
     <!-- <ExperienceContract class="flex basis-1/12" /> -->
@@ -52,6 +57,14 @@
 <script setup lang="ts">
 import type { ExperienceInterface } from "~/models/interfaces/ExperienceInterface";
 import experiencesData from "../../assets/staticData/experiences.json";
+import {
+  Ripple,
+  initTWE,
+} from "tw-elements";
+
+onMounted(() => {
+  initTWE({Ripple });
+});
 
 const experienceList: Array<ExperienceInterface> = experiencesData as Array<ExperienceInterface>;
 let currentExperienceIndex = 0;
@@ -74,15 +87,11 @@ const selectExperience = (index: number) => {
 
 <style scoped>
 .selector-button {
-  @apply flex items-center justify-center text-xl sm:text-2xl md:text-4xl lg:text-4xl;
+  @apply  h-14 w-14 lg:h-16 lg:w-16 rounded-full flex items-center  text-2xl lg:text-4xl justify-center;
 }
 
-.active {
-  @apply text-red-500 hover:text-orange-200;
-}
 
 .disabled {
-  @apply text-gray-400;
+  @apply text-gray-400 border-gray-400 hover:border-gray-400 transition-none transform-none;
 }
 </style>
-~/models/interfaces/ExperienceInterface

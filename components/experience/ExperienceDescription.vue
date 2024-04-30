@@ -1,16 +1,16 @@
 <template>
   <div id="experience-description" class="flex flex-col w-full gap-2">
-    <div class="flex w-full justify-between gap-2 sm:gap-2 md:gap-6 lg:gap-60">
+    <div class="flex w-full justify-center gap-2  xl:gap-32">
       <div class="info">
-        <Icon aria-label="job info" name="ic:baseline-code" class="text-xl sm:text-2xl md:text-5xl lg:text-4xl" />
+        <Icon aria-label="job info" name="ic:baseline-code" class="text-xl" />
         <p>{{ experience.title }}</p>
       </div>
       <div class="info">
-        <Icon aria-label="contract type" name="ic:outline-handshake" class="text-xl sm:text-2xl md:text-4xl lg:text-3xl" />
+        <Icon aria-label="contract type" name="ic:outline-handshake" class="text-xl" />
         <p>{{ experience.contractType }}</p>
       </div>
     </div>
-    <p class=" text-xs sm:text-base md:text-2xl   lg:text-3xl lg:pt-5 font-semibold text-gray-200">{{ experience.description }}</p>
+    <p class="text-sm xl:text-lg text-white  text-center text-pretty font-bold">{{ experience.description }}</p>
   </div>
 </template>
 
@@ -23,14 +23,14 @@ let experience: Ref<ExperienceInterface> = useState("selectedExperience");
 </script>
 <style scoped>
 .info {
-  @apply flex items-center justify-between text-orange-300 gap-1 md:gap-3;
+  @apply flex items-center justify-between text-violet-900 bg-violet-200 rounded-full  font-bold px-2 py-1  xl:px-4 xl:py-3 gap-1 xl:gap-4;
+  
 }
 
 svg {
   @apply col-span-1;
 }
 .info p {
-  @apply col-span-7 text-[9px] font-bold  sm:text-xs md:text-[3vw] lg:text-[1.5vw];
+  @apply   text-xs xl:text-base;
 }
 </style>
-~/models/interfaces/ExperienceInterface

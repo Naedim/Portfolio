@@ -1,14 +1,14 @@
 <template>
-  <div id="home-page" class="flex  w-full pt-28  flex-col items-center justify-between">
-    <div id = "home-page__introduction" class="flex self-center flex-col items-start justify-center gap-5 md:gap-8 lg:w-4/6 lg:gap-10">
+  <div id="home-page" class="flex w-full flex-col items-center justify-between">
+    <div id = "home-page__introduction" class="flex self-center w-3/4 flex-col items-start justify-center gap-5">
       <div>
-        <p id="home-page__introduction-first-line" class="text-xl font-bold text-white sm:text-3xl md:text-5xl lg:text-4xl">
+        <p id="home-page__introduction-first-line" class="text-2xl lg:text-4xl xl:text-5xl font-bold text-violet-900">
           Hello, I'm
         </p>
         <p
           title="Damien NOEL"
           id="home-page__introduction-second-line"
-          class="text-3xl font-semibold text-orange-200 sm:text-5xl md:text-7xl lg:text-6xl"
+          class="text-4xl lg:text-6xl xl:text-7xl font-semibold text-white"
         >
           Damien NOEL
         </p>
@@ -16,14 +16,14 @@
 
       <div
         id="home-page__introduction-third-line"
-        class="flex flex-col gap-1 text-lg font-bold text-white sm:text-2xl md:gap-3 md:text-4xl lg:gap-3 lg:text-4xl xl:text-5xl"
+        class="flex flex-col gap-1 text-xl lg:text-3xl xl:text-4xl font-bold"
       >
-        <p title="Software engineer"><span class="text-red-500">/$: </span>Software engineer</p>
-        <p title="University IT teacher"><span class="text-red-500">&& </span>University IT teacher</p>
-        <p title="freelance developer"><span class="text-red-500">&& </span>freelance developer</p>
+        <p class = "text-white" title="Software engineer"><span class="text-violet-900">/$: </span>Software engineer</p>
+        <p class = "text-white" title="University IT teacher"><span class="text-violet-900">&& </span>University IT teacher</p>
+        <p class = "text-white" title="freelance developer"><span class="text-violet-900">&& </span>freelance developer</p>
       </div>
     </div>
 
-    <Footer class="h-30 w-full bottom-3 sm:bottom-6 portrait:absolute landscape:pt-10 lg:landscape:absolute lg:landscape:bottom-10" />
+    <Footer class="h-30 w-full bottom-4 lg:bottom-12 portrait:absolute landscape:pt-10 lg:landscape:absolute lg:landscape:bottom-10" />
   </div>
 </template>

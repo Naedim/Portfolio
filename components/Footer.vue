@@ -1,11 +1,14 @@
 <template>
-    <footer class = "box-border flex items-center justify-center gap-10 md:gap-20">
+    <footer class = "box-border flex items-center justify-center gap-10">
         
-        <NuxtLink v-for="(media, index) in medias" :to= media.url target="_blank" :title = "`${media.label} link`" class = "flex flex-col items-center text-white hover:text-orange-300 ">
-            <Icon :name = "media.iconName" :aria-label = "`${media.label} link`" class = "text-4xl md:text-6xl" />
-            <p class = "text-sm md:text-lg" >{{media.label}}</p>
+        <div v-for="(media, index) in medias"  >
+        <NuxtLink :to= media.url target="_blank" :title = "`${media.label} link`" class = "flex flex-col items-center">
+        <button class = "p-2">
+            <Icon :name = "media.iconName" :aria-label = "`${media.label} link`" class = "text-4xl lg:text-5xl " />
+        </button>
         </NuxtLink>
-        
+        <p class = " text-white font-bold text-center text-sm  lg:text-lg xl:text-xl" >{{media.label}}</p>
+        </div>
     </footer>
 </template>
 

@@ -1,15 +1,13 @@
 <template>
-  <div id = "app"
-    class="box-border flex min-h-screen w-screen flex-col bg-neutral-900 p-3 sm:p-6 md:p-10 "
-  >
-    <NuxtLayout>
+  <!-- <div id = "app" class = "h-screen landscape:h-max landscape:xl:h-screen"> -->
+  <div id = "app" class = "portrait:h-screen landscape:h-max landscape:lg:h-screen">
+    <NuxtLayout >
       <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
 
-<script setup lang="ts">
-
+<script setup>
 const title = "Damien NOEL's Portfolio";
 const description =
   "Hello I'm Damien NOEL, a newly graduated developper and this is the portfolio that tracks the project I'm working on";
@@ -41,8 +39,10 @@ useHead({
 button {
   all: unset;
   cursor: pointer;
+  @apply filter text-white  bg-gradient-to-r from-violet-900 to-violet-600 rounded-full shadow-lg transition-all duration-200 
 }
-button:hover{
-  transform : scale(1.05);
+
+button.focused-skill {
+ @apply bg-none bg-white text-violet-900
 }
 </style>

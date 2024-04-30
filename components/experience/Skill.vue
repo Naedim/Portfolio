@@ -2,16 +2,16 @@
   <button
     :id="'skill-button' + props.skill.name"
     :title="`what is ${props.skill.name}`"
-    class="lg:h-13 box-border h-8 min-w-[4rem] grow rounded-full bg-slate-200 p-1 sm:h-12 sm:min-w-[6rem] sm:p-2 md:h-12 md:min-w-[30vw] md:p-3 lg:min-w-[15rem] lg:max-w-[30rem]"
+    class="box-border grow  px-4 py-3  max-w-40 bg-gradient-to-r from-violet-200 to-violet-100 text-violet-900 "
   >
     <NuxtLink
       :to="skillInfos[props.skill.name].website"
       target="_blank"
-      class="flex h-full items-center justify-center gap-2 sm:gap-x-3 md:gap-4"
+      class="flex h-full items-center justify-center gap-2"
       :title="`what is ${props.skill.name}`"
     >
-      <img :title="`${skill.name} logo`" class="h-4 w-auto sm:h-6 md:h-9" :src="`/skillsPictures/${skillInfos[props.skill.name].logo}`" />
-      <p class="text-xs font-semibold text-neutral-700 sm:text-sm md:text-xl">{{ skill.name }}</p>
+      <img :title="`${skill.name} logo`" class="h-4 w-auto " :src="`/skillsPictures/${skillInfos[props.skill.name].logo}`" />
+      <p class="text-xs  xl:text-base font-semibold">{{ skill.name }}</p>
     </NuxtLink>
   </button>
 </template>
