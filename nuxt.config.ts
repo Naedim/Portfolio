@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", '@nuxtjs/robots'],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", '@nuxtjs/robots', "shadcn-nuxt"],
   target : "static",
+  componentDir: './components/ui',
 
   router: {
     extendRoutes(routes, resolve) {
