@@ -6,7 +6,9 @@
         class="flex items-start gap-2 text-violet-900 font-semibold text-base lg:text-xl xl:text-2xl"
         title="navbar's logo"
       >
-        Damien NOEL
+      <div class = "w-full h-full bg-red-500">
+        
+      </div>
       </div>
 
       <div
