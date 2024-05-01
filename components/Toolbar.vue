@@ -3,7 +3,7 @@
     <div class="flex flex-col">
       <div
         id="toolbar__navbar-logo"
-        class="flex items-start gap-2 text-violet-900 font-semibold text-base lg:text-xl xl:text-2xl"
+        class="flex items-start gap-2 text-violet-600 font-semibold text-base lg:text-xl xl:text-2xl"
         title="navbar's logo"
       >
        Damien NOEL 
@@ -40,7 +40,7 @@
       </li>
     </ul>
 
-    <ul id="toolbar__big-screen-menu" class="hidden w-4/6 grow  items-start justify-end gap-32 xl:flex ">
+    <ul id="toolbar__big-screen-menu" class="absolute hidden xl:flex w-[100vw] items-start justify-center gap-16 ">
       <li v-for="(page, path) in pages" :key="path">
 
           <NuxtLink

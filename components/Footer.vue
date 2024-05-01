@@ -7,7 +7,7 @@
             <Icon :name = "media.iconName" :aria-label = "`${media.label} link`" class = "text-4xl lg:text-5xl " />
         </button>
         </NuxtLink>
-        <p class = " text-white font-bold text-center text-sm  lg:text-lg xl:text-xl" >{{media.label}}</p>
+        <p class = " text-white text-center text-sm  lg:text-lg xl:text-xl" >{{media.label}}</p>
         </div>
     </footer>
 </template>

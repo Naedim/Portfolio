@@ -39,10 +39,10 @@ useHead({
 button {
   all: unset;
   cursor: pointer;
-  @apply filter text-white  bg-gradient-to-r from-violet-900 to-violet-600 rounded-full shadow-lg transition-all duration-200 
+  @apply filter text-white  bg-gradient-to-r from-violet-900 to-violet-500 rounded-full shadow-lg transition-all duration-200 
 }
 
 button.focused-skill {
- @apply bg-none bg-white text-violet-900
+ @apply bg-none   bg-white  bg-white text-violet-900
 }
 </style>
