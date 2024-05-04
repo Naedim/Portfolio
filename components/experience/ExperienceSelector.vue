@@ -44,7 +44,7 @@
     </div>
     
     <!-- Lower duration -->
-    <div class = "flex w-full justify-center">
+    <div class = "flex w-full justify-center pt-1">
         <p class="text-sm font-semibold text-violet-600">
           {{ selectedExperience.begining }} - {{ selectedExperience.duration }}
         </p>
