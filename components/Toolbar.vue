@@ -48,9 +48,7 @@
             :title="`go to page ${page}`"
             class="font-semibold" 
             >
-            <button title="page navigation" class = "px-4 py-3 text-xl rounded-full" data-twe-ripple-init data-twe-ripple-color="dark">
             {{ page }}
-            </button>
           </NuxtLink>
       </li>
     </ul>
