@@ -24,6 +24,5 @@
       </div>
     </div>
 
-    <Footer class="h-30 w-full bottom-4 lg:bottom-12 portrait:absolute landscape:pt-10 lg:landscape:absolute lg:landscape:bottom-10" />
   </div>
 </template>

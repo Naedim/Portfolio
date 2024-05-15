@@ -7,7 +7,7 @@
         :title="`domain of ${domain.title}`"
         v-for="(domain, index) in selectedExperience.skillDomainList"
         @click="selectedDomainIndex = index"
-        :class="index === selectedDomainIndex && 'focused-skill'"
+        :class="index === selectedDomainIndex && 'focused'"
         class="box-content h-6 grow  max-w-60  px-4 py-3  rounded-full"
       >
           <p class="text-center text-sm xl:text-base font-bold ">{{ domain.title }}</p>

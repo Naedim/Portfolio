@@ -1,6 +1,6 @@
 <template>
   <div id="experience-description" class="flex flex-col w-full gap-2">
-    <div class="flex w-full justify-center gap-2  xl:gap-32">
+    <div class="flex w-full justify-center gap-2  xl:gap-28">
       <div class="info">
         <Icon aria-label="job info" name="ic:baseline-code" class="text-2xl" />
         <p>{{ experience.title }}</p>
