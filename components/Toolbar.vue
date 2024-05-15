@@ -76,11 +76,13 @@ const medias = [{
    iconName : "mdi:linkedin",
    label : "Linkedin",
    url : "https://www.linkedin.com/in/dam-no/"
-},{
-   iconName : "mdi:github",
-   label : "Github",
-   url : "https://github.com/Naedim"
-}]
+},
+// {
+//    iconName : "mdi:github",
+//    label : "Github",
+//    url : "https://github.com/Naedim"
+// }
+]
 
 const isMobileMenuActive: Ref<Boolean> = ref(false);
 
