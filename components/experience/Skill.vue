@@ -1,19 +1,18 @@
 <template>
-  <button
-    :id="'skill-button' + props.skill.name"
-    :title="`what is ${props.skill.name}`"
-    class="box-border grow  px-4 py-3  max-w-40 bg-gradient-to-r from-violet-200 to-violet-100 text-violet-900 "
-  >
     <NuxtLink
       :to="skillInfos[props.skill.name].website"
       target="_blank"
-      class="flex h-full items-center justify-center gap-2"
       :title="`what is ${props.skill.name}`"
     >
-      <img :title="`${skill.name} logo`" class="h-4 w-auto " :src="`/skillsPictures/${skillInfos[props.skill.name].logo}`" />
-      <p class="text-xs  xl:text-base font-semibold">{{ skill.name }}</p>
-    </NuxtLink>
+  <button
+    :id="'skill-button' + props.skill.name"
+    :title="`what is ${props.skill.name}`"
+    class="flex items-center gap-2 box-border grow  px-4 py-3  max-w-48 bg-gradient-to-r from-violet-200 to-violet-100 text-violet-900 "
+  >
+      <img :title="`${skill.name} logo`" class="h-4 lg:h-5 w-auto " :src="`/skillsPictures/${skillInfos[props.skill.name].logo}`" />
+      <p class="text-xs xl:text-base font-semibold">{{ skill.name }}</p>
   </button>
+    </NuxtLink>
 </template>
 
 <script setup lang="ts">

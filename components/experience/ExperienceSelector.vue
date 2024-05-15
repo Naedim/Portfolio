@@ -1,6 +1,6 @@
 <template>
   <div id="experience-selector" class="flex w-full flex-col items-center justify-center">
-    <div class="flex w-full justify-center gap-10 lg:gap-20 xl:gap-30 items-center">
+    <div class="flex w-11/12 lg:w-2/5 xl:w-3/5 justify-between  items-center">
       <!-- Left button -->
       <button
         id="reverse"
