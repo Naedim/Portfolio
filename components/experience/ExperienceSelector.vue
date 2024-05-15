@@ -1,6 +1,6 @@
 <template>
   <div id="experience-selector" class="flex w-full flex-col items-center justify-center">
-    <div class="flex w-full lg:w-4/5  justify-between items-center">
+    <div class="flex w-full justify-center gap-10 lg:gap-20 xl:gap-30 items-center">
       <!-- Left button -->
       <button
         id="reverse"
@@ -21,7 +21,7 @@
             :to= selectedExperience.company.website
             target="_blank"
             :title="`${selectedExperience.company.name}`"
-            class="flex items-center gap-2 text-xl lg:text-3xl font-bold sm:text-xl"
+            class="flex items-center gap-2 text-xl lg:text-3xl font-bold"
           >
             <h2>
               {{ selectedExperience.company.name }}
@@ -87,11 +87,11 @@ const selectExperience = (index: number) => {
 
 <style scoped>
 .selector-button {
-  @apply  h-14 w-14 lg:h-16 lg:w-16 rounded-full flex items-center  text-2xl lg:text-4xl justify-center;
+  @apply  h-12 w-12 lg:h-14 lg:w-14 rounded-full flex items-center  text-2xl lg:text-4xl justify-center;
 }
 
 
 .disabled {
-  @apply text-gray-400 border-gray-400 hover:border-gray-400 transition-none transform-none;
+  @apply bg-none bg-gray-900 text-gray-400 border-gray-400 hover:border-gray-400 transition-none transform-none;
 }
 </style>

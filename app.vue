@@ -42,7 +42,7 @@ button {
   @apply filter text-white  bg-gradient-to-r from-violet-900 to-violet-500 rounded-full shadow-lg transition-all duration-200 
 }
 
-button.focused-skill {
- @apply bg-none   bg-white  bg-white text-violet-900
+button:focus, button.focused {
+ @apply bg-gradient-to-r from-rose-900 to-rose-500  text-white
 }
 </style>
